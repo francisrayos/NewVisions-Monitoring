@@ -1,0 +1,25 @@
+# Ignore files generated automatically by terraform
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+*.tfvars
+
+# logs
+*.log
+
+# Directories
+.terraform/
+.vagrant/
+app/
+
+# SSH Keys
+*.pem
+
+# Backup files
+*.bak
+
+# Ignored Terraform files
+*gitignore*.tf
+
+# Ignored vscode files
+.vscode/
