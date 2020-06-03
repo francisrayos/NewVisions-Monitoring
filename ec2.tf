@@ -1,7 +1,10 @@
 # NOTE: Instance is launched within the same VPC as Redshift cluster
-variable "public_key_path" { }
-variable "instance_ami" { }
-variable "instance_type" { }
+variable "public_key_path1" { }
+variable "public_key_path2" { }
+variable "airflow_instance_ami" { }
+variable "airflow_instance_type" { }
+variable "rstudio_instance_ami" { }
+variable "rstudio_instance_type" { }
 
 # Route Table for Instance
 resource "aws_route_table" "rtb_public" {
