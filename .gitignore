@@ -25,5 +25,7 @@ app/
 .vscode/
 
 # Generated keys
-*/rstudio*
-*/airflow*
+airflow
+airflow.pub
+rstudio
+rstudio.pub
