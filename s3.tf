@@ -1,13 +1,12 @@
-resource "aws_s3_bucket" "b" {
-  bucket = "my-s3-bucket"
-  acl    = "private"
+resource "aws_s3_bucket" "example" {
+  bucket = "new-visions-s3-bucket"
+  acl = "private"
 
   versioning {
     enabled = true
   }
 
   tags = {
-    terraform   = "true"
-    environment = "dev"
+    Name = "s3-terraform-bucket"
   }
 }
