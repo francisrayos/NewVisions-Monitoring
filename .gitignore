@@ -23,3 +23,7 @@ app/
 
 # Ignored vscode files
 .vscode/
+
+# Generated keys
+*/rstudio*
+*/airflow*

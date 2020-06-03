@@ -4,6 +4,8 @@ variable "vpc_cidr" { }
 resource "aws_vpc" "redshift_vpc" {
   cidr_block       = "${var.vpc_cidr}"
   instance_tenancy = "default"
+  enable_dns_support   = "true"
+  enable_dns_hostnames = "true"
   
   tags = {
     Name = "redshift-vpc"
@@ -27,7 +29,7 @@ resource "aws_default_security_group" "redshift_security_group" {
     from_port   = 5439
     to_port     = 5439
     protocol    = "tcp"
-    cidr_blocks = ["108.54.97.235/32"]
+    cidr_blocks = ["${var.ip_cidr_blocks}"]
   }
   
   tags = {
@@ -57,7 +59,7 @@ resource "aws_subnet" "redshift_subnet_1" {
   ]
 }
 resource "aws_subnet" "redshift_subnet_2" {
-  vpc_id     = "${aws_vpc.redshift_vpc.id}"
+  vpc_id            = "${aws_vpc.redshift_vpc.id}"
   cidr_block        = "${var.redshift_subnet_cidr_2}"
   availability_zone = "us-east-2b"
   map_public_ip_on_launch = "true"
