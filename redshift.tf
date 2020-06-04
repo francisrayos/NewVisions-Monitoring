@@ -1,5 +1,6 @@
 # Create VPC
 variable "vpc_cidr" { }
+variable "ip_cidr_blocks" { }
 
 resource "aws_vpc" "redshift_vpc" {
   cidr_block       = "${var.vpc_cidr}"

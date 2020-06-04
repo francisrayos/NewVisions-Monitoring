@@ -15,7 +15,7 @@ resource "aws_route_table" "rtb_public" {
     gateway_id = "${aws_internet_gateway.redshift_vpc_gw.id}"
   }
 
-  tags {
+  tags = {
     Name = "ec2-route-table"
   }
 
@@ -25,7 +25,7 @@ resource "aws_route_table" "rtb_public" {
 }
 
 # Route Associations Public
-resource "aws_route_table_association" "rta_subnet_public" {
+resource "aws_route_table_association" "rta_subnet_public1" {
   subnet_id      = "${aws_subnet.redshift_subnet_1.id}"
   route_table_id = "${aws_route_table.rtb_public.id}"
 
@@ -35,7 +35,7 @@ resource "aws_route_table_association" "rta_subnet_public" {
   ]
 }
 
-resource "aws_route_table_association" "rta_subnet_public" {
+resource "aws_route_table_association" "rta_subnet_public2" {
   subnet_id      = "${aws_subnet.redshift_subnet_2.id}"
   route_table_id = "${aws_route_table.rtb_public.id}"
 
@@ -64,7 +64,7 @@ resource "aws_security_group" "allow-ssh" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  tags {
+  tags = {
     Name = "security-group-22"
   }
 
@@ -96,9 +96,9 @@ resource "aws_instance" "airflow_instance" {
   vpc_security_group_ids = ["${aws_security_group.allow-ssh.id}"]
 
   # Public SSH Key
-  key_name               = "${aws_key_pair.ec2key.key_name}"
+  key_name               = "${aws_key_pair.airflow-key.key_name}"
 
-  tags {
+  tags = {
     Name = "airflow-instance"
   }
 
@@ -120,9 +120,9 @@ resource "aws_instance" "rstudio_instance" {
   vpc_security_group_ids = ["${aws_security_group.allow-ssh.id}"]
 
   # Public SSH Key
-  key_name               = "${aws_key_pair.ec2key.key_name}"
+  key_name               = "${aws_key_pair.rstudio-key.key_name}"
 
-  tags {
+  tags = {
     Name = "rstudio-instance"
   }
 
