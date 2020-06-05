@@ -48,7 +48,7 @@ variable "redshift_subnet_cidr_2" { }
 resource "aws_subnet" "redshift_subnet_1" {
   vpc_id            = "${aws_vpc.redshift_vpc.id}"
   cidr_block        = "${var.redshift_subnet_cidr_1}"
-  availability_zone = "us-east-2a"
+  availability_zone = "us-east-1a"
   map_public_ip_on_launch = "true"
   
   tags = {
@@ -62,7 +62,7 @@ resource "aws_subnet" "redshift_subnet_1" {
 resource "aws_subnet" "redshift_subnet_2" {
   vpc_id            = "${aws_vpc.redshift_vpc.id}"
   cidr_block        = "${var.redshift_subnet_cidr_2}"
-  availability_zone = "us-east-2b"
+  availability_zone = "us-east-1b"
   map_public_ip_on_launch = "true"
   
   tags = {

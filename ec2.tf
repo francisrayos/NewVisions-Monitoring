@@ -75,13 +75,66 @@ resource "aws_security_group" "allow-ssh" {
 
 # Key Pairs to SSH to EC2
 resource "aws_key_pair" "airflow-key" {
-  key_name   = "publicKey1"
+  key_name   = "public-airflow-key"
   public_key = "${file(var.public_key_path1)}"
 }
 
 resource "aws_key_pair" "rstudio-key" {
-  key_name   = "publicKey2"
+  key_name   = "public-rstudio-key"
   public_key = "${file(var.public_key_path2)}"
+}
+
+# Roles and Policies
+resource "aws_iam_role_policy" "metricbeat_iam_policy" {
+  name = "metricbeat_iam_policy"
+  role = "${aws_iam_role.metricbeat_iam_role.id}"
+
+  policy = <<-EOF
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+              "ec2:DescribeRegions",
+              "ec2:DescribeInstances",
+              "cloudwatch:ListMetrics",
+              "cloudwatch:GetMetricData"
+            ],
+            "Resource": "*"
+        }
+    ]
+  }
+  EOF
+}
+
+resource "aws_iam_role" "metricbeat_iam_role" {
+  name = "metricbeat_iam_role"
+
+  assume_role_policy = <<-EOF
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Action": "sts:AssumeRole",
+        "Principal": {
+          "Service": "ec2.amazonaws.com"
+        },
+        "Effect": "Allow",
+        "Sid": ""
+      }
+    ]
+  }
+  EOF
+
+  tags = {
+    Name = "metricbeat-role"
+  }
+}
+
+resource "aws_iam_instance_profile" "metricbeat_profile" {
+  name = "metricbeat_profile"
+  role = "${aws_iam_role.metricbeat_iam_role.name}"
 }
 
 # Create the Instance
@@ -97,6 +150,9 @@ resource "aws_instance" "airflow_instance" {
 
   # Public SSH Key
   key_name               = "${aws_key_pair.airflow-key.key_name}"
+
+  # IAM Instance Profile
+  iam_instance_profile   = "${aws_iam_instance_profile.metricbeat_profile.name}"
 
   tags = {
     Name = "airflow-instance"
@@ -121,6 +177,9 @@ resource "aws_instance" "rstudio_instance" {
 
   # Public SSH Key
   key_name               = "${aws_key_pair.rstudio-key.key_name}"
+
+  # IAM Instance Profile
+  iam_instance_profile   = "${aws_iam_instance_profile.metricbeat_profile.name}"
 
   tags = {
     Name = "rstudio-instance"
