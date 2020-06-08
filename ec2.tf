@@ -99,7 +99,9 @@ resource "aws_iam_role_policy" "metricbeat_iam_policy" {
               "ec2:DescribeRegions",
               "ec2:DescribeInstances",
               "cloudwatch:ListMetrics",
-              "cloudwatch:GetMetricData"
+              "cloudwatch:GetMetricData",
+              "iam:ListAccountAliases", 
+              "sts:GetCallerIdentity"
             ],
             "Resource": "*"
         }
