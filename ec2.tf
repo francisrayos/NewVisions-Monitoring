@@ -172,6 +172,9 @@ resource "aws_instance" "airflow_instance" {
   # IAM Instance Profile
   iam_instance_profile   = "${aws_iam_instance_profile.metricbeat_profile.name}"
 
+  # Enable detailed monitoring
+  monitoring             = true
+
   tags = {
     Name = "airflow-instance"
   }
@@ -198,6 +201,9 @@ resource "aws_instance" "rstudio_instance" {
 
   # IAM Instance Profile
   iam_instance_profile   = "${aws_iam_instance_profile.metricbeat_profile.name}"
+
+  # Enable detailed monitoring
+  monitoring             = true
 
   tags = {
     Name = "rstudio-instance"
