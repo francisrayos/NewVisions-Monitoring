@@ -57,9 +57,18 @@ resource "aws_security_group" "allow-ssh" {
       cidr_blocks = ["0.0.0.0/0"]
   }
 
+  # Connecting to Airflow
   ingress {
       from_port   = 8080
       to_port     = 8080
+      protocol    = "tcp"
+      cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  # Connecting to Beats
+  ingress {
+      from_port   = 5015
+      to_port     = 5015
       protocol    = "tcp"
       cidr_blocks = ["0.0.0.0/0"]
   }
