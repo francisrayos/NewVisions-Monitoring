@@ -1,0 +1,264 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Overview of Googlecloud Pubsub Metrics",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"gridData\": {\"h\": 13, \"i\": \"575df0fe-b44d-471f-8386-c4bd118a3810\", \"x\": 0, \"w\": 10, \"y\": 0}, \"title\": \"Filters\", \"version\": \"7.6.1\", \"embeddableConfig\": {\"title\": \"Filters\"}, \"panelRefName\": \"panel_0\", \"panelIndex\": \"575df0fe-b44d-471f-8386-c4bd118a3810\"}, {\"gridData\": {\"h\": 13, \"i\": \"5c336037-7c71-4eab-b544-926aaff73736\", \"x\": 11, \"w\": 17, \"y\": 0}, \"title\": \"Subscription Oldest Unacked Message\", \"version\": \"7.6.1\", \"embeddableConfig\": {\"title\": \"Subscription Oldest Unacked Message\"}, \"panelRefName\": \"panel_1\", \"panelIndex\": \"5c336037-7c71-4eab-b544-926aaff73736\"}, {\"gridData\": {\"h\": 13, \"i\": \"389bc633-eeaf-4deb-815c-3a6b8e5d95ac\", \"x\": 29, \"w\": 19, \"y\": 0}, \"title\": \"Subscription Undelivered Messages\", \"version\": \"7.6.1\", \"embeddableConfig\": {\"title\": \"Subscription Undelivered Messages\"}, \"panelRefName\": \"panel_2\", \"panelIndex\": \"389bc633-eeaf-4deb-815c-3a6b8e5d95ac\"}, {\"gridData\": {\"h\": 15, \"i\": \"2e8dc479-ba85-4424-87c4-40b93e801006\", \"x\": 0, \"w\": 24, \"y\": 13}, \"title\": \"Subscription Backlog Size\", \"version\": \"7.6.1\", \"embeddableConfig\": {\"title\": \"Subscription Backlog Size\"}, \"panelRefName\": \"panel_3\", \"panelIndex\": \"2e8dc479-ba85-4424-87c4-40b93e801006\"}, {\"gridData\": {\"h\": 15, \"i\": \"aefce32f-71e4-4770-9a4b-bedb2c608abd\", \"x\": 24, \"w\": 24, \"y\": 13}, \"title\": \"Subscription Pull Request Count\", \"version\": \"7.6.1\", \"embeddableConfig\": {\"title\": \"Subscription Pull Request Count\"}, \"panelRefName\": \"panel_4\", \"panelIndex\": \"aefce32f-71e4-4770-9a4b-bedb2c608abd\"}, {\"gridData\": {\"h\": 15, \"i\": \"ca4cce89-0d1d-4d96-b35f-443a05d1b410\", \"x\": 0, \"w\": 24, \"y\": 28}, \"title\": \"Topic Message Size\", \"version\": \"7.6.1\", \"embeddableConfig\": {\"title\": \"Topic Message Size\"}, \"panelRefName\": \"panel_5\", \"panelIndex\": \"ca4cce89-0d1d-4d96-b35f-443a05d1b410\"}, {\"gridData\": {\"h\": 15, \"i\": \"95c5c1f6-194c-4814-8281-02fecf7a81a5\", \"x\": 24, \"w\": 24, \"y\": 28}, \"title\": \"Subscription Undelivered Messages\", \"version\": \"7.6.1\", \"embeddableConfig\": {\"title\": \"Subscription Undelivered Messages\"}, \"panelRefName\": \"panel_6\", \"panelIndex\": \"95c5c1f6-194c-4814-8281-02fecf7a81a5\"}, {\"gridData\": {\"h\": 15, \"i\": \"ab2fad6a-f888-4b49-92c4-c220f3b8669c\", \"x\": 0, \"w\": 24, \"y\": 43}, \"title\": \"Subscription Pull Message Operation Count\", \"version\": \"7.6.1\", \"embeddableConfig\": {\"title\": \"Subscription Pull Message Operation Count\"}, \"panelRefName\": \"panel_7\", \"panelIndex\": \"ab2fad6a-f888-4b49-92c4-c220f3b8669c\"}, {\"gridData\": {\"h\": 15, \"i\": \"2121bde6-3a01-4339-8508-a20c107c62c9\", \"x\": 24, \"w\": 24, \"y\": 43}, \"title\": \"Subscription Sent Message Count\", \"version\": \"7.6.1\", \"embeddableConfig\": {\"title\": \"Subscription Sent Message Count\"}, \"panelRefName\": \"panel_8\", \"panelIndex\": \"2121bde6-3a01-4339-8508-a20c107c62c9\"}]",
+                "timeRestore": false,
+                "title": "[Metricbeat Googlecloud] Pubsub Overview",
+                "version": 1
+            },
+            "id": "ac97c2f0-6ac5-11ea-b657-e57ec854315f",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "8897e920-6ac5-11ea-b657-e57ec854315f",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "1a83ede0-6ab5-11ea-b657-e57ec854315f",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "fddf3a50-6ac8-11ea-b657-e57ec854315f",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "5067cf60-6a2b-11ea-b657-e57ec854315f",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "8e4a1d50-6ab8-11ea-b657-e57ec854315f",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "0cb2b3f0-6abe-11ea-b657-e57ec854315f",
+                    "name": "panel_5",
+                    "type": "visualization"
+                },
+                {
+                    "id": "afe5e1b0-6ab3-11ea-b657-e57ec854315f",
+                    "name": "panel_6",
+                    "type": "visualization"
+                },
+                {
+                    "id": "8355dab0-6ab8-11ea-b657-e57ec854315f",
+                    "name": "panel_7",
+                    "type": "visualization"
+                },
+                {
+                    "id": "97ee1230-6ab8-11ea-b657-e57ec854315f",
+                    "name": "panel_8",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2020-03-20T16:52:13.023Z",
+            "version": "WzEwMDUsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Pubsub Filters [Metricbeat Googlecloud]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"updateFiltersOnChange\": true, \"pinFilters\": true, \"useTimeFilter\": true, \"controls\": [{\"parent\": \"\", \"indexPatternRefName\": \"control_0_index_pattern\", \"label\": \"Subscription ID\", \"fieldName\": \"googlecloud.labels.resource.subscription_id\", \"options\": {\"size\": 5, \"type\": \"terms\", \"dynamicOptions\": true, \"multiselect\": true, \"order\": \"desc\"}, \"id\": \"1584720667458\", \"type\": \"list\"}, {\"parent\": \"\", \"indexPatternRefName\": \"control_1_index_pattern\", \"label\": \"Topic ID\", \"fieldName\": \"googlecloud.labels.resource.topic_id\", \"options\": {\"size\": 5, \"type\": \"terms\", \"dynamicOptions\": true, \"multiselect\": true, \"order\": \"desc\"}, \"id\": \"1584720684072\", \"type\": \"list\"}]}, \"title\": \"Pubsub Filters [Metricbeat Googlecloud]\", \"type\": \"input_control_vis\"}"
+            },
+            "id": "8897e920-6ac5-11ea-b657-e57ec854315f",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "metricbeat-*",
+                    "name": "control_0_index_pattern",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "metricbeat-*",
+                    "name": "control_1_index_pattern",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-03-20T16:34:17.599Z",
+            "version": "Wzk5MywzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Pubsub Subscription Oldest Unacked Message [Metricbeat Googlecloud]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"drop_last_bucket\": 0, \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"type\": \"metric\", \"background_color_rules\": [{\"id\": \"e0957450-6ab4-11ea-b946-0f4b813ed42e\"}], \"gauge_style\": \"half\", \"bar_color_rules\": [{\"id\": \"8a3465a0-6ac6-11ea-a262-61aa6533c46b\"}], \"time_field\": \"\", \"axis_position\": \"left\", \"index_pattern\": \"\", \"interval\": \"5m\", \"series\": [{\"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"label\": \"Oldest Unacknowledged Message(s)\", \"type\": \"timeseries\", \"split_mode\": \"filter\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"filter\": {\"language\": \"kuery\", \"query\": \"event.dataset: \\\"googlecloud.pubsub\\\" \"}, \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": \"2\", \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"googlecloud.pubsub.subscription.oldest_unacked_message_age\"}], \"terms_field\": \"googlecloud.labels.resource.subscription_id\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": \"3\"}], \"gauge_color_rules\": [{\"id\": \"df2ac0c0-6ab4-11ea-b946-0f4b813ed42e\"}]}, \"title\": \"Pubsub Subscription Oldest Unacked Message [Metricbeat Googlecloud]\", \"type\": \"metrics\"}"
+            },
+            "id": "1a83ede0-6ab5-11ea-b657-e57ec854315f",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-20T16:22:19.360Z",
+            "version": "Wzk4OCwzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Pubsub Subscription Number of Undelivered Messages [Metricbeat Googlecloud]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"default_index_pattern\": \"metricbeat-*\", \"background_color_rules\": [{\"id\": \"eed2b050-6ac8-11ea-a765-0512a055c04c\"}], \"default_timefield\": \"@timestamp\", \"time_field\": \"\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"index_pattern\": \"\", \"type\": \"metric\", \"axis_position\": \"left\", \"drop_last_bucket\": 0, \"series\": [{\"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"label\": \"Number of Undelivered Messages\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": \"2\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"googlecloud.pubsub.subscription.num_undelivered_messages\"}], \"terms_field\": \"googlecloud.labels.resource.subscription_id\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": \"3\"}], \"interval\": \"5m\"}, \"title\": \"Pubsub Subscription Number of Undelivered Messages [Metricbeat Googlecloud]\", \"type\": \"metrics\"}"
+            },
+            "id": "fddf3a50-6ac8-11ea-b657-e57ec854315f",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-20T16:36:54.809Z",
+            "version": "Wzk5NywzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Pubsub Subscription Backlog Size [Metricbeat Googlecloud]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"drop_last_bucket\": 0, \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"type\": \"timeseries\", \"background_color_rules\": [{\"id\": \"cb6bee00-6a1f-11ea-b594-a5f826db7e0b\"}], \"gauge_style\": \"half\", \"bar_color_rules\": [{\"id\": \"cc54ee70-6a1f-11ea-b594-a5f826db7e0b\"}], \"time_field\": \"\", \"axis_position\": \"left\", \"index_pattern\": \"\", \"interval\": \"5m\", \"series\": [{\"label\": \"\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"line_width\": \"2\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"googlecloud.pubsub.subscription.backlog_bytes\"}], \"terms_field\": \"googlecloud.labels.resource.subscription_id\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": \"3\"}], \"gauge_color_rules\": [{\"id\": \"cce19e10-6a1f-11ea-b594-a5f826db7e0b\"}]}, \"title\": \"Pubsub Subscription Backlog Size [Metricbeat Googlecloud]\", \"type\": \"metrics\"}"
+            },
+            "id": "5067cf60-6a2b-11ea-b657-e57ec854315f",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-19T21:48:05.334Z",
+            "version": "Wzk1NiwzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Pubsub Subscription Pull Request Count [Metricbeat Googlecloud]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"default_index_pattern\": \"metricbeat-*\", \"background_color_rules\": [{\"id\": \"e0957450-6ab4-11ea-b946-0f4b813ed42e\"}], \"default_timefield\": \"@timestamp\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"type\": \"timeseries\", \"index_pattern\": \"\", \"gauge_style\": \"half\", \"time_field\": \"\", \"axis_position\": \"left\", \"drop_last_bucket\": 0, \"interval\": \"5m\", \"series\": [{\"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"label\": \"\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": \"2\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"googlecloud.pubsub.subscription.pull_request_count\"}], \"terms_field\": \"googlecloud.labels.resource.subscription_id\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": \"3\"}], \"gauge_color_rules\": [{\"id\": \"df2ac0c0-6ab4-11ea-b946-0f4b813ed42e\"}]}, \"title\": \"Pubsub Subscription Pull Request Count [Metricbeat Googlecloud]\", \"type\": \"metrics\"}"
+            },
+            "id": "8e4a1d50-6ab8-11ea-b657-e57ec854315f",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-20T16:10:38.696Z",
+            "version": "Wzk3OCwzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Pubsub Topic Message Size [Metricbeat Googlecloud]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"default_index_pattern\": \"metricbeat-*\", \"background_color_rules\": [{\"id\": \"e0957450-6ab4-11ea-b946-0f4b813ed42e\"}], \"default_timefield\": \"@timestamp\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"type\": \"timeseries\", \"index_pattern\": \"\", \"gauge_style\": \"half\", \"time_field\": \"\", \"axis_position\": \"left\", \"drop_last_bucket\": 0, \"interval\": \"5m\", \"series\": [{\"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"label\": \"\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": \"2\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"googlecloud.pubsub.topic.message_sizes.bucket_options.Options.ExponentialBuckets.num_finite_buckets\"}], \"terms_field\": \"googlecloud.labels.resource.topic_id\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": \"3\"}], \"gauge_color_rules\": [{\"id\": \"df2ac0c0-6ab4-11ea-b946-0f4b813ed42e\"}]}, \"title\": \"Pubsub Topic Message Size [Metricbeat Googlecloud]\", \"type\": \"metrics\"}"
+            },
+            "id": "0cb2b3f0-6abe-11ea-b657-e57ec854315f",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-20T16:53:34.774Z",
+            "version": "WzEwMDcsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Pubsub Subscription Undelivered Messages [Metricbeat Googlecloud]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"drop_last_bucket\": 0, \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"time_field\": \"\", \"series\": [{\"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"label\": \"\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": \"2\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"googlecloud.pubsub.subscription.num_undelivered_messages\"}], \"terms_field\": \"googlecloud.labels.resource.subscription_id\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": \"3\"}], \"interval\": \"5m\"}, \"title\": \"Pubsub Subscription Undelivered Messages [Metricbeat Googlecloud]\", \"type\": \"metrics\"}"
+            },
+            "id": "afe5e1b0-6ab3-11ea-b657-e57ec854315f",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-20T14:04:17.099Z",
+            "version": "Wzk1OCwzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Pubsub Subscription Pull Message Operation Count [Metricbeat Googlecloud]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"default_index_pattern\": \"metricbeat-*\", \"background_color_rules\": [{\"id\": \"e0957450-6ab4-11ea-b946-0f4b813ed42e\"}], \"default_timefield\": \"@timestamp\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"type\": \"timeseries\", \"index_pattern\": \"\", \"gauge_style\": \"half\", \"time_field\": \"\", \"axis_position\": \"left\", \"drop_last_bucket\": 0, \"interval\": \"5m\", \"series\": [{\"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"label\": \"\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": \"2\", \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"googlecloud.pubsub.subscription.pull_message_operation_count\"}], \"terms_field\": \"googlecloud.labels.resource.subscription_id\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": \"3\"}], \"gauge_color_rules\": [{\"id\": \"df2ac0c0-6ab4-11ea-b946-0f4b813ed42e\"}]}, \"title\": \"Pubsub Subscription Pull Message Operation Count [Metricbeat Googlecloud]\", \"type\": \"metrics\"}"
+            },
+            "id": "8355dab0-6ab8-11ea-b657-e57ec854315f",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-20T14:38:49.818Z",
+            "version": "Wzk2MSwzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Pubsub Subscription Sent Message Count [Metricbeat Googlecloud]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"default_index_pattern\": \"metricbeat-*\", \"background_color_rules\": [{\"id\": \"e0957450-6ab4-11ea-b946-0f4b813ed42e\"}], \"default_timefield\": \"@timestamp\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"type\": \"timeseries\", \"index_pattern\": \"\", \"gauge_style\": \"half\", \"time_field\": \"\", \"axis_position\": \"left\", \"drop_last_bucket\": 0, \"interval\": \"5m\", \"series\": [{\"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"label\": \"\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": \"2\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"googlecloud.pubsub.subscription.sent_message_count\"}], \"terms_field\": \"googlecloud.labels.resource.subscription_id\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": \"3\"}], \"gauge_color_rules\": [{\"id\": \"df2ac0c0-6ab4-11ea-b946-0f4b813ed42e\"}]}, \"title\": \"Pubsub Subscription Sent Message Count [Metricbeat Googlecloud]\", \"type\": \"metrics\"}"
+            },
+            "id": "97ee1230-6ab8-11ea-b657-e57ec854315f",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-20T15:12:11.523Z",
+            "version": "Wzk2NCwzXQ=="
+        }
+    ],
+    "version": "7.6.1"
+}

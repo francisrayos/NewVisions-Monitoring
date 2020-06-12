@@ -1,0 +1,178 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "The dashboard presents metric data describing ActiveMQ broker. Metrics show statistics of enqueued and dequeued messages, consumers, producers and memory usage (broker, store, temp).",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"version\": \"7.4.0\", \"gridData\": {\"h\": 15, \"i\": \"cd2b33a6-3c4c-4d97-9cfb-7c6e47f248dc\", \"x\": 0, \"w\": 24, \"y\": 0}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_0\", \"panelIndex\": \"cd2b33a6-3c4c-4d97-9cfb-7c6e47f248dc\"}, {\"version\": \"7.4.0\", \"gridData\": {\"h\": 15, \"i\": \"dc086d82-511a-45e3-b20e-6eef48e22ee1\", \"x\": 24, \"w\": 24, \"y\": 0}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_1\", \"panelIndex\": \"dc086d82-511a-45e3-b20e-6eef48e22ee1\"}, {\"version\": \"7.4.0\", \"gridData\": {\"h\": 15, \"i\": \"84a09081-449a-44f8-bc43-7119730dc74b\", \"x\": 0, \"w\": 24, \"y\": 15}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_2\", \"panelIndex\": \"84a09081-449a-44f8-bc43-7119730dc74b\"}, {\"version\": \"7.4.0\", \"gridData\": {\"h\": 5, \"i\": \"e5e43ead-2ed5-4290-86f3-5dd623500f87\", \"x\": 24, \"w\": 24, \"y\": 15}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_3\", \"panelIndex\": \"e5e43ead-2ed5-4290-86f3-5dd623500f87\"}, {\"version\": \"7.4.0\", \"gridData\": {\"h\": 5, \"i\": \"f891ea87-7718-4820-a0dc-21b160c1e684\", \"x\": 24, \"w\": 24, \"y\": 20}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_4\", \"panelIndex\": \"f891ea87-7718-4820-a0dc-21b160c1e684\"}, {\"version\": \"7.4.0\", \"gridData\": {\"h\": 5, \"i\": \"54a788b6-5ede-4217-a975-ba6bc57f5274\", \"x\": 24, \"w\": 24, \"y\": 25}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_5\", \"panelIndex\": \"54a788b6-5ede-4217-a975-ba6bc57f5274\"}]",
+                "timeRestore": false,
+                "title": "[Metricbeat ActiveMQ] Broker Overview",
+                "version": 1
+            },
+            "id": "fc27a270-0b95-11ea-81bb-cf244189d349",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "55cacee0-0ba7-11ea-81bb-cf244189d349",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "ce456e60-0b99-11ea-81bb-cf244189d349",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "33cbfa60-0b95-11ea-81bb-cf244189d349",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "594db510-0b9c-11ea-81bb-cf244189d349",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "bfad8290-0d22-11ea-ba76-7fb26815d86c",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "cb475400-0d22-11ea-ba76-7fb26815d86c",
+                    "name": "panel_5",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2019-11-22T12:26:00.404Z",
+            "version": "WzUxOSwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Broker Messages [Metricbeat ActiveMQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"time_field\": \"\", \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"axis_min\": \"0\", \"legend_position\": \"bottom\", \"index_pattern\": \"\", \"bar_color_rules\": [{\"id\": \"aa435ec0-0ba6-11ea-b0d5-191f327f6941\"}], \"axis_position\": \"left\", \"series\": [{\"label\": \"Dequeue\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"activemq.broker.messages.dequeue.count\"}, {\"type\": \"derivative\", \"id\": \"03adf430-0ba6-11ea-b0d5-191f327f6941\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"unit\": \"\"}], \"type\": \"timeseries\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Enqueue\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"149ece90-0ba6-11ea-b0d5-191f327f6941\", \"axis_position\": \"right\", \"color\": \"rgba(115,216,255,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"149ef5a0-0ba6-11ea-b0d5-191f327f6941\", \"field\": \"activemq.broker.messages.enqueue.count\"}, {\"type\": \"derivative\", \"id\": \"149ef5a1-0ba6-11ea-b0d5-191f327f6941\", \"field\": \"149ef5a0-0ba6-11ea-b0d5-191f327f6941\", \"unit\": \"\"}], \"type\": \"timeseries\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Count\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"39964ed0-0ba6-11ea-b0d5-191f327f6941\", \"axis_position\": \"right\", \"color\": \"rgba(252,196,0,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"39964ed1-0ba6-11ea-b0d5-191f327f6941\", \"field\": \"activemq.broker.messages.enqueue.count\"}, {\"type\": \"derivative\", \"id\": \"8920b440-0ba6-11ea-b0d5-191f327f6941\", \"field\": \"39964ed1-0ba6-11ea-b0d5-191f327f6941\", \"unit\": \"\"}], \"type\": \"timeseries\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"\"}, \"title\": \"Broker Messages [Metricbeat ActiveMQ]\", \"type\": \"metrics\"}"
+            },
+            "id": "55cacee0-0ba7-11ea-81bb-cf244189d349",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-21T13:34:08.894Z",
+            "version": "WzQzOCwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Broker Consumers/Producers [Metricbeat ActiveMQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"default_index_pattern\": \"metricbeat-*\", \"background_color_rules\": [{\"id\": \"60dba290-0b99-11ea-8e0f-4970006b3ce7\"}], \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"axis_min\": \"0\", \"legend_position\": \"bottom\", \"index_pattern\": \"\", \"annotations\": [], \"axis_position\": \"left\", \"time_field\": \"\", \"series\": [{\"label\": \"Consumers\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"50a86850-0b98-11ea-8e0f-4970006b3ce7\", \"field\": \"activemq.broker.consumers.count\"}], \"terms_field\": \"activemq.broker.name\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Producers\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"9a1e6840-0b98-11ea-8e0f-4970006b3ce7\", \"axis_position\": \"right\", \"color\": \"rgba(65,157,247,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"9a1e6841-0b98-11ea-8e0f-4970006b3ce7\", \"field\": \"activemq.broker.producers.count\"}], \"terms_field\": \"activemq.broker.name\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"\"}, \"title\": \"Broker Consumers/Producers [Metricbeat ActiveMQ]\", \"type\": \"metrics\"}"
+            },
+            "id": "ce456e60-0b99-11ea-81bb-cf244189d349",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-21T13:34:08.894Z",
+            "version": "WzQzOSwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Broker Connections [Metricbeat ActiveMQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"isModelInvalid\": false, \"gauge_width\": 10, \"default_index_pattern\": \"metricbeat-*\", \"axis_min\": \"0\", \"legend_position\": \"bottom\", \"index_pattern\": \"\", \"gauge_color_rules\": [{\"id\": \"1a5bd500-0b95-11ea-81df-8dc66a02be3a\"}], \"bar_color_rules\": [{\"id\": \"1996d750-0b95-11ea-81df-8dc66a02be3a\"}], \"show_legend\": 1, \"time_field\": \"\", \"axis_formatter\": \"number\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"background_color_rules\": [{\"id\": \"178caf70-0b95-11ea-81df-8dc66a02be3a\"}], \"gauge_style\": \"half\", \"axis_position\": \"left\", \"series\": [{\"split_filters\": [{\"label\": \"\", \"id\": \"b1b376f0-0b96-11ea-81df-8dc66a02be3a\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"color\": \"#68BC00\"}], \"label\": \"Connections\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"activemq.broker.connections.count\"}, {\"type\": \"derivative\", \"id\": \"90525b80-0ba4-11ea-8c5c-257c67a7a008\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"unit\": \"\"}], \"terms_field\": \"activemq.broker.name\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"\"}, \"title\": \"Broker Connections [Metricbeat ActiveMQ]\", \"type\": \"metrics\"}"
+            },
+            "id": "33cbfa60-0b95-11ea-81bb-cf244189d349",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-21T13:34:08.894Z",
+            "version": "WzQ0MCwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Broker Memory Usage [Metricbeat ActiveMQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"gauge_color_rules\": [{\"id\": \"9acca240-0b9b-11ea-8e0f-4970006b3ce7\"}], \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"type\": \"gauge\", \"background_color_rules\": [{\"id\": \"a19e8b60-0b9b-11ea-8e0f-4970006b3ce7\"}], \"gauge_style\": \"half\", \"bar_color_rules\": [{\"id\": \"f6955680-0b9b-11ea-8e0f-4970006b3ce7\"}], \"time_field\": \"\", \"axis_position\": \"left\", \"index_pattern\": \"\", \"interval\": \"\", \"series\": [{\"value_template\": \"\", \"label\": \"Broker Memory\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"axis_position\": \"right\", \"color\": \"rgba(252,220,0,1)\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"activemq.broker.memory.broker.pct\"}], \"type\": \"timeseries\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Store Memory\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"7716c9c0-0b9b-11ea-8e0f-4970006b3ce7\", \"axis_position\": \"right\", \"color\": \"rgba(104,204,202,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"7716c9c1-0b9b-11ea-8e0f-4970006b3ce7\", \"field\": \"activemq.broker.memory.store.pct\"}], \"type\": \"timeseries\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Temp Memory\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"13799400-0b9c-11ea-8e0f-4970006b3ce7\", \"axis_position\": \"right\", \"color\": \"rgba(174,161,255,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"13799401-0b9c-11ea-8e0f-4970006b3ce7\", \"field\": \"activemq.broker.memory.temp.pct\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"gauge_max\": \"1\"}, \"title\": \"Broker Memory Usage [Metricbeat ActiveMQ]\", \"type\": \"metrics\"}"
+            },
+            "id": "594db510-0b9c-11ea-81bb-cf244189d349",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-22T15:29:57.883Z",
+            "version": "WzUzOSwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Broker Temp Memory Usage [Metricbeat ActiveMQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"gauge_color_rules\": [{\"id\": \"9acca240-0b9b-11ea-8e0f-4970006b3ce7\"}], \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"type\": \"gauge\", \"background_color_rules\": [{\"id\": \"a19e8b60-0b9b-11ea-8e0f-4970006b3ce7\"}], \"gauge_style\": \"half\", \"bar_color_rules\": [{\"id\": \"f6955680-0b9b-11ea-8e0f-4970006b3ce7\"}], \"time_field\": \"\", \"axis_position\": \"left\", \"index_pattern\": \"\", \"interval\": \"\", \"series\": [{\"value_template\": \"\", \"label\": \"Temp Memory\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"axis_position\": \"right\", \"color\": \"rgba(252,220,0,1)\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"activemq.broker.memory.temp.pct\"}], \"type\": \"timeseries\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Store Memory\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"7716c9c0-0b9b-11ea-8e0f-4970006b3ce7\", \"axis_position\": \"right\", \"color\": \"rgba(104,204,202,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"7716c9c1-0b9b-11ea-8e0f-4970006b3ce7\", \"field\": \"activemq.broker.memory.store.pct\"}], \"type\": \"timeseries\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Temp Memory\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"13799400-0b9c-11ea-8e0f-4970006b3ce7\", \"axis_position\": \"right\", \"color\": \"rgba(174,161,255,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"13799401-0b9c-11ea-8e0f-4970006b3ce7\", \"field\": \"activemq.broker.memory.temp.pct\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"gauge_max\": \"1\"}, \"title\": \"Broker Temp Memory Usage [Metricbeat ActiveMQ]\", \"type\": \"metrics\"}"
+            },
+            "id": "bfad8290-0d22-11ea-ba76-7fb26815d86c",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-22T15:30:29.667Z",
+            "version": "WzU0MSwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Broker Store Memory Usage [Metricbeat ActiveMQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"gauge_color_rules\": [{\"id\": \"9acca240-0b9b-11ea-8e0f-4970006b3ce7\"}], \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"type\": \"gauge\", \"background_color_rules\": [{\"id\": \"a19e8b60-0b9b-11ea-8e0f-4970006b3ce7\"}], \"gauge_style\": \"half\", \"bar_color_rules\": [{\"id\": \"f6955680-0b9b-11ea-8e0f-4970006b3ce7\"}], \"time_field\": \"\", \"axis_position\": \"left\", \"index_pattern\": \"\", \"interval\": \"\", \"series\": [{\"value_template\": \"\", \"label\": \"Store Memory\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"axis_position\": \"right\", \"color\": \"rgba(252,220,0,1)\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"activemq.broker.memory.store.pct\"}], \"type\": \"timeseries\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Store Memory\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"7716c9c0-0b9b-11ea-8e0f-4970006b3ce7\", \"axis_position\": \"right\", \"color\": \"rgba(104,204,202,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"7716c9c1-0b9b-11ea-8e0f-4970006b3ce7\", \"field\": \"activemq.broker.memory.store.pct\"}], \"type\": \"timeseries\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Temp Memory\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"13799400-0b9c-11ea-8e0f-4970006b3ce7\", \"axis_position\": \"right\", \"color\": \"rgba(174,161,255,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"13799401-0b9c-11ea-8e0f-4970006b3ce7\", \"field\": \"activemq.broker.memory.temp.pct\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"gauge_max\": \"1\"}, \"title\": \"Broker Store Memory Usage [Metricbeat ActiveMQ]\", \"type\": \"metrics\"}"
+            },
+            "id": "cb475400-0d22-11ea-ba76-7fb26815d86c",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-22T15:30:59.820Z",
+            "version": "WzU0MywyXQ=="
+        }
+    ],
+    "version": "7.4.0"
+}

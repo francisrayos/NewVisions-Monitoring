@@ -1,0 +1,609 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Overview of host metrics",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"version\": true, \"highlightAll\": true, \"query\": {\"language\": \"kuery\", \"query\": \"host.name:\\\"CHANGEME_HOSTNAME\\\"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"darkTheme\": false}",
+                "panelsJSON": "[{\"version\": \"7.6.0\", \"gridData\": {\"h\": 15, \"i\": \"1\", \"x\": 0, \"w\": 24, \"y\": 55}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_0\", \"panelIndex\": \"1\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 15, \"i\": \"2\", \"x\": 24, \"w\": 24, \"y\": 25}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_1\", \"panelIndex\": \"2\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 15, \"i\": \"3\", \"x\": 24, \"w\": 24, \"y\": 55}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_2\", \"panelIndex\": \"3\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 15, \"i\": \"4\", \"x\": 0, \"w\": 24, \"y\": 40}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_3\", \"panelIndex\": \"4\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 15, \"i\": \"5\", \"x\": 24, \"w\": 24, \"y\": 70}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_4\", \"panelIndex\": \"5\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 15, \"i\": \"6\", \"x\": 0, \"w\": 24, \"y\": 70}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_5\", \"panelIndex\": \"6\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 15, \"i\": \"7\", \"x\": 0, \"w\": 24, \"y\": 25}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_6\", \"panelIndex\": \"7\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 15, \"i\": \"8\", \"x\": 24, \"w\": 24, \"y\": 40}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_7\", \"panelIndex\": \"8\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 10, \"i\": \"9\", \"x\": 16, \"w\": 8, \"y\": 5}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_8\", \"panelIndex\": \"9\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 10, \"i\": \"10\", \"x\": 0, \"w\": 8, \"y\": 5}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_9\", \"panelIndex\": \"10\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 10, \"i\": \"11\", \"x\": 8, \"w\": 8, \"y\": 5}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_10\", \"panelIndex\": \"11\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 10, \"i\": \"12\", \"x\": 24, \"w\": 8, \"y\": 5}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_11\", \"panelIndex\": \"12\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 10, \"i\": \"13\", \"x\": 32, \"w\": 8, \"y\": 5}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_12\", \"panelIndex\": \"13\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 10, \"i\": \"14\", \"x\": 32, \"w\": 16, \"y\": 15}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_13\", \"panelIndex\": \"14\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 5, \"i\": \"16\", \"x\": 0, \"w\": 24, \"y\": 0}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_14\", \"panelIndex\": \"16\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 10, \"i\": \"21\", \"x\": 0, \"w\": 8, \"y\": 15}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_15\", \"panelIndex\": \"21\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 10, \"i\": \"22\", \"x\": 8, \"w\": 8, \"y\": 15}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_16\", \"panelIndex\": \"22\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 10, \"i\": \"23\", \"x\": 24, \"w\": 8, \"y\": 15}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_17\", \"panelIndex\": \"23\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 10, \"i\": \"25\", \"x\": 40, \"w\": 8, \"y\": 5}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_18\", \"panelIndex\": \"25\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 15, \"i\": \"27\", \"x\": 0, \"w\": 24, \"y\": 85}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_19\", \"panelIndex\": \"27\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 15, \"i\": \"28\", \"x\": 24, \"w\": 24, \"y\": 85}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_20\", \"panelIndex\": \"28\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 10, \"i\": \"29\", \"x\": 16, \"w\": 8, \"y\": 15}, \"embeddableConfig\": {\"vis\": {\"defaultColors\": {\"0 - 100\": \"rgb(0,104,55)\"}}}, \"panelRefName\": \"panel_21\", \"panelIndex\": \"29\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 5, \"i\": \"30\", \"x\": 24, \"w\": 24, \"y\": 0}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_22\", \"panelIndex\": \"30\"}]",
+                "timeRestore": false,
+                "title": "[Metricbeat System] Host overview ECS",
+                "version": 1
+            },
+            "id": "79ffd6e0-faa0-11e6-947f-177f697178b8-ecs",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "6b7b9a40-faa1-11e6-86b1-cd7735ff7e23-ecs",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "4d546850-1b15-11e7-b09e-037021c4f8df-ecs",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "089b85d0-1b16-11e7-b09e-037021c4f8df-ecs",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "bfa5e400-1b16-11e7-b09e-037021c4f8df-ecs",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "e0f001c0-1b18-11e7-b09e-037021c4f8df-ecs",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "2e224660-1b19-11e7-b09e-037021c4f8df-ecs",
+                    "name": "panel_5",
+                    "type": "visualization"
+                },
+                {
+                    "id": "ab2d1e90-1b1a-11e7-b09e-037021c4f8df-ecs",
+                    "name": "panel_6",
+                    "type": "visualization"
+                },
+                {
+                    "id": "4e4bb1e0-1b1b-11e7-b09e-037021c4f8df-ecs",
+                    "name": "panel_7",
+                    "type": "visualization"
+                },
+                {
+                    "id": "26732e20-1b91-11e7-bec4-a5e9ec5cab8b-ecs",
+                    "name": "panel_8",
+                    "type": "visualization"
+                },
+                {
+                    "id": "83e12df0-1b91-11e7-bec4-a5e9ec5cab8b-ecs",
+                    "name": "panel_9",
+                    "type": "visualization"
+                },
+                {
+                    "id": "d3166e80-1b91-11e7-bec4-a5e9ec5cab8b-ecs",
+                    "name": "panel_10",
+                    "type": "visualization"
+                },
+                {
+                    "id": "522ee670-1b92-11e7-bec4-a5e9ec5cab8b-ecs",
+                    "name": "panel_11",
+                    "type": "visualization"
+                },
+                {
+                    "id": "1aae9140-1b93-11e7-8ada-3df93aab833e-ecs",
+                    "name": "panel_12",
+                    "type": "visualization"
+                },
+                {
+                    "id": "34f97ee0-1b96-11e7-8ada-3df93aab833e-ecs",
+                    "name": "panel_13",
+                    "type": "visualization"
+                },
+                {
+                    "id": "System-Navigation-ecs",
+                    "name": "panel_14",
+                    "type": "visualization"
+                },
+                {
+                    "id": "19e123b0-4d5a-11e7-aee5-fdc812cc3bec-ecs",
+                    "name": "panel_15",
+                    "type": "visualization"
+                },
+                {
+                    "id": "d2e80340-4d5c-11e7-aa29-87a97a796de6-ecs",
+                    "name": "panel_16",
+                    "type": "visualization"
+                },
+                {
+                    "id": "825fdb80-4d1d-11e7-b5f2-2b7c1895bf32-ecs",
+                    "name": "panel_17",
+                    "type": "visualization"
+                },
+                {
+                    "id": "96976150-4d5d-11e7-aa29-87a97a796de6-ecs",
+                    "name": "panel_18",
+                    "type": "visualization"
+                },
+                {
+                    "id": "99381c80-4d60-11e7-9a4c-ed99bbcaa42b-ecs",
+                    "name": "panel_19",
+                    "type": "visualization"
+                },
+                {
+                    "id": "c5e3cf90-4d60-11e7-9a4c-ed99bbcaa42b-ecs",
+                    "name": "panel_20",
+                    "type": "visualization"
+                },
+                {
+                    "id": "590a60f0-5d87-11e7-8884-1bb4c3b890e4-ecs",
+                    "name": "panel_21",
+                    "type": "visualization"
+                },
+                {
+                    "id": "3d65d450-a9c3-11e7-af20-67db8aecb295-ecs",
+                    "name": "panel_22",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2020-03-26T18:07:09.250Z",
+            "version": "WzY4MDMsN10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Network Traffic (Packets) [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"type\": \"timeseries\", \"index_pattern\": \"*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"time_field\": \"@timestamp\", \"series\": [{\"label\": \"Inbound\", \"split_mode\": \"terms\", \"value_template\": \"{{value}}/s\", \"id\": \"da1046f1-faa0-11e6-86b1-cd7735ff7e23\", \"axis_position\": \"right\", \"color\": \"rgba(0,156,224,1)\", \"formatter\": \"0.[00]a\", \"line_width\": \"0\", \"metrics\": [{\"type\": \"max\", \"id\": \"da1046f2-faa0-11e6-86b1-cd7735ff7e23\", \"field\": \"system.network.in.packets\"}, {\"type\": \"derivative\", \"id\": \"f41f9280-faa0-11e6-86b1-cd7735ff7e23\", \"field\": \"da1046f2-faa0-11e6-86b1-cd7735ff7e23\", \"unit\": \"1s\"}, {\"type\": \"positive_only\", \"id\": \"c0da3d80-1b93-11e7-8ada-3df93aab833e\", \"field\": \"f41f9280-faa0-11e6-86b1-cd7735ff7e23\", \"unit\": \"\"}, {\"type\": \"series_agg\", \"id\": \"ecaad010-2c2c-11e7-be71-3162da85303f\", \"function\": \"sum\"}], \"terms_field\": \"system.network.name\", \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": \"1\", \"point_size\": \"0\"}, {\"label\": \"Outbound\", \"split_mode\": \"terms\", \"value_template\": \"{{value}}/s\", \"id\": \"fbbd5720-faa0-11e6-86b1-cd7735ff7e23\", \"axis_position\": \"right\", \"color\": \"rgba(250,40,255,1)\", \"formatter\": \"0.[00]a\", \"line_width\": \"0\", \"metrics\": [{\"type\": \"max\", \"id\": \"fbbd7e30-faa0-11e6-86b1-cd7735ff7e23\", \"field\": \"system.network.out.packets\"}, {\"type\": \"derivative\", \"id\": \"fbbd7e31-faa0-11e6-86b1-cd7735ff7e23\", \"field\": \"fbbd7e30-faa0-11e6-86b1-cd7735ff7e23\", \"unit\": \"1s\"}, {\"script\": \"params.rate != null && params.rate > 0 ? params.rate * -1 : null\", \"type\": \"calculation\", \"id\": \"17e597a0-faa1-11e6-86b1-cd7735ff7e23\", \"variables\": [{\"id\": \"1940bad0-faa1-11e6-86b1-cd7735ff7e23\", \"field\": \"fbbd7e31-faa0-11e6-86b1-cd7735ff7e23\", \"name\": \"rate\"}]}, {\"type\": \"series_agg\", \"id\": \"fe5fbdc0-2c2c-11e7-be71-3162da85303f\", \"function\": \"sum\"}], \"terms_field\": \"system.network.name\", \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": \"1\", \"point_size\": \"0\"}], \"id\": \"da1046f0-faa0-11e6-86b1-cd7735ff7e23\", \"filter\": {\"language\": \"lucene\", \"query\": \"-system.network.name:l*\"}, \"interval\": \"auto\"}, \"type\": \"metrics\", \"title\": \"Mericbeat: Network Traffic (Packets) ECS\", \"listeners\": {}}"
+            },
+            "id": "6b7b9a40-faa1-11e6-86b1-cd7735ff7e23-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxNjMsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "System Load [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_grid\": 1, \"show_legend\": 1, \"index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"id\": \"f6264ad0-1b14-11e7-b09e-037021c4f8df\", \"series\": [{\"label\": \"1m\", \"split_mode\": \"everything\", \"id\": \"f62671e0-1b14-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"color\": \"rgba(115,216,255,1)\", \"formatter\": \"number\", \"line_width\": \"3\", \"metrics\": [{\"type\": \"avg\", \"id\": \"f62671e1-1b14-11e7-b09e-037021c4f8df\", \"field\": \"system.load.1\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": 1}, {\"label\": \"5m\", \"split_mode\": \"everything\", \"id\": \"1c324850-1b15-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"color\": \"rgba(0,156,224,1)\", \"formatter\": \"number\", \"line_width\": \"3\", \"metrics\": [{\"type\": \"avg\", \"id\": \"1c324851-1b15-11e7-b09e-037021c4f8df\", \"field\": \"system.load.5\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": \"0\"}, {\"label\": \"15m\", \"split_mode\": \"everything\", \"id\": \"3287e740-1b15-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"color\": \"rgba(0,98,177,1)\", \"formatter\": \"number\", \"line_width\": \"3\", \"metrics\": [{\"type\": \"avg\", \"id\": \"32880e50-1b15-11e7-b09e-037021c4f8df\", \"field\": \"system.load.15\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": \"0\"}], \"interval\": \"auto\"}, \"title\": \"System Load [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "4d546850-1b15-11e7-b09e-037021c4f8df-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxNjQsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Network Traffic (Bytes) [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"type\": \"timeseries\", \"index_pattern\": \"*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"time_field\": \"@timestamp\", \"series\": [{\"label\": \"Inbound \", \"split_mode\": \"terms\", \"value_template\": \"{{value}}/s\", \"id\": \"da1046f1-faa0-11e6-86b1-cd7735ff7e23\", \"axis_position\": \"right\", \"color\": \"rgba(0,156,224,1)\", \"formatter\": \"bytes\", \"line_width\": \"0\", \"metrics\": [{\"type\": \"max\", \"id\": \"da1046f2-faa0-11e6-86b1-cd7735ff7e23\", \"field\": \"system.network.in.bytes\"}, {\"type\": \"derivative\", \"id\": \"f41f9280-faa0-11e6-86b1-cd7735ff7e23\", \"field\": \"da1046f2-faa0-11e6-86b1-cd7735ff7e23\", \"unit\": \"1s\"}, {\"type\": \"positive_only\", \"id\": \"a87398e0-1b93-11e7-8ada-3df93aab833e\", \"field\": \"f41f9280-faa0-11e6-86b1-cd7735ff7e23\", \"unit\": \"\"}, {\"type\": \"series_agg\", \"id\": \"2d533df0-2c2d-11e7-be71-3162da85303f\", \"function\": \"sum\"}], \"terms_field\": \"system.network.name\", \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": \"1\", \"point_size\": \"0\"}, {\"label\": \"Outbound \", \"split_mode\": \"terms\", \"value_template\": \"{{value}}/s\", \"id\": \"fbbd5720-faa0-11e6-86b1-cd7735ff7e23\", \"axis_position\": \"right\", \"color\": \"rgba(250,40,255,1)\", \"formatter\": \"bytes\", \"line_width\": \"0\", \"metrics\": [{\"type\": \"max\", \"id\": \"fbbd7e30-faa0-11e6-86b1-cd7735ff7e23\", \"field\": \"system.network.out.bytes\"}, {\"type\": \"derivative\", \"id\": \"fbbd7e31-faa0-11e6-86b1-cd7735ff7e23\", \"field\": \"fbbd7e30-faa0-11e6-86b1-cd7735ff7e23\", \"unit\": \"1s\"}, {\"script\": \"params.rate != null && params.rate > 0 ? params.rate * -1 : null\", \"type\": \"calculation\", \"id\": \"17e597a0-faa1-11e6-86b1-cd7735ff7e23\", \"variables\": [{\"id\": \"1940bad0-faa1-11e6-86b1-cd7735ff7e23\", \"field\": \"fbbd7e31-faa0-11e6-86b1-cd7735ff7e23\", \"name\": \"rate\"}]}, {\"type\": \"series_agg\", \"id\": \"533da9b0-2c2d-11e7-be71-3162da85303f\", \"function\": \"sum\"}], \"terms_field\": \"system.network.name\", \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": \"1\", \"point_size\": \"0\"}], \"id\": \"da1046f0-faa0-11e6-86b1-cd7735ff7e23\", \"filter\": {\"language\": \"lucene\", \"query\": \"-system.network.name:l*\"}, \"interval\": \"auto\"}, \"type\": \"metrics\", \"title\": \"Mericbeat: Network Traffic (Bytes) ECS\", \"listeners\": {}}"
+            },
+            "id": "089b85d0-1b16-11e7-b09e-037021c4f8df-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxNjUsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Memory Usage [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_grid\": 1, \"show_legend\": 1, \"index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"id\": \"32f46f40-1b16-11e7-b09e-037021c4f8df\", \"series\": [{\"label\": \"Used\", \"split_mode\": \"everything\", \"id\": \"4ff61fd0-1b16-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"color\": \"rgba(211,49,21,1)\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"4ff61fd1-1b16-11e7-b09e-037021c4f8df\", \"field\": \"system.memory.actual.used.bytes\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"stacked\", \"fill\": \"1\", \"point_size\": \"0\"}, {\"label\": \"Cache\", \"split_mode\": \"everything\", \"id\": \"753a6080-1b16-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"color\": \"rgba(0,156,224,1)\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"753a6081-1b16-11e7-b09e-037021c4f8df\", \"field\": \"system.memory.actual.used.bytes\"}, {\"type\": \"avg\", \"id\": \"7c9d3f00-1b16-11e7-b09e-037021c4f8df\", \"field\": \"system.memory.used.bytes\"}, {\"script\": \"params.actual != null && params.used != null ? params.used - params.actual : null\", \"type\": \"calculation\", \"id\": \"869cc160-1b16-11e7-b09e-037021c4f8df\", \"variables\": [{\"id\": \"890f9620-1b16-11e7-b09e-037021c4f8df\", \"field\": \"753a6081-1b16-11e7-b09e-037021c4f8df\", \"name\": \"actual\"}, {\"id\": \"8f3ab7f0-1b16-11e7-b09e-037021c4f8df\", \"field\": \"7c9d3f00-1b16-11e7-b09e-037021c4f8df\", \"name\": \"used\"}]}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"stacked\", \"fill\": \"1\", \"point_size\": \"0\"}, {\"label\": \"Free\", \"split_mode\": \"everything\", \"id\": \"32f46f41-1b16-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"32f46f42-1b16-11e7-b09e-037021c4f8df\", \"field\": \"system.memory.free\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"stacked\", \"fill\": \"1\", \"point_size\": \"0\"}], \"interval\": \"auto\"}, \"title\": \"Memory Usage [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "bfa5e400-1b16-11e7-b09e-037021c4f8df-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxNjYsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Top Processes By CPU [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"type\": \"top_n\", \"id\": \"5f5b8d50-1b18-11e7-b09e-037021c4f8df\", \"show_grid\": 1, \"filter\": \"\", \"drilldown_url\": \"\", \"index_pattern\": \"metricbeat-*\", \"bar_color_rules\": [{\"value\": 0, \"id\": \"60e11be0-1b18-11e7-b09e-037021c4f8df\", \"bar_color\": \"rgba(104,188,0,1)\", \"operator\": \"gte\"}], \"axis_position\": \"left\", \"series\": [{\"terms_order_by\": \"5f5b8d52-1b18-11e7-b09e-037021c4f8df\", \"color\": \"#68BC00\", \"fill\": 0.5, \"id\": \"5f5b8d51-1b18-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"5f5b8d52-1b18-11e7-b09e-037021c4f8df\", \"field\": \"system.process.cpu.total.pct\"}], \"terms_field\": \"process.name\", \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"split_mode\": \"terms\", \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Top Processes By CPU [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "e0f001c0-1b18-11e7-b09e-037021c4f8df-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxNjcsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Processes By Memory [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"type\": \"top_n\", \"id\": \"edfceb30-1b18-11e7-b09e-037021c4f8df\", \"show_grid\": 1, \"filter\": \"\", \"drilldown_url\": \"\", \"index_pattern\": \"metricbeat-*\", \"bar_color_rules\": [{\"value\": 0, \"id\": \"efb9b660-1b18-11e7-b09e-037021c4f8df\", \"bar_color\": \"rgba(104,188,0,1)\", \"operator\": \"gte\"}, {\"value\": 0.7, \"id\": \"17fcb820-1b19-11e7-b09e-037021c4f8df\", \"bar_color\": \"rgba(254,146,0,1)\", \"operator\": \"gte\"}, {\"value\": 0.85, \"id\": \"1dd61070-1b19-11e7-b09e-037021c4f8df\", \"bar_color\": \"rgba(211,49,21,1)\", \"operator\": \"gte\"}], \"axis_position\": \"left\", \"series\": [{\"terms_order_by\": \"edfceb32-1b18-11e7-b09e-037021c4f8df\", \"color\": \"#68BC00\", \"fill\": 0.5, \"id\": \"edfceb31-1b18-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"edfceb32-1b18-11e7-b09e-037021c4f8df\", \"field\": \"system.process.memory.rss.pct\"}], \"terms_field\": \"process.name\", \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"split_mode\": \"terms\", \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Processes By Memory [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "2e224660-1b19-11e7-b09e-037021c4f8df-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxNjgsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "CPU Usage [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_grid\": 1, \"show_legend\": 1, \"index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"id\": \"80a04950-1b19-11e7-b09e-037021c4f8df\", \"series\": [{\"label\": \"user\", \"split_mode\": \"everything\", \"id\": \"80a04951-1b19-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"80a04952-1b19-11e7-b09e-037021c4f8df\", \"field\": \"system.cpu.user.pct\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"stacked\", \"fill\": \"1\", \"point_size\": \"0\"}, {\"label\": \"system\", \"split_mode\": \"everything\", \"id\": \"993acf30-1b19-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"color\": \"rgba(211,49,21,1)\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"993acf31-1b19-11e7-b09e-037021c4f8df\", \"field\": \"system.cpu.system.pct\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"stacked\", \"fill\": \"1\", \"point_size\": \"0\"}, {\"label\": \"nice\", \"split_mode\": \"everything\", \"id\": \"65ca35e0-1b1a-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"color\": \"rgba(123,100,255,1)\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"65ca5cf0-1b1a-11e7-b09e-037021c4f8df\", \"field\": \"system.cpu.nice.pct\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"stacked\", \"fill\": \"1\", \"point_size\": \"0\"}, {\"label\": \"irq\", \"split_mode\": \"everything\", \"id\": \"741b5f20-1b1a-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"color\": \"rgba(226,115,0,1)\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"741b5f21-1b1a-11e7-b09e-037021c4f8df\", \"field\": \"system.cpu.irq.pct\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"stacked\", \"fill\": \"1\", \"point_size\": \"0\"}, {\"label\": \"softirq\", \"split_mode\": \"everything\", \"id\": \"2efc5d40-1b1a-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"color\": \"rgba(176,188,0,1)\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"2efc5d41-1b1a-11e7-b09e-037021c4f8df\", \"field\": \"system.cpu.softirq.pct\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"stacked\", \"fill\": \"1\", \"point_size\": \"0\"}, {\"label\": \"iowait\", \"split_mode\": \"everything\", \"id\": \"ae644a30-1b19-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"color\": \"rgba(15,20,25,1)\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"ae644a31-1b19-11e7-b09e-037021c4f8df\", \"field\": \"system.cpu.iowait.pct\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"stacked\", \"fill\": \"1\", \"point_size\": \"0\"}], \"interval\": \"auto\"}, \"title\": \"CPU Usage [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "ab2d1e90-1b1a-11e7-b09e-037021c4f8df-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxNjksM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Disk IO (Bytes) [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_grid\": 1, \"show_legend\": 1, \"index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"time_field\": \"@timestamp\", \"series\": [{\"label\": \"reads\", \"split_mode\": \"everything\", \"value_template\": \"{{value}}/s\", \"id\": \"d3c67db1-1b1a-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"color\": \"rgba(22,165,165,1)\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"d3c67db2-1b1a-11e7-b09e-037021c4f8df\", \"field\": \"system.diskio.read.bytes\"}, {\"type\": \"derivative\", \"id\": \"f55b9910-1b1a-11e7-b09e-037021c4f8df\", \"field\": \"d3c67db2-1b1a-11e7-b09e-037021c4f8df\", \"unit\": \"1s\"}, {\"type\": \"positive_only\", \"id\": \"dcbbb100-1b93-11e7-8ada-3df93aab833e\", \"field\": \"f55b9910-1b1a-11e7-b09e-037021c4f8df\", \"unit\": \"\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": \"1\", \"point_size\": \"0\"}, {\"label\": \"writes\", \"split_mode\": \"everything\", \"value_template\": \"{{value}}/s\", \"id\": \"144124d0-1b1b-11e7-b09e-037021c4f8df\", \"axis_position\": \"right\", \"color\": \"rgba(251,158,0,1)\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"144124d1-1b1b-11e7-b09e-037021c4f8df\", \"field\": \"system.diskio.write.bytes\"}, {\"type\": \"derivative\", \"id\": \"144124d2-1b1b-11e7-b09e-037021c4f8df\", \"field\": \"144124d1-1b1b-11e7-b09e-037021c4f8df\", \"unit\": \"1s\"}, {\"script\": \"params.rate > 0 ? params.rate * -1 : 0\", \"type\": \"calculation\", \"id\": \"144124d4-1b1b-11e7-b09e-037021c4f8df\", \"variables\": [{\"id\": \"144124d3-1b1b-11e7-b09e-037021c4f8df\", \"field\": \"144124d2-1b1b-11e7-b09e-037021c4f8df\", \"name\": \"rate\"}]}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": \"1\", \"point_size\": \"0\"}], \"id\": \"d3c67db0-1b1a-11e7-b09e-037021c4f8df\", \"filter\": \"\", \"type\": \"timeseries\", \"interval\": \"auto\"}, \"title\": \"Disk IO (Bytes) [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "4e4bb1e0-1b1b-11e7-b09e-037021c4f8df-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxNzAsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Load Gauge [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"id\": \"fdcc6180-1b90-11e7-bec4-a5e9ec5cab8b\", \"show_grid\": 1, \"gauge_inner_width\": 10, \"background_color_rules\": [{\"id\": \"feefabd0-1b90-11e7-bec4-a5e9ec5cab8b\"}], \"index_pattern\": \"metricbeat-*\", \"gauge_style\": \"half\", \"type\": \"gauge\", \"axis_position\": \"left\", \"interval\": \"auto\", \"series\": [{\"label\": \"5m Load\", \"split_mode\": \"everything\", \"id\": \"fdcc6181-1b90-11e7-bec4-a5e9ec5cab8b\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"fdcc6182-1b90-11e7-bec4-a5e9ec5cab8b\", \"field\": \"system.load.5\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"gauge_color_rules\": [{\"id\": \"ffd94880-1b90-11e7-bec4-a5e9ec5cab8b\"}]}, \"title\": \"Load Gauge [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "26732e20-1b91-11e7-bec4-a5e9ec5cab8b-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxNzEsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "CPU Usage Gauge [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"gauge_color_rules\": [{\"value\": 0, \"gauge\": \"rgba(104,188,0,1)\", \"id\": \"4ef2c3b0-1b91-11e7-bec4-a5e9ec5cab8b\", \"operator\": \"gte\"}, {\"value\": 0.7, \"gauge\": \"rgba(254,146,0,1)\", \"id\": \"e6561ae0-1b91-11e7-bec4-a5e9ec5cab8b\", \"operator\": \"gte\"}, {\"value\": 0.85, \"gauge\": \"rgba(211,49,21,1)\", \"id\": \"ec655040-1b91-11e7-bec4-a5e9ec5cab8b\", \"operator\": \"gte\"}], \"axis_formatter\": \"number\", \"gauge_width\": 10, \"id\": \"4c9e2550-1b91-11e7-bec4-a5e9ec5cab8b\", \"filter\": \"\", \"gauge_inner_width\": 10, \"show_grid\": 1, \"index_pattern\": \"metricbeat-*\", \"gauge_style\": \"half\", \"type\": \"gauge\", \"axis_position\": \"left\", \"time_field\": \"@timestamp\", \"interval\": \"auto\", \"series\": [{\"label\": \"CPU Usage\", \"split_mode\": \"everything\", \"id\": \"4c9e2551-1b91-11e7-bec4-a5e9ec5cab8b\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"4c9e2552-1b91-11e7-bec4-a5e9ec5cab8b\", \"field\": \"system.cpu.user.pct\"}, {\"type\": \"avg\", \"id\": \"225c2140-5fd7-11e7-a63a-a937b7c1a7e1\", \"field\": \"system.cpu.system.pct\"}, {\"type\": \"avg\", \"id\": \"837a30c0-5fd7-11e7-a63a-a937b7c1a7e1\", \"field\": \"system.cpu.cores\"}, {\"script\": \"params.n > 0 ? (params.user+params.system)/params.n : null\", \"type\": \"calculation\", \"id\": \"587aa510-1b91-11e7-bec4-a5e9ec5cab8b\", \"variables\": [{\"id\": \"5a19af10-1b91-11e7-bec4-a5e9ec5cab8b\", \"field\": \"4c9e2552-1b91-11e7-bec4-a5e9ec5cab8b\", \"name\": \"user\"}, {\"id\": \"32b54f80-5fd7-11e7-a63a-a937b7c1a7e1\", \"field\": \"225c2140-5fd7-11e7-a63a-a937b7c1a7e1\", \"name\": \"system\"}, {\"id\": \"8ba6eef0-5fd7-11e7-a63a-a937b7c1a7e1\", \"field\": \"837a30c0-5fd7-11e7-a63a-a937b7c1a7e1\", \"name\": \"n\"}]}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"gauge_max\": \"1\"}, \"title\": \"CPU Usage Gauge [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "83e12df0-1b91-11e7-bec4-a5e9ec5cab8b-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:44.291Z",
+            "version": "WzUzODEsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Memory Usage Gauge [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"gauge_color_rules\": [{\"value\": 0, \"gauge\": \"rgba(104,188,0,1)\", \"id\": \"a0d522e0-1b91-11e7-bec4-a5e9ec5cab8b\", \"operator\": \"gte\"}, {\"value\": 0.7, \"gauge\": \"rgba(254,146,0,1)\", \"id\": \"b45ad8f0-1b91-11e7-bec4-a5e9ec5cab8b\", \"operator\": \"gte\"}, {\"value\": 0.85, \"gauge\": \"rgba(211,49,21,1)\", \"id\": \"c06e9550-1b91-11e7-bec4-a5e9ec5cab8b\", \"operator\": \"gte\"}], \"axis_formatter\": \"number\", \"gauge_width\": 10, \"id\": \"9f51b730-1b91-11e7-bec4-a5e9ec5cab8b\", \"filter\": \"\", \"gauge_inner_width\": 10, \"show_grid\": 1, \"index_pattern\": \"metricbeat-*\", \"gauge_style\": \"half\", \"type\": \"gauge\", \"axis_position\": \"left\", \"time_field\": \"@timestamp\", \"interval\": \"auto\", \"series\": [{\"label\": \"Memory Usage\", \"split_mode\": \"everything\", \"id\": \"9f51b731-1b91-11e7-bec4-a5e9ec5cab8b\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"9f51b732-1b91-11e7-bec4-a5e9ec5cab8b\", \"field\": \"system.memory.actual.used.pct\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"gauge_max\": \"1\"}, \"title\": \"Memory Usage Gauge [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "d3166e80-1b91-11e7-bec4-a5e9ec5cab8b-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:44.291Z",
+            "version": "WzUzODAsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Inbound Traffic [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"type\": \"metric\", \"id\": \"0c761590-1b92-11e7-bec4-a5e9ec5cab8b\", \"show_grid\": 1, \"filter\": {\"language\": \"lucene\", \"query\": \"-system.network.name:l*\"}, \"background_color_rules\": [{\"id\": \"0e346760-1b92-11e7-bec4-a5e9ec5cab8b\"}], \"index_pattern\": \"metricbeat-*\", \"axis_position\": \"left\", \"series\": [{\"label\": \"Inbound Traffic\", \"split_mode\": \"terms\", \"value_template\": \"{{value}}/s\", \"id\": \"0c761591-1b92-11e7-bec4-a5e9ec5cab8b\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"0c761592-1b92-11e7-bec4-a5e9ec5cab8b\", \"field\": \"system.network.in.bytes\"}, {\"type\": \"derivative\", \"id\": \"1d659060-1b92-11e7-bec4-a5e9ec5cab8b\", \"field\": \"0c761592-1b92-11e7-bec4-a5e9ec5cab8b\", \"unit\": \"1s\"}, {\"type\": \"positive_only\", \"id\": \"f2074f70-1b92-11e7-a416-41f5ccdba2e6\", \"field\": \"1d659060-1b92-11e7-bec4-a5e9ec5cab8b\", \"unit\": \"\"}, {\"type\": \"series_agg\", \"id\": \"c40e18f0-2c55-11e7-a0ad-277ce466684d\", \"function\": \"sum\"}], \"terms_field\": \"system.network.name\", \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Total Transferred\", \"split_mode\": \"terms\", \"value_template\": \"{{value}}\", \"id\": \"37f70440-1b92-11e7-bec4-a5e9ec5cab8b\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"37f72b50-1b92-11e7-bec4-a5e9ec5cab8b\", \"field\": \"system.network.in.bytes\"}, {\"type\": \"derivative\", \"id\": \"37f72b51-1b92-11e7-bec4-a5e9ec5cab8b\", \"field\": \"37f72b50-1b92-11e7-bec4-a5e9ec5cab8b\", \"unit\": \"\"}, {\"type\": \"positive_only\", \"id\": \"f9da2dd0-1b92-11e7-a416-41f5ccdba2e6\", \"field\": \"37f72b51-1b92-11e7-bec4-a5e9ec5cab8b\", \"unit\": \"\"}, {\"sigma\": \"\", \"type\": \"series_agg\", \"id\": \"3e63c2f0-1b92-11e7-bec4-a5e9ec5cab8b\", \"field\": \"f9da2dd0-1b92-11e7-a416-41f5ccdba2e6\", \"function\": \"overall_sum\"}], \"terms_field\": \"system.network.name\", \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Inbound Traffic [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "522ee670-1b92-11e7-bec4-a5e9ec5cab8b-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:44.291Z",
+            "version": "WzUzNzcsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Outbound Traffic [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"type\": \"metric\", \"id\": \"0c761590-1b92-11e7-bec4-a5e9ec5cab8b\", \"show_grid\": 1, \"filter\": {\"language\": \"lucene\", \"query\": \"-system.network.name:l*\"}, \"background_color_rules\": [{\"id\": \"0e346760-1b92-11e7-bec4-a5e9ec5cab8b\"}], \"index_pattern\": \"metricbeat-*\", \"axis_position\": \"left\", \"series\": [{\"label\": \"Outbound Traffic\", \"split_mode\": \"terms\", \"value_template\": \"{{value}}/s\", \"id\": \"0c761591-1b92-11e7-bec4-a5e9ec5cab8b\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"0c761592-1b92-11e7-bec4-a5e9ec5cab8b\", \"field\": \"system.network.out.bytes\"}, {\"type\": \"derivative\", \"id\": \"1d659060-1b92-11e7-bec4-a5e9ec5cab8b\", \"field\": \"0c761592-1b92-11e7-bec4-a5e9ec5cab8b\", \"unit\": \"1s\"}, {\"type\": \"positive_only\", \"id\": \"f2074f70-1b92-11e7-a416-41f5ccdba2e6\", \"field\": \"1d659060-1b92-11e7-bec4-a5e9ec5cab8b\", \"unit\": \"\"}, {\"type\": \"series_agg\", \"id\": \"a1737470-2c55-11e7-a0ad-277ce466684d\", \"function\": \"sum\"}], \"terms_field\": \"system.network.name\", \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Total Transferred\", \"split_mode\": \"terms\", \"value_template\": \"{{value}}\", \"id\": \"37f70440-1b92-11e7-bec4-a5e9ec5cab8b\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"37f72b50-1b92-11e7-bec4-a5e9ec5cab8b\", \"field\": \"system.network.out.bytes\"}, {\"type\": \"derivative\", \"id\": \"37f72b51-1b92-11e7-bec4-a5e9ec5cab8b\", \"field\": \"37f72b50-1b92-11e7-bec4-a5e9ec5cab8b\", \"unit\": \"\"}, {\"type\": \"positive_only\", \"id\": \"f9da2dd0-1b92-11e7-a416-41f5ccdba2e6\", \"field\": \"37f72b51-1b92-11e7-bec4-a5e9ec5cab8b\", \"unit\": \"\"}, {\"sigma\": \"\", \"type\": \"series_agg\", \"id\": \"3e63c2f0-1b92-11e7-bec4-a5e9ec5cab8b\", \"field\": \"f9da2dd0-1b92-11e7-a416-41f5ccdba2e6\", \"function\": \"overall_sum\"}], \"terms_field\": \"system.network.name\", \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Outbound Traffic [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "1aae9140-1b93-11e7-8ada-3df93aab833e-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:44.291Z",
+            "version": "WzUzNzgsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Disk Usage [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"time_field\": \"@timestamp\", \"time_range_mode\": \"entire_time_range\", \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"type\": \"top_n\", \"axis_formatter\": \"number\", \"id\": \"9f7e48a0-1b95-11e7-8ada-3df93aab833e\", \"filter\": {\"language\": \"lucene\", \"query\": \"-system.filesystem.mount_point:\\\\/run* AND -system.filesystem.mount_point:\\\\/sys* AND -system.filesystem.mount_point:\\\\/dev* AND -system.filesystem.mount_point:\\\\/proc* AND -system.filesystem.mount_point:\\\\/var* AND -system.filesystem.mount_point:\\\\/boot\"}, \"show_grid\": 1, \"drilldown_url\": \"\", \"axis_scale\": \"normal\", \"index_pattern\": \"metricbeat-*\", \"bar_color_rules\": [{\"value\": 0, \"id\": \"bf525310-1b95-11e7-8ada-3df93aab833e\", \"bar_color\": \"rgba(104,188,0,1)\", \"operator\": \"gte\"}, {\"value\": 0.7, \"id\": \"125fc4c0-1b96-11e7-8ada-3df93aab833e\", \"bar_color\": \"rgba(254,146,0,1)\", \"operator\": \"gte\"}, {\"value\": 0.85, \"id\": \"1a5c7240-1b96-11e7-8ada-3df93aab833e\", \"bar_color\": \"rgba(211,49,21,1)\", \"operator\": \"gte\"}], \"axis_position\": \"left\", \"series\": [{\"color\": \"#68BC00\", \"fill\": 0.5, \"id\": \"9f7e48a1-1b95-11e7-8ada-3df93aab833e\", \"axis_position\": \"right\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"order_by\": \"@timestamp\", \"size\": 1, \"agg_with\": \"avg\", \"type\": \"top_hit\", \"id\": \"9f7e48a2-1b95-11e7-8ada-3df93aab833e\", \"field\": \"system.filesystem.used.pct\", \"order\": \"desc\"}], \"terms_field\": \"system.filesystem.mount_point\", \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"split_mode\": \"terms\", \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Disk Usage [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "34f97ee0-1b96-11e7-8ada-3df93aab833e-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-26T17:26:35.781Z",
+            "version": "WzY3NTEsN10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "System Navigation [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"fontSize\": 12, \"markdown\": \"[System Overview](#/dashboard/Metricbeat-system-overview-ecs)  | [Host Overview](#/dashboard/79ffd6e0-faa0-11e6-947f-177f697178b8-ecs) |\\n[Containers overview](#/dashboard/CPU-slash-Memory-per-container-ecs)\"}, \"title\": \"System Navigation [Metricbeat System] ECS\", \"type\": \"markdown\"}"
+            },
+            "id": "System-Navigation-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:44.291Z",
+            "version": "WzUzNzIsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Swap usage [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"gauge_color_rules\": [{\"value\": 0, \"gauge\": \"rgba(104,188,0,1)\", \"id\": \"d17c1e90-4d59-11e7-aee5-fdc812cc3bec\", \"operator\": \"gte\"}, {\"value\": 0.7, \"gauge\": \"rgba(251,158,0,1)\", \"id\": \"fc1d3490-4d59-11e7-aee5-fdc812cc3bec\", \"operator\": \"gte\"}, {\"value\": 0.85, \"gauge\": \"rgba(211,49,21,1)\", \"id\": \"0e204240-4d5a-11e7-aee5-fdc812cc3bec\", \"operator\": \"gte\"}], \"axis_formatter\": \"number\", \"gauge_width\": 10, \"id\": \"cee2fd20-4d59-11e7-aee5-fdc812cc3bec\", \"filter\": \"\", \"gauge_inner_width\": 10, \"show_grid\": 1, \"index_pattern\": \"metricbeat-*\", \"gauge_style\": \"half\", \"type\": \"gauge\", \"axis_position\": \"left\", \"time_field\": \"@timestamp\", \"interval\": \"auto\", \"series\": [{\"label\": \"Swap usage\", \"split_mode\": \"everything\", \"id\": \"cee2fd21-4d59-11e7-aee5-fdc812cc3bec\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"cee2fd22-4d59-11e7-aee5-fdc812cc3bec\", \"field\": \"system.memory.swap.used.pct\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"gauge_max\": \"\"}, \"title\": \"Swap usage [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "19e123b0-4d5a-11e7-aee5-fdc812cc3bec-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxNzgsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Memory usage vs total [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"background_color_rules\": [{\"id\": \"6f7618b0-4d5c-11e7-aa29-87a97a796de6\"}], \"show_legend\": 1, \"index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"time_field\": \"@timestamp\", \"type\": \"metric\", \"id\": \"6bc65720-4d5c-11e7-aa29-87a97a796de6\", \"series\": [{\"label\": \"Memory usage\", \"split_mode\": \"everything\", \"id\": \"6bc65721-4d5c-11e7-aa29-87a97a796de6\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"6bc65722-4d5c-11e7-aa29-87a97a796de6\", \"field\": \"system.memory.actual.used.bytes\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Total Memory\", \"split_mode\": \"everything\", \"id\": \"b8fe6820-4d5c-11e7-aa29-87a97a796de6\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"b8fe6821-4d5c-11e7-aa29-87a97a796de6\", \"field\": \"system.memory.total\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"type\": \"metrics\", \"title\": \"Memory usage vs total ECS\", \"listeners\": {}}"
+            },
+            "id": "d2e80340-4d5c-11e7-aa29-87a97a796de6-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxNzksM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Disk used [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"show_grid\": 1, \"isModelInvalid\": false, \"gauge_color_rules\": [{\"value\": 0, \"gauge\": \"rgba(104,188,0,1)\", \"id\": \"51921d10-4d1d-11e7-b5f2-2b7c1895bf32\", \"operator\": \"gte\"}, {\"value\": 0.7, \"gauge\": \"rgba(251,158,0,1)\", \"id\": \"f26de750-4d54-11e7-b5f2-2b7c1895bf32\", \"operator\": \"gte\"}, {\"value\": 0.85, \"gauge\": \"rgba(211,49,21,1)\", \"id\": \"fa31d190-4d54-11e7-b5f2-2b7c1895bf32\", \"operator\": \"gte\"}], \"time_range_mode\": \"entire_time_range\", \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"id\": \"4e4dc780-4d1d-11e7-b5f2-2b7c1895bf32\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"filter\": \"\", \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"index_pattern\": \"metricbeat-*\", \"gauge_style\": \"half\", \"type\": \"gauge\", \"axis_position\": \"left\", \"time_field\": \"@timestamp\", \"interval\": \"auto\", \"series\": [{\"label\": \"Disk used\", \"split_mode\": \"everything\", \"id\": \"4e4dee90-4d1d-11e7-b5f2-2b7c1895bf32\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"percent\", \"line_width\": 1, \"metrics\": [{\"order_by\": \"@timestamp\", \"size\": 1, \"agg_with\": \"avg\", \"type\": \"top_hit\", \"id\": \"4e4dee91-4d1d-11e7-b5f2-2b7c1895bf32\", \"field\": \"system.fsstat.total_size.used\", \"order\": \"desc\"}, {\"order_by\": \"@timestamp\", \"size\": 1, \"agg_with\": \"avg\", \"type\": \"top_hit\", \"id\": \"57c96ee0-4d54-11e7-b5f2-2b7c1895bf32\", \"field\": \"system.fsstat.total_size.total\", \"order\": \"desc\"}, {\"script\": \"params.used/params.total \", \"type\": \"math\", \"id\": \"6304cca0-4d54-11e7-b5f2-2b7c1895bf32\", \"variables\": [{\"id\": \"6da10430-4d54-11e7-b5f2-2b7c1895bf32\", \"field\": \"4e4dee91-4d1d-11e7-b5f2-2b7c1895bf32\", \"name\": \"used\"}, {\"id\": \"73b8c510-4d54-11e7-b5f2-2b7c1895bf32\", \"field\": \"57c96ee0-4d54-11e7-b5f2-2b7c1895bf32\", \"name\": \"total\"}]}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"gauge_max\": \"1\"}, \"title\": \"Disk used [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "825fdb80-4d1d-11e7-b5f2-2b7c1895bf32-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-26T17:22:09.379Z",
+            "version": "WzY3MTksN10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Packetloss [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"background_color_rules\": [{\"id\": \"6ba9b1f0-4d5d-11e7-aa29-87a97a796de6\"}], \"show_grid\": 1, \"show_legend\": 1, \"index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"time_field\": \"@timestamp\", \"type\": \"metric\", \"id\": \"6984af10-4d5d-11e7-aa29-87a97a796de6\", \"series\": [{\"label\": \"In Packetloss\", \"split_mode\": \"everything\", \"id\": \"6984af11-4d5d-11e7-aa29-87a97a796de6\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"6984af12-4d5d-11e7-aa29-87a97a796de6\", \"field\": \"system.network.in.dropped\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Out Packetloss\", \"split_mode\": \"everything\", \"id\": \"ac2e6b30-4d5d-11e7-aa29-87a97a796de6\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"ac2e6b31-4d5d-11e7-aa29-87a97a796de6\", \"field\": \"system.network.out.dropped\"}], \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Packetloss [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "96976150-4d5d-11e7-aa29-87a97a796de6-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxODEsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Interfaces by Incoming traffic [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_grid\": 1, \"show_legend\": 1, \"index_pattern\": \"metricbeat-*\", \"bar_color_rules\": [{\"id\": \"44596d40-4d60-11e7-9a4c-ed99bbcaa42b\"}], \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"time_field\": \"@timestamp\", \"type\": \"top_n\", \"id\": \"42ceae90-4d60-11e7-9a4c-ed99bbcaa42b\", \"series\": [{\"terms_order_by\": \"42ced5a1-4d60-11e7-9a4c-ed99bbcaa42b\", \"label\": \"Interfaces by Incoming traffic\", \"split_mode\": \"terms\", \"id\": \"42ced5a0-4d60-11e7-9a4c-ed99bbcaa42b\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"42ced5a1-4d60-11e7-9a4c-ed99bbcaa42b\", \"field\": \"system.network.in.bytes\"}], \"terms_field\": \"system.network.name\", \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Interfaces by Incoming traffic [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "99381c80-4d60-11e7-9a4c-ed99bbcaa42b-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxODIsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Interfaces by Outgoing traffic [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_grid\": 1, \"show_legend\": 1, \"index_pattern\": \"metricbeat-*\", \"bar_color_rules\": [{\"id\": \"9db20be0-4d60-11e7-9a4c-ed99bbcaa42b\"}], \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"time_field\": \"@timestamp\", \"type\": \"top_n\", \"id\": \"9cdba910-4d60-11e7-9a4c-ed99bbcaa42b\", \"series\": [{\"terms_order_by\": \"9cdba912-4d60-11e7-9a4c-ed99bbcaa42b\", \"label\": \"Interfaces by Outgoing traffic\", \"split_mode\": \"terms\", \"id\": \"9cdba911-4d60-11e7-9a4c-ed99bbcaa42b\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"9cdba912-4d60-11e7-9a4c-ed99bbcaa42b\", \"field\": \"system.network.out.bytes\"}], \"terms_field\": \"system.network.name\", \"chart_type\": \"line\", \"seperate_axis\": 0, \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Interfaces by Outgoing traffic [Metricbeat System] ECS\", \"type\": \"metrics\"}"
+            },
+            "id": "c5e3cf90-4d60-11e7-9a4c-ed99bbcaa42b-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxODMsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\", \"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Number of processes [Metricbeat System] ECS",
+                "uiStateJSON": "{\"vis\": {\"defaultColors\": {\"0 - 100\": \"rgb(0,104,55)\"}}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"id\": \"1\", \"params\": {\"field\": \"process.pid\", \"customLabel\": \"Processes\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"cardinality\"}], \"params\": {\"type\": \"gauge\", \"gauge\": {\"style\": {\"fontSize\": 60, \"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"bgFill\": \"#000\"}, \"gaugeStyle\": \"Full\", \"invertColors\": false, \"autoExtend\": false, \"type\": \"simple\", \"gaugeColorMode\": \"None\", \"colorSchema\": \"Green to Red\", \"labels\": {\"show\": true, \"color\": \"black\"}, \"backStyle\": \"Full\", \"verticalSplit\": false, \"colorsRange\": [{\"from\": 0, \"to\": 100}], \"scale\": {\"width\": 2, \"show\": false, \"color\": \"#333\", \"labels\": false}, \"percentageMode\": false, \"useRange\": false, \"orientation\": \"vertical\", \"gaugeType\": \"Metric\"}, \"addLegend\": false, \"addTooltip\": true}, \"type\": \"metric\", \"title\": \"Number of processes ECS\", \"listeners\": {}}"
+            },
+            "id": "590a60f0-5d87-11e7-8884-1bb4c3b890e4-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "metricbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxODQsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Tip [Metricbeat System] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"fontSize\": 12, \"markdown\": \"**TIP:** To select another host, go to the [System Overview](#/dashboard/Metricbeat-system-overview-ecs) dashboard and double-click a host name.\"}, \"title\": \"Tip [Metricbeat System] ECS\", \"type\": \"markdown\"}"
+            },
+            "id": "3d65d450-a9c3-11e7-af20-67db8aecb295-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-03T20:18:18.996Z",
+            "version": "WzUxODUsM10="
+        }
+    ],
+    "version": "7.6.0"
+}

@@ -1,0 +1,219 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Kubernetes Proxy metrics",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"event.dataset\": {\"type\": \"phrase\", \"query\": \"kubernetes.proxy\"}}}, \"meta\": {\"alias\": null, \"value\": \"kubernetes.proxy\", \"params\": {\"query\": \"kubernetes.proxy\"}, \"negate\": false, \"type\": \"phrase\", \"disabled\": false, \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\", \"key\": \"event.dataset\"}}]}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"version\": \"7.1.1\", \"gridData\": {\"h\": 12, \"i\": \"1\", \"x\": 0, \"w\": 23, \"y\": 12}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_0\", \"panelIndex\": \"1\"}, {\"version\": \"7.1.1\", \"gridData\": {\"h\": 12, \"i\": \"2\", \"x\": 23, \"w\": 25, \"y\": 12}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_1\", \"panelIndex\": \"2\"}, {\"version\": \"7.1.1\", \"gridData\": {\"h\": 12, \"i\": \"3\", \"x\": 12, \"w\": 9, \"y\": 0}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_2\", \"panelIndex\": \"3\"}, {\"version\": \"7.1.1\", \"gridData\": {\"h\": 12, \"i\": \"4\", \"x\": 21, \"w\": 27, \"y\": 0}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_3\", \"panelIndex\": \"4\"}, {\"version\": \"7.1.1\", \"gridData\": {\"h\": 13, \"i\": \"5\", \"x\": 0, \"w\": 48, \"y\": 24}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_4\", \"panelIndex\": \"5\"}, {\"version\": \"7.1.1\", \"gridData\": {\"h\": 10, \"i\": \"6\", \"x\": 0, \"w\": 48, \"y\": 37}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_5\", \"panelIndex\": \"6\"}, {\"version\": \"7.1.1\", \"gridData\": {\"h\": 12, \"i\": \"7\", \"x\": 0, \"w\": 12, \"y\": 0}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_6\", \"panelIndex\": \"7\"}]",
+                "timeRestore": false,
+                "title": "[Metricbeat Kubernetes] Proxy",
+                "version": 1
+            },
+            "id": "5e649d60-9901-11e9-ba57-b7ab4e2d4b58",
+            "migrationVersion": {
+                "dashboard": "7.0.0"
+            },
+            "references": [
+                {
+                    "id": "metricbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "e0ddd3e0-98fe-11e9-ba57-b7ab4e2d4b58",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "cac89fb0-9906-11e9-ba57-b7ab4e2d4b58",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "09b404f0-99af-11e9-ba57-b7ab4e2d4b58",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "8c6c2690-9bd8-11e9-9dc8-fd27291d427f",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "b8a24790-9bf0-11e9-9dc8-fd27291d427f",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "ba7bf750-9bf5-11e9-9dc8-fd27291d427f",
+                    "name": "panel_5",
+                    "type": "visualization"
+                },
+                {
+                    "id": "bcb194a0-9bf8-11e9-9dc8-fd27291d427f",
+                    "name": "panel_6",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2019-07-03T14:46:55.299Z",
+            "version": "WzI5MywyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Proxy CPU [Metricbeat Kubernetes]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"axis_min\": \"0\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"value_template\": \"{{value}} s\", \"label\": \"CPU time\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"kubernetes.proxy.process.cpu.sec\"}, {\"type\": \"derivative\", \"id\": \"35da60d0-98fe-11e9-b4e1-6dc893538542\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Proxy CPU [Metricbeat Kubernetes]\", \"type\": \"metrics\"}"
+            },
+            "id": "e0ddd3e0-98fe-11e9-ba57-b7ab4e2d4b58",
+            "migrationVersion": {
+                "visualization": "7.2.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-07-03T14:03:00.189Z",
+            "version": "WzI3NCwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Proxy memory [Metricbeat Kubernetes]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"default_index_pattern\": \"metricbeat-*\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"label\": \"Resident\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(251,158,0,1)\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"kubernetes.proxy.process.memory.resident.bytes\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Virtual\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"1ea6cee0-9907-11e9-b4e1-6dc893538542\", \"axis_position\": \"right\", \"color\": \"rgba(164,221,0,1)\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"1ea6cee1-9907-11e9-b4e1-6dc893538542\", \"field\": \"kubernetes.proxy.process.memory.virtual.bytes\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Proxy memory [Metricbeat Kubernetes]\", \"type\": \"metrics\"}"
+            },
+            "id": "cac89fb0-9906-11e9-ba57-b7ab4e2d4b58",
+            "migrationVersion": {
+                "visualization": "7.2.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-07-03T11:26:56.138Z",
+            "version": "WzI1NiwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Proxy process [Metricbeat Kubernetes]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"markdown_less\": \"\\ntable, tr, td, th {\\n    border: none;\\n}\\n\\n\", \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"type\": \"markdown\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"markdown_css\": \"#markdown-61ca57f0-469d-11e7-af02-69e470af7417 table,#markdown-61ca57f0-469d-11e7-af02-69e470af7417 tr,#markdown-61ca57f0-469d-11e7-af02-69e470af7417 td,#markdown-61ca57f0-469d-11e7-af02-69e470af7417 th{border:none}\", \"interval\": \"30s\", \"series\": [{\"label\": \"\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"script\": \"\", \"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"kubernetes.proxy.process.started.sec\", \"variables\": [{\"id\": \"1bbc4a20-99ac-11e9-8beb-c3bf9b9dfc43\", \"name\": \"v\"}]}, {\"script\": \"round( (params._timestamp /1000 - params.started) / 86400, 2)\", \"type\": \"math\", \"id\": \"1f34f620-99ac-11e9-8beb-c3bf9b9dfc43\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"variables\": [{\"id\": \"1f371900-99ac-11e9-8beb-c3bf9b9dfc43\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"name\": \"started\"}]}], \"var_name\": \"started\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"cc3b1700-99ac-11e9-8beb-c3bf9b9dfc43\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"cc3b1701-99ac-11e9-8beb-c3bf9b9dfc43\", \"field\": \"kubernetes.proxy.process.fds.open.count\"}], \"var_name\": \"fds\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"da1b1270-99ad-11e9-8beb-c3bf9b9dfc43\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"da1b1271-99ad-11e9-8beb-c3bf9b9dfc43\", \"field\": \"kubernetes.proxy.process.memory.resident.bytes\"}], \"var_name\": \"resident_memory\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"50f54000-99ae-11e9-8beb-c3bf9b9dfc43\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"50f54001-99ae-11e9-8beb-c3bf9b9dfc43\", \"field\": \"kubernetes.proxy.process.memory.virtual.bytes\"}], \"var_name\": \"virtual_memory\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"markdown\": \"\\n|  |   |\\n|---|---|\\n|**Days running**|{{ math.started.last.raw }}|\\n|**File descriptors open**|{{ average_of_kubernetes_proxy_process_fds_open_count.fds.last.raw }}|\\n|**Resident Memory**|{{ average_of_kubernetes_proxy_process_memory_resident_bytes.resident_memory.last.formatted }}|\\n|**Virtual Memory**|{{ average_of_kubernetes_proxy_process_memory_virtual_bytes.virtual_memory.last.formatted }}|\\n\\n\"}, \"title\": \"Proxy process [Metricbeat Kubernetes]\", \"type\": \"metrics\"}"
+            },
+            "id": "09b404f0-99af-11e9-ba57-b7ab4e2d4b58",
+            "migrationVersion": {
+                "visualization": "7.2.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-07-03T14:46:47.946Z",
+            "version": "WzI5MiwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Proxy HTTP request duration [Metricbeat Kubernetes]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"default_index_pattern\": \"metricbeat-*\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"label\": \"P99\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"05a03f20-9bd8-11e9-871d-d3c7d4c337ef\", \"axis_position\": \"right\", \"color\": \"rgba(165,228,85,1)\", \"formatter\": \"us,ms,2\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"05a06630-9bd8-11e9-871d-d3c7d4c337ef\", \"field\": \"kubernetes.proxy.http.request.duration.us.percentile.99\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"P90\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"dc0faec0-9bd7-11e9-871d-d3c7d4c337ef\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"us,ms,2\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"dc0faec1-9bd7-11e9-871d-d3c7d4c337ef\", \"field\": \"kubernetes.proxy.http.request.duration.us.percentile.90\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"P50\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(65,117,0,1)\", \"formatter\": \"us,ms,2\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"kubernetes.proxy.http.request.duration.us.percentile.50\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Proxy HTTP request duration [Metricbeat Kubernetes]\", \"type\": \"metrics\"}"
+            },
+            "id": "8c6c2690-9bd8-11e9-9dc8-fd27291d427f",
+            "migrationVersion": {
+                "visualization": "7.2.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-07-03T11:25:27.941Z",
+            "version": "WzI1MiwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Proxy network programming [Metricbeat Kubernetes]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"default_index_pattern\": \"metricbeat-*\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"axis_min\": \"0\", \"background_color_rules\": [{\"id\": \"4fb3cbb0-9be5-11e9-871d-d3c7d4c337ef\"}], \"gauge_style\": \"half\", \"bar_color_rules\": [{\"id\": \"4b459c20-9be5-11e9-871d-d3c7d4c337ef\"}], \"type\": \"timeseries\", \"axis_position\": \"left\", \"index_pattern\": \"\", \"interval\": \"auto\", \"series\": [{\"label\": \"Under 16ms\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"hidden\": false, \"axis_position\": \"right\", \"color\": \"rgba(63,112,2,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"4dbb3a90-9be6-11e9-871d-d3c7d4c337ef\", \"field\": \"kubernetes.proxy.sync.networkprogramming.duration.us.bucket.16000\"}, {\"type\": \"derivative\", \"id\": \"189688a0-9be7-11e9-871d-d3c7d4c337ef\", \"field\": \"4dbb3a90-9be6-11e9-871d-d3c7d4c337ef\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Under 512ms\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"a60dbe60-9be7-11e9-871d-d3c7d4c337ef\", \"hidden\": false, \"axis_position\": \"right\", \"color\": \"rgba(138,223,24,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"a60dbe61-9be7-11e9-871d-d3c7d4c337ef\", \"field\": \"kubernetes.proxy.sync.networkprogramming.duration.us.bucket.512000\"}, {\"type\": \"derivative\", \"id\": \"b55a1080-9be7-11e9-871d-d3c7d4c337ef\", \"field\": \"a60dbe61-9be7-11e9-871d-d3c7d4c337ef\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.4\", \"point_size\": 1}, {\"label\": \"Under 1024 ms\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"c5cc4f90-9be8-11e9-871d-d3c7d4c337ef\", \"hidden\": false, \"axis_position\": \"right\", \"color\": \"rgba(174,161,255,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"c5cc4f91-9be8-11e9-871d-d3c7d4c337ef\", \"field\": \"kubernetes.proxy.sync.networkprogramming.duration.us.bucket.1024000\"}, {\"type\": \"derivative\", \"id\": \"f17cb2b0-9be8-11e9-871d-d3c7d4c337ef\", \"field\": \"c5cc4f91-9be8-11e9-871d-d3c7d4c337ef\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.4\", \"point_size\": 1}, {\"label\": \"Under 4096 ms\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"e0901380-9be7-11e9-871d-d3c7d4c337ef\", \"hidden\": false, \"axis_position\": \"right\", \"color\": \"rgba(115,216,255,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"e0901381-9be7-11e9-871d-d3c7d4c337ef\", \"field\": \"kubernetes.proxy.sync.networkprogramming.duration.us.bucket.4096000\"}, {\"type\": \"derivative\", \"id\": \"f2b6fce0-9be7-11e9-871d-d3c7d4c337ef\", \"field\": \"e0901381-9be7-11e9-871d-d3c7d4c337ef\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.2\", \"point_size\": 1}, {\"label\": \"Under 8192 ms\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"882fa5a0-9be9-11e9-871d-d3c7d4c337ef\", \"axis_position\": \"right\", \"color\": \"rgba(252,196,0,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"882fccb0-9be9-11e9-871d-d3c7d4c337ef\", \"field\": \"kubernetes.proxy.sync.networkprogramming.duration.us.bucket.8192000\"}, {\"type\": \"derivative\", \"id\": \"9adb9d80-9be9-11e9-871d-d3c7d4c337ef\", \"field\": \"882fccb0-9be9-11e9-871d-d3c7d4c337ef\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.2\", \"point_size\": 1}, {\"label\": \"Under 16384 ms\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"86549550-9bef-11e9-871d-d3c7d4c337ef\", \"axis_position\": \"right\", \"color\": \"rgba(209,119,103,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"86549551-9bef-11e9-871d-d3c7d4c337ef\", \"field\": \"kubernetes.proxy.sync.networkprogramming.duration.us.bucket.16384000\"}, {\"type\": \"derivative\", \"id\": \"86549552-9bef-11e9-871d-d3c7d4c337ef\", \"field\": \"86549551-9bef-11e9-871d-d3c7d4c337ef\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": 1}, {\"label\": \"All\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"c66bf580-9be9-11e9-871d-d3c7d4c337ef\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"c66bf581-9be9-11e9-871d-d3c7d4c337ef\", \"field\": \"kubernetes.proxy.sync.networkprogramming.duration.us.bucket.+Inf\"}, {\"type\": \"derivative\", \"id\": \"d48b3950-9be9-11e9-871d-d3c7d4c337ef\", \"field\": \"c66bf581-9be9-11e9-871d-d3c7d4c337ef\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": 1}], \"gauge_color_rules\": [{\"id\": \"4de1cad0-9be5-11e9-871d-d3c7d4c337ef\"}]}, \"title\": \"Proxy network programming [Metricbeat Kubernetes]\", \"type\": \"metrics\"}"
+            },
+            "id": "b8a24790-9bf0-11e9-9dc8-fd27291d427f",
+            "migrationVersion": {
+                "visualization": "7.2.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-07-03T11:26:26.595Z",
+            "version": "WzI1NSwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Proxy sync rules [Metricbeat Kubernetes]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"default_index_pattern\": \"metricbeat-*\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"label\": \"Under 16 ms\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"hidden\": false, \"axis_position\": \"right\", \"color\": \"rgba(63,112,2,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"kubernetes.proxy.sync.rules.duration.us.bucket.16000\"}, {\"type\": \"derivative\", \"id\": \"038a94d0-9bf4-11e9-9f03-d58417b2a60d\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Under 512 ms\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"250daed0-9bf4-11e9-9f03-d58417b2a60d\", \"hidden\": false, \"axis_position\": \"right\", \"color\": \"rgba(138,223,24,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"250dd5e0-9bf4-11e9-9f03-d58417b2a60d\", \"field\": \"kubernetes.proxy.sync.rules.duration.us.bucket.512000\"}, {\"type\": \"derivative\", \"id\": \"250dd5e1-9bf4-11e9-9f03-d58417b2a60d\", \"field\": \"250dd5e0-9bf4-11e9-9f03-d58417b2a60d\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.4\", \"point_size\": 1}, {\"label\": \"Under 1024 ms\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"744141b0-9bf4-11e9-9f03-d58417b2a60d\", \"hidden\": false, \"axis_position\": \"right\", \"color\": \"rgba(174,161,255,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"744141b1-9bf4-11e9-9f03-d58417b2a60d\", \"field\": \"kubernetes.proxy.sync.rules.duration.us.bucket.1024000\"}, {\"type\": \"derivative\", \"id\": \"744141b2-9bf4-11e9-9f03-d58417b2a60d\", \"field\": \"744141b1-9bf4-11e9-9f03-d58417b2a60d\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.3\", \"point_size\": 1}, {\"label\": \"Under 4096 ms\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"e4454060-9bf4-11e9-9f03-d58417b2a60d\", \"hidden\": false, \"axis_position\": \"right\", \"color\": \"rgba(115,216,255,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"e4454061-9bf4-11e9-9f03-d58417b2a60d\", \"field\": \"kubernetes.proxy.sync.rules.duration.us.bucket.4096000\"}, {\"type\": \"derivative\", \"id\": \"e4456770-9bf4-11e9-9f03-d58417b2a60d\", \"field\": \"e4454061-9bf4-11e9-9f03-d58417b2a60d\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.2\", \"point_size\": 1}, {\"label\": \"Under 8192 ms\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"1ac14f80-9bf5-11e9-9f03-d58417b2a60d\", \"hidden\": false, \"axis_position\": \"right\", \"color\": \"rgba(252,196,0,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"1ac17690-9bf5-11e9-9f03-d58417b2a60d\", \"field\": \"kubernetes.proxy.sync.rules.duration.us.bucket.8192000\"}, {\"type\": \"derivative\", \"id\": \"1ac17691-9bf5-11e9-9f03-d58417b2a60d\", \"field\": \"1ac17690-9bf5-11e9-9f03-d58417b2a60d\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.1\", \"point_size\": 1}, {\"label\": \"Under 16384 ms\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"3cbf17c0-9bf5-11e9-9f03-d58417b2a60d\", \"hidden\": false, \"axis_position\": \"right\", \"color\": \"rgba(209,119,103,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"3cbf17c1-9bf5-11e9-9f03-d58417b2a60d\", \"field\": \"kubernetes.proxy.sync.rules.duration.us.bucket.16384000\"}, {\"type\": \"derivative\", \"id\": \"3cbf17c2-9bf5-11e9-9f03-d58417b2a60d\", \"field\": \"3cbf17c1-9bf5-11e9-9f03-d58417b2a60d\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": 1}, {\"label\": \"All\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"58fb7c80-9bf5-11e9-9f03-d58417b2a60d\", \"axis_position\": \"right\", \"color\": \"rgba(104,188,0,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"58fb7c81-9bf5-11e9-9f03-d58417b2a60d\", \"field\": \"kubernetes.proxy.sync.rules.duration.us.bucket.+Inf\"}, {\"type\": \"derivative\", \"id\": \"58fb7c82-9bf5-11e9-9f03-d58417b2a60d\", \"field\": \"58fb7c81-9bf5-11e9-9f03-d58417b2a60d\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Proxy sync rules [Metricbeat Kubernetes]\", \"type\": \"metrics\"}"
+            },
+            "id": "ba7bf750-9bf5-11e9-9dc8-fd27291d427f",
+            "migrationVersion": {
+                "visualization": "7.2.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-07-03T11:27:49.230Z",
+            "version": "WzI1OSwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Host selector [Metricbeat Kubernetes]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"updateFiltersOnChange\": false, \"pinFilters\": false, \"useTimeFilter\": false, \"controls\": [{\"parent\": \"\", \"indexPatternRefName\": \"control_0_index_pattern\", \"label\": \"Hostname\", \"fieldName\": \"host.hostname\", \"options\": {\"size\": 5, \"type\": \"terms\", \"dynamicOptions\": true, \"multiselect\": true, \"order\": \"desc\"}, \"id\": \"1561982488150\", \"type\": \"list\"}, {\"parent\": \"\", \"indexPatternRefName\": \"control_1_index_pattern\", \"label\": \"Service address\", \"fieldName\": \"service.address\", \"options\": {\"size\": 5, \"type\": \"terms\", \"dynamicOptions\": true, \"multiselect\": false, \"order\": \"desc\"}, \"id\": \"1561982723711\", \"type\": \"list\"}]}, \"title\": \"Host selector [Metricbeat Kubernetes]\", \"type\": \"input_control_vis\"}"
+            },
+            "id": "bcb194a0-9bf8-11e9-9dc8-fd27291d427f",
+            "migrationVersion": {
+                "visualization": "7.2.0"
+            },
+            "references": [
+                {
+                    "id": "metricbeat-*",
+                    "name": "control_0_index_pattern",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "metricbeat-*",
+                    "name": "control_1_index_pattern",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-07-03T07:20:34.226Z",
+            "version": "WzEzMywxXQ=="
+        }
+    ],
+    "version": "7.2.0"
+}

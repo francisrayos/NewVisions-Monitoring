@@ -1,0 +1,228 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "The dashboard presents metric data describing ActiveMQ topics. Metrics show statistics of exchanged messages, consumers, producers and memory usage.",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"version\": \"7.4.0\", \"gridData\": {\"h\": 15, \"i\": \"099a7d74-8287-4717-b1d1-77f7ed2b67d0\", \"x\": 0, \"w\": 24, \"y\": 0}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_0\", \"panelIndex\": \"099a7d74-8287-4717-b1d1-77f7ed2b67d0\"}, {\"version\": \"7.4.0\", \"gridData\": {\"h\": 15, \"i\": \"c22e6794-6c79-4f2d-b942-f4a4bb73948e\", \"x\": 24, \"w\": 24, \"y\": 0}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_1\", \"panelIndex\": \"c22e6794-6c79-4f2d-b942-f4a4bb73948e\"}, {\"version\": \"7.4.0\", \"gridData\": {\"h\": 15, \"i\": \"adb64a5b-bfe9-4225-a712-f51ad30cab9d\", \"x\": 0, \"w\": 24, \"y\": 15}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_2\", \"panelIndex\": \"adb64a5b-bfe9-4225-a712-f51ad30cab9d\"}, {\"version\": \"7.4.0\", \"gridData\": {\"h\": 15, \"i\": \"09ea3c98-d808-4c5f-9d04-7a94fd3cc2c8\", \"x\": 24, \"w\": 24, \"y\": 30}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_3\", \"panelIndex\": \"09ea3c98-d808-4c5f-9d04-7a94fd3cc2c8\"}, {\"version\": \"7.4.0\", \"gridData\": {\"h\": 15, \"i\": \"43902672-df24-4be2-beb5-34961f190b5c\", \"x\": 0, \"w\": 24, \"y\": 30}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_4\", \"panelIndex\": \"43902672-df24-4be2-beb5-34961f190b5c\"}, {\"version\": \"7.4.0\", \"gridData\": {\"h\": 15, \"i\": \"ddce0ec5-f393-4479-a8a9-e1c7ffc339cb\", \"x\": 24, \"w\": 24, \"y\": 45}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_5\", \"panelIndex\": \"ddce0ec5-f393-4479-a8a9-e1c7ffc339cb\"}, {\"version\": \"7.4.0\", \"gridData\": {\"h\": 15, \"i\": \"c591ef68-9215-49de-a548-30196faa31bd\", \"x\": 0, \"w\": 24, \"y\": 45}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_6\", \"panelIndex\": \"c591ef68-9215-49de-a548-30196faa31bd\"}, {\"version\": \"7.4.0\", \"gridData\": {\"h\": 15, \"i\": \"88a65079-a0b4-49c7-abbe-6e181c5dbbc3\", \"x\": 24, \"w\": 24, \"y\": 15}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_7\", \"panelIndex\": \"88a65079-a0b4-49c7-abbe-6e181c5dbbc3\"}]",
+                "timeRestore": false,
+                "title": "[Metricbeat ActiveMQ] Topics Overview",
+                "version": 1
+            },
+            "id": "d97b7520-0bbe-11ea-81bb-cf244189d349",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "a85c09b0-0bbd-11ea-81bb-cf244189d349",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "e91f2b80-0bbd-11ea-81bb-cf244189d349",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "d22e5e00-0bbd-11ea-81bb-cf244189d349",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "8ae8aa90-0bc8-11ea-81bb-cf244189d349",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "21fb23a0-0bbe-11ea-81bb-cf244189d349",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "89de30b0-0bce-11ea-81bb-cf244189d349",
+                    "name": "panel_5",
+                    "type": "visualization"
+                },
+                {
+                    "id": "e73c2af0-0bce-11ea-81bb-cf244189d349",
+                    "name": "panel_6",
+                    "type": "visualization"
+                },
+                {
+                    "id": "3db29790-0bd7-11ea-81bb-cf244189d349",
+                    "name": "panel_7",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2019-11-21T13:34:10.940Z",
+            "version": "WzQ1MSwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Topics Messages Dequeue [Metricbeat ActiveMQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"time_field\": \"\", \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"axis_min\": \"0\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"label\": \"Dequeue\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"activemq.topic.messages.dequeue.count\"}, {\"type\": \"derivative\", \"id\": \"4f39bd50-0bbd-11ea-b87b-6d4c24968040\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"unit\": \"\"}], \"terms_field\": \"activemq.topic.name\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"\"}, \"title\": \"Topics Messages Dequeue [Metricbeat ActiveMQ]\", \"type\": \"metrics\"}"
+            },
+            "id": "a85c09b0-0bbd-11ea-81bb-cf244189d349",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-21T13:34:10.940Z",
+            "version": "WzQ1MiwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Topics Messages Enqueue [Metricbeat ActiveMQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"time_field\": \"\", \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"axis_min\": \"0\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"label\": \"Enqueue\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(115,216,255,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"activemq.topic.messages.enqueue.count\"}, {\"type\": \"derivative\", \"id\": \"4f39bd50-0bbd-11ea-b87b-6d4c24968040\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"unit\": \"\"}], \"terms_field\": \"activemq.topic.name\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"\"}, \"title\": \"Topics Messages Enqueue [Metricbeat ActiveMQ]\", \"type\": \"metrics\"}"
+            },
+            "id": "e91f2b80-0bbd-11ea-81bb-cf244189d349",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-21T13:34:10.940Z",
+            "version": "WzQ1MywxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Topics Messages Dispatch [Metricbeat ActiveMQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"time_field\": \"\", \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"axis_min\": \"0\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"label\": \"Dispatch\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(104,204,202,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"activemq.topic.messages.dispatch.count\"}, {\"type\": \"derivative\", \"id\": \"4f39bd50-0bbd-11ea-b87b-6d4c24968040\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"unit\": \"\"}], \"terms_field\": \"activemq.topic.name\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"\"}, \"title\": \"Topics Messages Dispatch [Metricbeat ActiveMQ]\", \"type\": \"metrics\"}"
+            },
+            "id": "d22e5e00-0bbd-11ea-81bb-cf244189d349",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-21T13:34:10.940Z",
+            "version": "WzQ1NCwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Topics Messages Enqueue Time [Metricbeat ActiveMQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"time_field\": \"\", \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"axis_min\": \"0\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"label\": \"\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(226,115,0,1)\", \"formatter\": \"ms,ms,\", \"line_width\": 1, \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"activemq.topic.messages.enqueue.time.avg\"}], \"terms_field\": \"activemq.topic.name\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"\"}, \"title\": \"Topics Messages Enqueue Time [Metricbeat ActiveMQ]\", \"type\": \"metrics\"}"
+            },
+            "id": "8ae8aa90-0bc8-11ea-81bb-cf244189d349",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-22T12:42:45.591Z",
+            "version": "WzUyNiwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Topics Messages In-flight [Metricbeat ActiveMQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"time_field\": \"\", \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"axis_min\": \"0\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"label\": \"In-flight\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(211,49,21,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"activemq.topic.messages.inflight.count\"}, {\"type\": \"derivative\", \"id\": \"4f39bd50-0bbd-11ea-b87b-6d4c24968040\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"unit\": \"\"}], \"terms_field\": \"activemq.topic.name\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"\"}, \"title\": \"Topics Messages In-flight [Metricbeat ActiveMQ]\", \"type\": \"metrics\"}"
+            },
+            "id": "21fb23a0-0bbe-11ea-81bb-cf244189d349",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-21T13:34:10.940Z",
+            "version": "WzQ1NiwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Topics Producers [Metricbeat ActiveMQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"time_field\": \"\", \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"axis_min\": \"0\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"label\": \"Producers\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(0,156,224,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"activemq.topic.producers.count\"}], \"terms_field\": \"activemq.topic.name\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"\"}, \"title\": \"Topics Producers [Metricbeat ActiveMQ]\", \"type\": \"metrics\"}"
+            },
+            "id": "89de30b0-0bce-11ea-81bb-cf244189d349",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-21T13:34:10.940Z",
+            "version": "WzQ1NywxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Topics Consumers [Metricbeat ActiveMQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"time_field\": \"\", \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"axis_min\": \"0\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"label\": \"Consumers\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(104,188,0,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"activemq.topic.consumers.count\"}], \"terms_field\": \"activemq.topic.name\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"\"}, \"title\": \"Topics Consumers [Metricbeat ActiveMQ]\", \"type\": \"metrics\"}"
+            },
+            "id": "e73c2af0-0bce-11ea-81bb-cf244189d349",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-21T13:34:10.940Z",
+            "version": "WzQ1OCwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Topics Messages Expired [Metricbeat ActiveMQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"isModelInvalid\": false, \"time_field\": \"\", \"default_index_pattern\": \"metricbeat-*\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"axis_min\": \"0\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"label\": \"Expired\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(174,161,255,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"activemq.topic.messages.expired.count\"}, {\"type\": \"derivative\", \"id\": \"4f39bd50-0bbd-11ea-b87b-6d4c24968040\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"unit\": \"\"}], \"terms_field\": \"activemq.topic.name\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"\"}, \"title\": \"Topics Messages Expired [Metricbeat ActiveMQ]\", \"type\": \"metrics\"}"
+            },
+            "id": "3db29790-0bd7-11ea-81bb-cf244189d349",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-21T13:34:10.940Z",
+            "version": "WzQ1OSwxXQ=="
+        }
+    ],
+    "version": "7.4.0"
+}

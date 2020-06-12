@@ -1,0 +1,339 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Overview of Redis Enterprise dashboard",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"version\": \"7.1.0\", \"gridData\": {\"h\": 8, \"i\": \"bdd26554-0293-4928-9751-f7304d9fbc74\", \"x\": 0, \"w\": 9, \"y\": 0}, \"embeddableConfig\": {\"title\": \"\"}, \"panelRefName\": \"panel_0\", \"panelIndex\": \"bdd26554-0293-4928-9751-f7304d9fbc74\"}, {\"gridData\": {\"h\": 8, \"i\": \"4aa7a92c-1705-40ee-9f53-478610ea34f0\", \"x\": 9, \"w\": 8, \"y\": 0}, \"title\": \"System CPU time\", \"version\": \"7.1.0\", \"embeddableConfig\": {\"title\": \"System CPU time\"}, \"panelRefName\": \"panel_1\", \"panelIndex\": \"4aa7a92c-1705-40ee-9f53-478610ea34f0\"}, {\"gridData\": {\"h\": 8, \"i\": \"431e4d28-f8be-46a3-8079-d562e644bae1\", \"x\": 17, \"w\": 8, \"y\": 0}, \"title\": \"User CPU time\", \"version\": \"7.1.0\", \"embeddableConfig\": {\"title\": \"User CPU time\"}, \"panelRefName\": \"panel_2\", \"panelIndex\": \"431e4d28-f8be-46a3-8079-d562e644bae1\"}, {\"gridData\": {\"h\": 8, \"i\": \"192540d9-3c81-495d-ba22-2b1d96841ba7\", \"x\": 25, \"w\": 7, \"y\": 0}, \"title\": \"Node free memory\", \"version\": \"7.1.0\", \"embeddableConfig\": {\"title\": \"Node free memory\"}, \"panelRefName\": \"panel_3\", \"panelIndex\": \"192540d9-3c81-495d-ba22-2b1d96841ba7\"}, {\"gridData\": {\"h\": 8, \"i\": \"666f6222-3542-42b0-9085-7e93224c3998\", \"x\": 32, \"w\": 8, \"y\": 0}, \"title\": \"Free persistent disk space\", \"version\": \"7.1.0\", \"embeddableConfig\": {\"title\": \"Free persistent disk space\"}, \"panelRefName\": \"panel_4\", \"panelIndex\": \"666f6222-3542-42b0-9085-7e93224c3998\"}, {\"gridData\": {\"h\": 8, \"i\": \"9d84abb9-cc6d-4d78-b2a4-ca77b942cf5c\", \"x\": 40, \"w\": 8, \"y\": 0}, \"title\": \"Free ephemeral disk space\", \"version\": \"7.1.0\", \"embeddableConfig\": {\"title\": \"Free ephemeral disk space\"}, \"panelRefName\": \"panel_5\", \"panelIndex\": \"9d84abb9-cc6d-4d78-b2a4-ca77b942cf5c\"}, {\"gridData\": {\"h\": 17, \"i\": \"86afca72-c2a2-4d20-af63-7e74220df79c\", \"x\": 0, \"w\": 16, \"y\": 8}, \"title\": \"Rate of incoming/outgoing network traffic\", \"version\": \"7.1.0\", \"embeddableConfig\": {\"title\": \"Rate of incoming/outgoing network traffic\"}, \"panelRefName\": \"panel_6\", \"panelIndex\": \"86afca72-c2a2-4d20-af63-7e74220df79c\"}, {\"gridData\": {\"h\": 17, \"i\": \"aab5878f-0105-4be9-aaea-1951de591ec8\", \"x\": 16, \"w\": 16, \"y\": 8}, \"title\": \"Total requests\", \"version\": \"7.1.0\", \"embeddableConfig\": {\"title\": \"Total requests\"}, \"panelRefName\": \"panel_7\", \"panelIndex\": \"aab5878f-0105-4be9-aaea-1951de591ec8\"}, {\"gridData\": {\"h\": 17, \"i\": \"c520c103-f16f-4490-ab07-3fbd38681c94\", \"x\": 32, \"w\": 16, \"y\": 8}, \"title\": \"Connections\", \"version\": \"7.1.0\", \"embeddableConfig\": {\"title\": \"Connections\"}, \"panelRefName\": \"panel_8\", \"panelIndex\": \"c520c103-f16f-4490-ab07-3fbd38681c94\"}, {\"gridData\": {\"h\": 17, \"i\": \"52d5e0f2-8c7d-42a0-b0d7-3bff758034bd\", \"x\": 0, \"w\": 16, \"y\": 25}, \"title\": \"GET/SET commands\", \"version\": \"7.1.0\", \"embeddableConfig\": {\"title\": \"GET/SET commands\"}, \"panelRefName\": \"panel_9\", \"panelIndex\": \"52d5e0f2-8c7d-42a0-b0d7-3bff758034bd\"}, {\"gridData\": {\"h\": 17, \"i\": \"8d97e4fa-7929-42b6-bcd1-c73a0ec6ceea\", \"x\": 16, \"w\": 16, \"y\": 25}, \"title\": \"Other commands\", \"version\": \"7.1.0\", \"embeddableConfig\": {\"title\": \"Other commands\"}, \"panelRefName\": \"panel_10\", \"panelIndex\": \"8d97e4fa-7929-42b6-bcd1-c73a0ec6ceea\"}, {\"gridData\": {\"h\": 17, \"i\": \"0f739671-dfbe-4ec9-8468-d5b2b9aad001\", \"x\": 32, \"w\": 16, \"y\": 25}, \"title\": \"Listener latency\", \"version\": \"7.1.0\", \"embeddableConfig\": {\"title\": \"Listener latency\"}, \"panelRefName\": \"panel_11\", \"panelIndex\": \"0f739671-dfbe-4ec9-8468-d5b2b9aad001\"}]",
+                "timeRestore": false,
+                "title": "[Metricbeat Redis Enterprise] Overview",
+                "version": 1
+            },
+            "id": "8da53a40-5a2f-11ea-bc69-cdcc68092a57",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "b96c3b00-5c92-11ea-b0b5-8133f1152545",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "8cba84c0-5a32-11ea-bc69-cdcc68092a57",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "9ddea420-5a32-11ea-bc69-cdcc68092a57",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "49c7dbf0-5a36-11ea-bc69-cdcc68092a57",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "14f6de30-5c7a-11ea-b0b5-8133f1152545",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "2d7ec670-5c7a-11ea-b0b5-8133f1152545",
+                    "name": "panel_5",
+                    "type": "visualization"
+                },
+                {
+                    "id": "f6c6d0e0-5a36-11ea-bc69-cdcc68092a57",
+                    "name": "panel_6",
+                    "type": "visualization"
+                },
+                {
+                    "id": "6c861200-5c7b-11ea-b0b5-8133f1152545",
+                    "name": "panel_7",
+                    "type": "visualization"
+                },
+                {
+                    "id": "b5621150-5c7a-11ea-b0b5-8133f1152545",
+                    "name": "panel_8",
+                    "type": "visualization"
+                },
+                {
+                    "id": "3c776b90-5c80-11ea-b0b5-8133f1152545",
+                    "name": "panel_9",
+                    "type": "visualization"
+                },
+                {
+                    "id": "837f9fd0-5c80-11ea-b0b5-8133f1152545",
+                    "name": "panel_10",
+                    "type": "visualization"
+                },
+                {
+                    "id": "a452c8c0-5c96-11ea-b0b5-8133f1152545",
+                    "name": "panel_11",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2020-03-03T15:48:26.671Z",
+            "version": "WzgwNCw0XQ=="
+        },
+        {
+            "attributes": {
+                "description": "Select cluster/node based on its name",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Cluster/node selector [Metricbeat Redis Enterprise]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"updateFiltersOnChange\": true, \"pinFilters\": false, \"useTimeFilter\": false, \"controls\": [{\"parent\": \"\", \"indexPatternRefName\": \"control_0_index_pattern\", \"label\": \"cluster name\", \"fieldName\": \"prometheus.labels.cluster\", \"options\": {\"size\": 5, \"type\": \"terms\", \"dynamicOptions\": true, \"multiselect\": false, \"order\": \"desc\"}, \"id\": \"1583159394252\", \"type\": \"list\"}, {\"parent\": \"\", \"indexPatternRefName\": \"control_1_index_pattern\", \"label\": \"node name\", \"fieldName\": \"prometheus.labels.node\", \"options\": {\"size\": 5, \"type\": \"terms\", \"dynamicOptions\": true, \"multiselect\": true, \"order\": \"desc\"}, \"id\": \"1583250395046\", \"type\": \"list\"}]}, \"title\": \"Cluster/node selector [Metricbeat Redis Enterprise]\", \"type\": \"input_control_vis\"}"
+            },
+            "id": "b96c3b00-5c92-11ea-b0b5-8133f1152545",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "metricbeat-*",
+                    "name": "control_0_index_pattern",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "metricbeat-*",
+                    "name": "control_1_index_pattern",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-03-03T15:47:18.669Z",
+            "version": "WzgwMyw0XQ=="
+        },
+        {
+            "attributes": {
+                "description": "System CPU time",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "System CPU time [Metricbeat Redis Enterprise]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"isModelInvalid\": false, \"axis_max\": \"1\", \"gauge_width\": 10, \"default_index_pattern\": \"metricbeat-*\", \"axis_min\": \"0\", \"legend_position\": \"bottom\", \"index_pattern\": \"\", \"gauge_color_rules\": [{\"id\": \"c743b7b0-5a32-11ea-89da-eba74ed7a082\"}], \"show_legend\": 1, \"time_field\": \"\", \"axis_formatter\": \"number\", \"default_timefield\": \"@timestamp\", \"type\": \"gauge\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"gauge_style\": \"half\", \"annotations\": [{\"ignore_global_filters\": 1, \"index_pattern\": \"*\", \"template\": \"\", \"color\": \"#F00\", \"query_string\": {\"language\": \"kuery\", \"query\": \"\"}, \"icon\": \"fa-tag\", \"id\": \"5cc43a90-5a32-11ea-94fe-9d9d001ff143\", \"ignore_panel_filters\": 1, \"fields\": \"\"}], \"axis_position\": \"left\", \"series\": [{\"label\": \"system\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"percent\", \"line_width\": \"1\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.node_cpu_system\"}], \"terms_field\": \"prometheus.labels.node\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.5\", \"steps\": 0, \"point_size\": \"1\"}], \"interval\": \"1m\"}, \"title\": \"System CPU time [Metricbeat Redis Enterprise]\", \"type\": \"metrics\"}"
+            },
+            "id": "8cba84c0-5a32-11ea-bc69-cdcc68092a57",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-02T14:26:48.851Z",
+            "version": "Wzc2MiwzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "User CPU time",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "User CPU time [Metricbeat Redis Enterprise]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"isModelInvalid\": false, \"axis_max\": \"1\", \"gauge_width\": 10, \"default_index_pattern\": \"metricbeat-*\", \"axis_min\": \"0\", \"legend_position\": \"bottom\", \"index_pattern\": \"\", \"gauge_color_rules\": [{\"id\": \"d5c40740-5a32-11ea-94fe-9d9d001ff143\"}], \"show_legend\": 1, \"time_field\": \"\", \"axis_formatter\": \"number\", \"default_timefield\": \"@timestamp\", \"type\": \"gauge\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"gauge_style\": \"half\", \"annotations\": [{\"ignore_global_filters\": 1, \"index_pattern\": \"*\", \"template\": \"\", \"color\": \"#F00\", \"query_string\": {\"language\": \"kuery\", \"query\": \"\"}, \"icon\": \"fa-tag\", \"id\": \"5cc43a90-5a32-11ea-94fe-9d9d001ff143\", \"ignore_panel_filters\": 1, \"fields\": \"\"}], \"axis_position\": \"left\", \"series\": [{\"label\": \"user\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(104,204,202,1)\", \"formatter\": \"percent\", \"line_width\": \"1\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.node_cpu_user\"}], \"terms_field\": \"prometheus.labels.node\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.5\", \"steps\": 0, \"point_size\": \"1\"}], \"interval\": \"1m\"}, \"title\": \"User CPU time [Metricbeat Redis Enterprise]\", \"type\": \"metrics\"}"
+            },
+            "id": "9ddea420-5a32-11ea-bc69-cdcc68092a57",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-02T14:27:31.125Z",
+            "version": "Wzc2MywzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "Node free memory",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Node free memory [Metricbeat Redis Enterprise]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"isModelInvalid\": false, \"axis_max\": \"\", \"gauge_width\": 10, \"default_index_pattern\": \"metricbeat-*\", \"axis_min\": \"0\", \"legend_position\": \"bottom\", \"index_pattern\": \"\", \"gauge_color_rules\": [{\"id\": \"d5c40740-5a32-11ea-94fe-9d9d001ff143\"}], \"show_legend\": 1, \"time_field\": \"\", \"background_color_rules\": [{\"id\": \"4493a7d0-5a37-11ea-83f4-dbbc99caa7c0\"}], \"default_timefield\": \"@timestamp\", \"type\": \"metric\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"gauge_style\": \"half\", \"annotations\": [{\"ignore_global_filters\": 1, \"index_pattern\": \"*\", \"template\": \"\", \"color\": \"#F00\", \"query_string\": {\"language\": \"kuery\", \"query\": \"\"}, \"icon\": \"fa-tag\", \"id\": \"5cc43a90-5a32-11ea-94fe-9d9d001ff143\", \"ignore_panel_filters\": 1, \"fields\": \"\"}], \"axis_position\": \"left\", \"series\": [{\"label\": \"Free memory\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(164,221,0,1)\", \"formatter\": \"bytes\", \"line_width\": \"1\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.node_free_memory\"}], \"terms_field\": \"prometheus.labels.node\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.5\", \"steps\": 0, \"point_size\": \"1\"}], \"interval\": \"1m\"}, \"title\": \"Node free memory [Metricbeat Redis Enterprise]\", \"type\": \"metrics\"}"
+            },
+            "id": "49c7dbf0-5a36-11ea-bc69-cdcc68092a57",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-02T14:27:48.934Z",
+            "version": "Wzc2NCwzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "Free disk space on configured persistent disk",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Free persistent disk space [Metricbeat Redis Enterprise]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"isModelInvalid\": false, \"axis_max\": \"\", \"gauge_width\": 10, \"default_index_pattern\": \"metricbeat-*\", \"axis_min\": \"0\", \"legend_position\": \"bottom\", \"index_pattern\": \"\", \"gauge_color_rules\": [{\"id\": \"d5c40740-5a32-11ea-94fe-9d9d001ff143\"}], \"show_legend\": 1, \"time_field\": \"\", \"background_color_rules\": [{\"id\": \"4493a7d0-5a37-11ea-83f4-dbbc99caa7c0\"}], \"default_timefield\": \"@timestamp\", \"type\": \"metric\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"gauge_style\": \"half\", \"annotations\": [{\"ignore_global_filters\": 1, \"index_pattern\": \"*\", \"template\": \"\", \"color\": \"#F00\", \"query_string\": {\"language\": \"kuery\", \"query\": \"\"}, \"icon\": \"fa-tag\", \"id\": \"5cc43a90-5a32-11ea-94fe-9d9d001ff143\", \"ignore_panel_filters\": 1, \"fields\": \"\"}], \"axis_position\": \"left\", \"series\": [{\"label\": \"Free persistent\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(164,221,0,1)\", \"formatter\": \"bytes\", \"line_width\": \"1\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.node_persistent_storage_free\"}], \"terms_field\": \"prometheus.labels.node\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.5\", \"steps\": 0, \"point_size\": \"1\"}], \"interval\": \"1m\"}, \"title\": \"Free persistent disk space [Metricbeat Redis Enterprise]\", \"type\": \"metrics\"}"
+            },
+            "id": "14f6de30-5c7a-11ea-b0b5-8133f1152545",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-02T14:28:01.957Z",
+            "version": "Wzc2NSwzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "Free disk space on configured ephemeral disk",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Free ephemeral disk space [Metricbeat Redis Enterprise]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"isModelInvalid\": false, \"axis_max\": \"\", \"gauge_width\": 10, \"default_index_pattern\": \"metricbeat-*\", \"axis_min\": \"0\", \"legend_position\": \"bottom\", \"index_pattern\": \"\", \"gauge_color_rules\": [{\"id\": \"d5c40740-5a32-11ea-94fe-9d9d001ff143\"}], \"show_legend\": 1, \"time_field\": \"\", \"background_color_rules\": [{\"id\": \"4493a7d0-5a37-11ea-83f4-dbbc99caa7c0\"}], \"default_timefield\": \"@timestamp\", \"type\": \"metric\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"gauge_style\": \"half\", \"annotations\": [{\"ignore_global_filters\": 1, \"index_pattern\": \"*\", \"template\": \"\", \"color\": \"#F00\", \"query_string\": {\"language\": \"kuery\", \"query\": \"\"}, \"icon\": \"fa-tag\", \"id\": \"5cc43a90-5a32-11ea-94fe-9d9d001ff143\", \"ignore_panel_filters\": 1, \"fields\": \"\"}], \"axis_position\": \"left\", \"series\": [{\"label\": \"Free ephemeral\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(164,221,0,1)\", \"formatter\": \"bytes\", \"line_width\": \"1\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.node_ephemeral_storage_free\"}], \"terms_field\": \"prometheus.labels.node\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.5\", \"steps\": 0, \"point_size\": \"1\"}], \"interval\": \"1m\"}, \"title\": \"Free ephemeral disk space [Metricbeat Redis Enterprise]\", \"type\": \"metrics\"}"
+            },
+            "id": "2d7ec670-5c7a-11ea-b0b5-8133f1152545",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-02T14:28:19.864Z",
+            "version": "Wzc2NiwzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "Rate of incoming/outgoing network traffic",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Rate of incoming/outgoing network traffic [Metricbeat Redis Enterprise]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"isModelInvalid\": false, \"axis_max\": \"\", \"gauge_width\": 10, \"default_index_pattern\": \"metricbeat-*\", \"axis_min\": \"0\", \"legend_position\": \"bottom\", \"index_pattern\": \"\", \"gauge_color_rules\": [{\"id\": \"d5c40740-5a32-11ea-94fe-9d9d001ff143\"}], \"show_legend\": 1, \"time_field\": \"\", \"axis_formatter\": \"number\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"gauge_style\": \"half\", \"annotations\": [{\"ignore_global_filters\": 1, \"index_pattern\": \"*\", \"template\": \"\", \"color\": \"#F00\", \"query_string\": {\"language\": \"kuery\", \"query\": \"\"}, \"icon\": \"fa-tag\", \"id\": \"5cc43a90-5a32-11ea-94fe-9d9d001ff143\", \"ignore_panel_filters\": 1, \"fields\": \"\"}], \"axis_position\": \"left\", \"series\": [{\"label\": \"Node ingress\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(0,156,224,1)\", \"formatter\": \"bytes\", \"line_width\": \"1\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.node_ingress_bytes\"}], \"terms_field\": \"prometheus.labels.node\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.5\", \"steps\": 0, \"point_size\": \"1\"}, {\"label\": \"Node egress\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"cc4a9810-5c93-11ea-a0a2-61bf5e1bd67b\", \"axis_position\": \"right\", \"color\": \"rgba(211,49,21,1)\", \"formatter\": \"bytes\", \"line_width\": \"1\", \"metrics\": [{\"type\": \"avg\", \"id\": \"cc4a9811-5c93-11ea-a0a2-61bf5e1bd67b\", \"field\": \"prometheus.metrics.node_egress_bytes\"}], \"terms_field\": \"prometheus.labels.node\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.5\", \"steps\": 0, \"point_size\": \"1\"}], \"interval\": \"1m\"}, \"title\": \"Rate of incoming/outgoing network traffic [Metricbeat Redis Enterprise]\", \"type\": \"metrics\"}"
+            },
+            "id": "f6c6d0e0-5a36-11ea-bc69-cdcc68092a57",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-02T14:42:18.930Z",
+            "version": "Wzc4NCwzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "Request rate handled by endpoints on node",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Total requests (ops/sec) [Metricbeat Redis Enterprise]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"isModelInvalid\": false, \"axis_max\": \"\", \"gauge_width\": 10, \"default_index_pattern\": \"metricbeat-*\", \"axis_min\": \"0\", \"legend_position\": \"bottom\", \"index_pattern\": \"\", \"gauge_color_rules\": [{\"id\": \"d5c40740-5a32-11ea-94fe-9d9d001ff143\"}], \"show_legend\": 1, \"time_field\": \"\", \"background_color_rules\": [{\"id\": \"4493a7d0-5a37-11ea-83f4-dbbc99caa7c0\"}], \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"gauge_style\": \"half\", \"annotations\": [{\"ignore_global_filters\": 1, \"index_pattern\": \"*\", \"template\": \"\", \"color\": \"#F00\", \"query_string\": {\"language\": \"kuery\", \"query\": \"\"}, \"icon\": \"fa-tag\", \"id\": \"5cc43a90-5a32-11ea-94fe-9d9d001ff143\", \"ignore_panel_filters\": 1, \"fields\": \"\"}], \"axis_position\": \"left\", \"series\": [{\"label\": \"Total requests (ops/sec)\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(12,121,125,1)\", \"formatter\": \"number\", \"line_width\": \"1\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.node_total_req\"}], \"terms_field\": \"prometheus.labels.node\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.5\", \"steps\": 0, \"point_size\": \"1\"}], \"interval\": \"1m\"}, \"title\": \"Total requests (ops/sec) [Metricbeat Redis Enterprise]\", \"type\": \"metrics\"}"
+            },
+            "id": "6c861200-5c7b-11ea-b0b5-8133f1152545",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-02T14:44:20.783Z",
+            "version": "Wzc4NiwzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "Number of clients connected to endpoints on node",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Connections [Metricbeat Redis Enterprise]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"isModelInvalid\": false, \"axis_max\": \"\", \"gauge_width\": 10, \"default_index_pattern\": \"metricbeat-*\", \"axis_min\": \"0\", \"legend_position\": \"bottom\", \"index_pattern\": \"\", \"gauge_color_rules\": [{\"id\": \"d5c40740-5a32-11ea-94fe-9d9d001ff143\"}], \"show_legend\": 1, \"time_field\": \"\", \"background_color_rules\": [{\"id\": \"4493a7d0-5a37-11ea-83f4-dbbc99caa7c0\"}], \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"gauge_style\": \"half\", \"annotations\": [{\"ignore_global_filters\": 1, \"index_pattern\": \"*\", \"template\": \"\", \"color\": \"#F00\", \"query_string\": {\"language\": \"kuery\", \"query\": \"\"}, \"icon\": \"fa-tag\", \"id\": \"5cc43a90-5a32-11ea-94fe-9d9d001ff143\", \"ignore_panel_filters\": 1, \"fields\": \"\"}], \"axis_position\": \"left\", \"series\": [{\"label\": \"Connections\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(123,100,255,1)\", \"formatter\": \"number\", \"line_width\": \"1\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.node_conns\"}], \"terms_field\": \"prometheus.labels.node\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.5\", \"steps\": 0, \"point_size\": \"1\"}], \"interval\": \"1m\"}, \"title\": \"Connections [Metricbeat Redis Enterprise]\", \"type\": \"metrics\"}"
+            },
+            "id": "b5621150-5c7a-11ea-b0b5-8133f1152545",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-02T14:44:37.374Z",
+            "version": "Wzc4NywzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "Number of memcached GET/SET commands sent to the DB",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "GET/SET commands [Metricbeat Redis Enterprise]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"isModelInvalid\": false, \"axis_max\": \"\", \"gauge_width\": 10, \"default_index_pattern\": \"metricbeat-*\", \"axis_min\": \"0\", \"legend_position\": \"bottom\", \"index_pattern\": \"\", \"gauge_color_rules\": [{\"id\": \"d5c40740-5a32-11ea-94fe-9d9d001ff143\"}], \"show_legend\": 1, \"time_field\": \"\", \"background_color_rules\": [{\"id\": \"4493a7d0-5a37-11ea-83f4-dbbc99caa7c0\"}], \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"gauge_style\": \"half\", \"annotations\": [{\"ignore_global_filters\": 1, \"index_pattern\": \"*\", \"template\": \"\", \"color\": \"#F00\", \"query_string\": {\"language\": \"kuery\", \"query\": \"\"}, \"icon\": \"fa-tag\", \"id\": \"5cc43a90-5a32-11ea-94fe-9d9d001ff143\", \"ignore_panel_filters\": 1, \"fields\": \"\"}], \"axis_position\": \"left\", \"series\": [{\"label\": \"GET\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(22,165,165,1)\", \"formatter\": \"number\", \"line_width\": \"1\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.listener_cmd_get\"}], \"terms_field\": \"prometheus.labels.proxy\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.5\", \"steps\": 0, \"point_size\": \"1\"}, {\"label\": \"SET\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"90e3af50-5c93-11ea-a0a2-61bf5e1bd67b\", \"axis_position\": \"right\", \"color\": \"rgba(252,220,0,1)\", \"formatter\": \"number\", \"line_width\": \"1\", \"metrics\": [{\"type\": \"avg\", \"id\": \"90e3af51-5c93-11ea-a0a2-61bf5e1bd67b\", \"field\": \"prometheus.metrics.listener_cmd_set\"}], \"terms_field\": \"prometheus.labels.proxy\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.5\", \"steps\": 0, \"point_size\": \"1\"}], \"interval\": \"1m\"}, \"title\": \"GET/SET commands [Metricbeat Redis Enterprise]\", \"type\": \"metrics\"}"
+            },
+            "id": "3c776b90-5c80-11ea-b0b5-8133f1152545",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-02T14:40:12.682Z",
+            "version": "Wzc4MSwzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "Number of memcached commands sent to the DB",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Other commands [Metricbeat Redis Enterprise]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"isModelInvalid\": false, \"axis_max\": \"\", \"gauge_width\": 10, \"default_index_pattern\": \"metricbeat-*\", \"axis_min\": \"0\", \"legend_position\": \"bottom\", \"index_pattern\": \"\", \"gauge_color_rules\": [{\"id\": \"d5c40740-5a32-11ea-94fe-9d9d001ff143\"}], \"show_legend\": 1, \"time_field\": \"\", \"background_color_rules\": [{\"id\": \"4493a7d0-5a37-11ea-83f4-dbbc99caa7c0\"}], \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"gauge_style\": \"half\", \"annotations\": [{\"ignore_global_filters\": 1, \"index_pattern\": \"*\", \"template\": \"\", \"color\": \"#F00\", \"query_string\": {\"language\": \"kuery\", \"query\": \"\"}, \"icon\": \"fa-tag\", \"id\": \"5cc43a90-5a32-11ea-94fe-9d9d001ff143\", \"ignore_panel_filters\": 1, \"fields\": \"\"}], \"axis_position\": \"left\", \"series\": [{\"value_template\": \"{{value}}\", \"label\": \"TOUCH\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(244,78,59,1)\", \"formatter\": \"number\", \"line_width\": \"1\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.listener_cmd_touch\"}], \"terms_field\": \"prometheus.labels.proxy\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.5\", \"steps\": 0, \"point_size\": \"1\"}, {\"label\": \"FLUSH\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"0576cfe0-5c90-11ea-83c6-4f084e5b49b0\", \"axis_position\": \"right\", \"color\": \"rgba(252,220,0,1)\", \"formatter\": \"number\", \"line_width\": \"1\", \"metrics\": [{\"type\": \"avg\", \"id\": \"0576cfe1-5c90-11ea-83c6-4f084e5b49b0\", \"field\": \"prometheus.metrics.listener_cmd_flush\"}], \"terms_field\": \"prometheus.labels.proxy\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.5\", \"steps\": 0, \"point_size\": \"1\"}, {\"label\": \"AUTH\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"22e43a90-5c90-11ea-83c6-4f084e5b49b0\", \"axis_position\": \"right\", \"color\": \"rgba(164,221,0,1)\", \"formatter\": \"number\", \"line_width\": \"1\", \"metrics\": [{\"type\": \"avg\", \"id\": \"22e43a91-5c90-11ea-83c6-4f084e5b49b0\", \"field\": \"prometheus.metrics.listener_auth_cmds\"}], \"terms_field\": \"prometheus.labels.proxy\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.5\", \"steps\": 0, \"point_size\": \"1\"}], \"interval\": \"1m\"}, \"title\": \"Other commands [Metricbeat Redis Enterprise]\", \"type\": \"metrics\"}"
+            },
+            "id": "837f9fd0-5c80-11ea-b0b5-8133f1152545",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-02T14:26:30.812Z",
+            "version": "Wzc2MSwzXQ=="
+        },
+        {
+            "attributes": {
+                "description": "Average latency of all types of commands on DB",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Listener latency [Metricbeat Redis Enterprise]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"isModelInvalid\": false, \"axis_max\": \"\", \"gauge_width\": 10, \"default_index_pattern\": \"metricbeat-*\", \"axis_min\": \"0\", \"legend_position\": \"bottom\", \"index_pattern\": \"\", \"gauge_color_rules\": [{\"id\": \"d5c40740-5a32-11ea-94fe-9d9d001ff143\"}], \"bar_color_rules\": [{\"id\": \"69b152e0-5c96-11ea-a0a2-61bf5e1bd67b\"}], \"show_legend\": 1, \"time_field\": \"\", \"background_color_rules\": [{\"id\": \"4493a7d0-5a37-11ea-83f4-dbbc99caa7c0\"}], \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"gauge_inner_width\": 10, \"axis_scale\": \"normal\", \"gauge_style\": \"half\", \"annotations\": [{\"ignore_global_filters\": 1, \"index_pattern\": \"*\", \"template\": \"\", \"color\": \"#F00\", \"query_string\": {\"language\": \"kuery\", \"query\": \"\"}, \"icon\": \"fa-tag\", \"id\": \"5cc43a90-5a32-11ea-94fe-9d9d001ff143\", \"ignore_panel_filters\": 1, \"fields\": \"\"}], \"axis_position\": \"left\", \"series\": [{\"label\": \"Latency\", \"type\": \"timeseries\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(12,121,125,1)\", \"formatter\": \"ms,ms,\", \"line_width\": \"1\", \"metrics\": [{\"type\": \"avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.listener_acc_latency\"}, {\"type\": \"avg\", \"id\": \"37d10ba0-5c99-11ea-a0a2-61bf5e1bd67b\", \"field\": \"prometheus.metrics.listener_total_res\"}, {\"script\": \"params.listener_acc_latency != null && params.listener_total_res > 0 ? params.listener_acc_latency/params.listener_total_res : null\", \"type\": \"calculation\", \"id\": \"12007b60-5c97-11ea-a0a2-61bf5e1bd67b\", \"variables\": [{\"id\": \"144dedd0-5c97-11ea-a0a2-61bf5e1bd67b\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"name\": \"listener_acc_latency\"}, {\"id\": \"bf706520-5c98-11ea-a0a2-61bf5e1bd67b\", \"field\": \"37d10ba0-5c99-11ea-a0a2-61bf5e1bd67b\", \"name\": \"listener_total_res\"}]}], \"terms_field\": \"prometheus.labels.node\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0.5\", \"steps\": 0, \"point_size\": \"1\"}], \"interval\": \"1m\"}, \"title\": \"Listener latency [Metricbeat Redis Enterprise]\", \"type\": \"metrics\"}"
+            },
+            "id": "a452c8c0-5c96-11ea-b0b5-8133f1152545",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-02T15:21:44.393Z",
+            "version": "Wzc5MSwzXQ=="
+        }
+    ],
+    "version": "7.1.0"
+}

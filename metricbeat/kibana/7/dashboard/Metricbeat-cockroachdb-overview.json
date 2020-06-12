@@ -1,0 +1,203 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Overview of the CockroachDB server status",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"gridData\": {\"h\": 11, \"i\": \"1\", \"x\": 0, \"w\": 24, \"y\": 0}, \"title\": \"Number of SQL connections\", \"version\": \"7.1.0\", \"embeddableConfig\": {}, \"panelRefName\": \"panel_0\", \"panelIndex\": \"1\"}, {\"gridData\": {\"h\": 11, \"i\": \"2\", \"x\": 24, \"w\": 24, \"y\": 0}, \"title\": \"SQL queries\", \"version\": \"7.1.0\", \"embeddableConfig\": {}, \"panelRefName\": \"panel_1\", \"panelIndex\": \"2\"}, {\"gridData\": {\"h\": 9, \"i\": \"3\", \"x\": 16, \"w\": 16, \"y\": 11}, \"title\": \"Replicas per Store\", \"version\": \"7.1.0\", \"embeddableConfig\": {}, \"panelRefName\": \"panel_2\", \"panelIndex\": \"3\"}, {\"gridData\": {\"h\": 9, \"i\": \"4\", \"x\": 32, \"w\": 16, \"y\": 11}, \"title\": \"Replica leaseholders\", \"version\": \"7.1.0\", \"embeddableConfig\": {}, \"panelRefName\": \"panel_3\", \"panelIndex\": \"4\"}, {\"gridData\": {\"h\": 9, \"i\": \"5\", \"x\": 0, \"w\": 16, \"y\": 11}, \"title\": \"Ranges\", \"version\": \"7.1.0\", \"embeddableConfig\": {}, \"panelRefName\": \"panel_4\", \"panelIndex\": \"5\"}, {\"gridData\": {\"h\": 10, \"i\": \"6\", \"x\": 0, \"w\": 24, \"y\": 20}, \"title\": \"Average log commit latency\", \"version\": \"7.1.0\", \"embeddableConfig\": {}, \"panelRefName\": \"panel_5\", \"panelIndex\": \"6\"}, {\"gridData\": {\"h\": 10, \"i\": \"7\", \"x\": 24, \"w\": 24, \"y\": 20}, \"title\": \"Average command commit latency\", \"version\": \"7.1.0\", \"embeddableConfig\": {}, \"panelRefName\": \"panel_6\", \"panelIndex\": \"7\"}]",
+                "timeRestore": false,
+                "title": "[Metricbeat CockroachDB] Overview",
+                "version": 1
+            },
+            "id": "e3ba0c30-9766-11e9-9eea-6f554992ec1f",
+            "migrationVersion": {
+                "dashboard": "7.0.0"
+            },
+            "references": [
+                {
+                    "id": "79691920-9766-11e9-9eea-6f554992ec1f",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "5073ed20-9760-11e9-9eea-6f554992ec1f",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "bad285b0-9769-11e9-9eea-6f554992ec1f",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "8add0960-976a-11e9-9eea-6f554992ec1f",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "2af19b90-976c-11e9-9eea-6f554992ec1f",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "74cf44b0-9771-11e9-9eea-6f554992ec1f",
+                    "name": "panel_5",
+                    "type": "visualization"
+                },
+                {
+                    "id": "b5ab45b0-9771-11e9-9eea-6f554992ec1f",
+                    "name": "panel_6",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2019-06-25T19:17:43.667Z",
+            "version": "WzU0LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Number of SQL connections [Metricbeat CockroachDB]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"default_index_pattern\": \"metricbeat-*\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"terms_direction\": \"desc\", \"terms_order_by\": \"_count\", \"label\": \"Number of connections\", \"split_color_mode\": \"rainbow\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.sql_conns\"}], \"terms_field\": \"service.address\", \"chart_type\": \"line\", \"stacked\": \"stacked\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Number of SQL connections [Metricbeat CockroachDB]\", \"type\": \"metrics\"}"
+            },
+            "id": "79691920-9766-11e9-9eea-6f554992ec1f",
+            "migrationVersion": {
+                "visualization": "7.0.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-06-25T19:10:30.316Z",
+            "version": "WzUxLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "SQL queries [Metricbeat CockroachDB]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"default_index_pattern\": \"metricbeat-*\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"index_pattern\": \"\", \"annotations\": [], \"axis_position\": \"left\", \"series\": [{\"terms_order_by\": \"88d70bc0-9760-11e9-b3d5-07b0ab7d6354\", \"label\": \"Selects\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"88d6bda0-9760-11e9-b3d5-07b0ab7d6354\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"sum\", \"id\": \"88d70bc0-9760-11e9-b3d5-07b0ab7d6354\", \"field\": \"prometheus.metrics.sql_select_count\"}, {\"type\": \"derivative\", \"id\": \"658d2990-9762-11e9-b3d5-07b0ab7d6354\", \"field\": \"88d70bc0-9760-11e9-b3d5-07b0ab7d6354\", \"unit\": \"\"}, {\"sigma\": \"\", \"type\": \"positive_only\", \"id\": \"ec698bc0-9762-11e9-b3d5-07b0ab7d6354\", \"field\": \"658d2990-9762-11e9-b3d5-07b0ab7d6354\", \"function\": \"sum\"}], \"terms_field\": \"service.address\", \"chart_type\": \"line\", \"stacked\": \"stacked\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Inserts\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"02d89100-9761-11e9-b3d5-07b0ab7d6354\", \"hidden\": false, \"axis_position\": \"right\", \"color\": \"rgba(244,78,59,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"sum\", \"id\": \"02d89101-9761-11e9-b3d5-07b0ab7d6354\", \"field\": \"prometheus.metrics.sql_insert_count\"}, {\"type\": \"derivative\", \"id\": \"74eba420-9762-11e9-b3d5-07b0ab7d6354\", \"field\": \"02d89101-9761-11e9-b3d5-07b0ab7d6354\", \"unit\": \"\"}, {\"type\": \"positive_only\", \"id\": \"54cb8aa0-9764-11e9-b3d5-07b0ab7d6354\", \"field\": \"74eba420-9762-11e9-b3d5-07b0ab7d6354\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"stacked\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Updates\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"hidden\": false, \"axis_position\": \"right\", \"color\": \"rgba(252,220,0,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"sum\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.sql_update_count\"}, {\"type\": \"derivative\", \"id\": \"9aa7ace0-9762-11e9-b3d5-07b0ab7d6354\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"unit\": \"\"}, {\"type\": \"positive_only\", \"id\": \"939af2c0-9764-11e9-b3d5-07b0ab7d6354\", \"field\": \"9aa7ace0-9762-11e9-b3d5-07b0ab7d6354\", \"unit\": \"\"}], \"terms_field\": \"service.address\", \"chart_type\": \"line\", \"stacked\": \"stacked\", \"fill\": 0.5, \"point_size\": 1}, {\"label\": \"Deletes\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"03f6d240-9761-11e9-b3d5-07b0ab7d6354\", \"hidden\": false, \"axis_position\": \"right\", \"color\": \"rgba(115,216,255,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"sum\", \"id\": \"03f6d241-9761-11e9-b3d5-07b0ab7d6354\", \"field\": \"prometheus.metrics.sql_delete_count\"}, {\"type\": \"derivative\", \"id\": \"a3ed7c30-9762-11e9-b3d5-07b0ab7d6354\", \"field\": \"03f6d241-9761-11e9-b3d5-07b0ab7d6354\", \"unit\": \"\"}, {\"type\": \"positive_only\", \"id\": \"a13994e0-9764-11e9-b3d5-07b0ab7d6354\", \"field\": \"a3ed7c30-9762-11e9-b3d5-07b0ab7d6354\", \"unit\": \"\"}], \"chart_type\": \"line\", \"stacked\": \"stacked\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"SQL queries [Metricbeat CockroachDB]\", \"type\": \"metrics\"}"
+            },
+            "id": "5073ed20-9760-11e9-9eea-6f554992ec1f",
+            "migrationVersion": {
+                "visualization": "7.0.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-06-25T18:41:34.934Z",
+            "version": "WzQ0LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Replicas per Store [Metricbeat CockroachDB]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"default_index_pattern\": \"metricbeat-*\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"terms_direction\": \"desc\", \"terms_order_by\": \"_count\", \"label\": \"Replicas per store\", \"split_color_mode\": \"rainbow\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.replicas\"}], \"terms_field\": \"service.address\", \"chart_type\": \"line\", \"stacked\": \"stacked\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Replicas per Store [Metricbeat CockroachDB]\", \"type\": \"metrics\"}"
+            },
+            "id": "bad285b0-9769-11e9-9eea-6f554992ec1f",
+            "migrationVersion": {
+                "visualization": "7.0.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-06-25T19:06:30.737Z",
+            "version": "WzQ4LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Replica leaseholders [Metricbeat CockroachDB]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"default_index_pattern\": \"metricbeat-*\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"label\": \"Replica leaseholders per store\", \"split_color_mode\": \"rainbow\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.replicas_leaseholders\"}], \"terms_field\": \"service.address\", \"chart_type\": \"line\", \"stacked\": \"stacked\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Replica leaseholders [Metricbeat CockroachDB]\", \"type\": \"metrics\"}"
+            },
+            "id": "8add0960-976a-11e9-9eea-6f554992ec1f",
+            "migrationVersion": {
+                "visualization": "7.0.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-06-25T18:34:03.281Z",
+            "version": "WzQwLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Ranges [Metricbeat CockroachDB]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"default_index_pattern\": \"metricbeat-*\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"label\": \"Underreplicated\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"e4489e50-976b-11e9-b3d5-07b0ab7d6354\", \"axis_position\": \"right\", \"color\": \"rgba(254,146,0,1)\", \"formatter\": \"number\", \"line_width\": \"2\", \"metrics\": [{\"type\": \"max\", \"id\": \"e4489e51-976b-11e9-b3d5-07b0ab7d6354\", \"field\": \"prometheus.metrics.ranges_underreplicated\"}], \"terms_field\": null, \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": \"2\"}, {\"label\": \"Overreplicated\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"c938f9c0-976b-11e9-b3d5-07b0ab7d6354\", \"axis_position\": \"right\", \"color\": \"rgba(252,220,0,1)\", \"formatter\": \"number\", \"line_width\": \"2\", \"metrics\": [{\"type\": \"max\", \"id\": \"c938f9c1-976b-11e9-b3d5-07b0ab7d6354\", \"field\": \"prometheus.metrics.ranges_overreplicated\"}], \"terms_field\": null, \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": \"2\"}, {\"label\": \"Unavailable\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"0ed1bf80-976c-11e9-b3d5-07b0ab7d6354\", \"axis_position\": \"right\", \"color\": \"rgba(244,78,59,1)\", \"formatter\": \"number\", \"line_width\": \"2\", \"metrics\": [{\"type\": \"max\", \"id\": \"0ed1bf81-976c-11e9-b3d5-07b0ab7d6354\", \"field\": \"prometheus.metrics.ranges_unavailable\"}], \"terms_field\": null, \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": \"0\", \"point_size\": \"2\"}, {\"label\": \"Total\", \"split_mode\": \"everything\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"axis_position\": \"right\", \"color\": \"rgba(204,204,204,1)\", \"formatter\": \"number\", \"line_width\": 1, \"metrics\": [{\"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.ranges\"}], \"terms_field\": null, \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Ranges [Metricbeat CockroachDB]\", \"type\": \"metrics\"}"
+            },
+            "id": "2af19b90-976c-11e9-9eea-6f554992ec1f",
+            "migrationVersion": {
+                "visualization": "7.0.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-06-25T18:38:28.645Z",
+            "version": "WzQyLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Log commit latency [Metricbeat CockroachDB]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"default_index_pattern\": \"metricbeat-*\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"value_template\": \"{{value}}ms\", \"label\": \"Average log commit latency\", \"split_color_mode\": \"rainbow\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"filter\": \"\", \"axis_position\": \"right\", \"color\": \"rgba(104,188,0,1)\", \"formatter\": \"ns,ms,2\", \"line_width\": 1, \"metrics\": [{\"size\": 1, \"agg_with\": \"avg\", \"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.raft_process_logcommit_latency_count\", \"order\": \"desc\"}, {\"type\": \"derivative\", \"id\": \"4346d3b0-976f-11e9-b3d5-07b0ab7d6354\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"unit\": \"\"}, {\"type\": \"max\", \"id\": \"4a430120-976f-11e9-b3d5-07b0ab7d6354\", \"field\": \"prometheus.metrics.raft_process_logcommit_latency_sum\", \"unit\": \"\"}, {\"type\": \"derivative\", \"id\": \"581519e0-9770-11e9-b3d5-07b0ab7d6354\", \"field\": \"4a430120-976f-11e9-b3d5-07b0ab7d6354\", \"unit\": \"\"}, {\"script\": \"params.sum / params.count\", \"type\": \"calculation\", \"id\": \"6574b730-9770-11e9-b3d5-07b0ab7d6354\", \"variables\": [{\"id\": \"6fbb54b0-9770-11e9-b3d5-07b0ab7d6354\", \"field\": \"581519e0-9770-11e9-b3d5-07b0ab7d6354\", \"name\": \"sum\"}, {\"id\": \"76cc90c0-9770-11e9-b3d5-07b0ab7d6354\", \"field\": \"4346d3b0-976f-11e9-b3d5-07b0ab7d6354\", \"name\": \"count\"}]}], \"terms_field\": \"service.address\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Log commit latency [Metricbeat CockroachDB]\", \"type\": \"metrics\"}"
+            },
+            "id": "74cf44b0-9771-11e9-9eea-6f554992ec1f",
+            "migrationVersion": {
+                "visualization": "7.0.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-06-25T19:08:05.279Z",
+            "version": "WzQ5LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Command commit latency [Metricbeat CockroachDB]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"params\": {\"show_legend\": 1, \"time_field\": \"@timestamp\", \"default_index_pattern\": \"metricbeat-*\", \"type\": \"timeseries\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"show_grid\": 1, \"axis_scale\": \"normal\", \"index_pattern\": \"\", \"axis_position\": \"left\", \"series\": [{\"value_template\": \"{{value}}ms\", \"label\": \"Average command commit latency\", \"split_color_mode\": \"rainbow\", \"split_mode\": \"terms\", \"separate_axis\": 0, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"filter\": \"\", \"axis_position\": \"right\", \"color\": \"rgba(104,188,0,1)\", \"formatter\": \"ns,ms,2\", \"line_width\": 1, \"metrics\": [{\"size\": 1, \"agg_with\": \"avg\", \"type\": \"max\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"field\": \"prometheus.metrics.raft_process_commandcommit_latency_count\", \"order\": \"desc\"}, {\"type\": \"derivative\", \"id\": \"4346d3b0-976f-11e9-b3d5-07b0ab7d6354\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"unit\": \"\"}, {\"type\": \"max\", \"id\": \"4a430120-976f-11e9-b3d5-07b0ab7d6354\", \"field\": \"prometheus.metrics.raft_process_commandcommit_latency_sum\", \"unit\": \"\"}, {\"type\": \"derivative\", \"id\": \"581519e0-9770-11e9-b3d5-07b0ab7d6354\", \"field\": \"4a430120-976f-11e9-b3d5-07b0ab7d6354\", \"unit\": \"\"}, {\"script\": \"params.sum / params.count\", \"type\": \"calculation\", \"id\": \"6574b730-9770-11e9-b3d5-07b0ab7d6354\", \"variables\": [{\"id\": \"6fbb54b0-9770-11e9-b3d5-07b0ab7d6354\", \"field\": \"581519e0-9770-11e9-b3d5-07b0ab7d6354\", \"name\": \"sum\"}, {\"id\": \"76cc90c0-9770-11e9-b3d5-07b0ab7d6354\", \"field\": \"4346d3b0-976f-11e9-b3d5-07b0ab7d6354\", \"name\": \"count\"}]}], \"terms_field\": \"service.address\", \"chart_type\": \"line\", \"stacked\": \"none\", \"fill\": 0.5, \"point_size\": 1}], \"interval\": \"auto\"}, \"title\": \"Command commit latency [Metricbeat CockroachDB]\", \"type\": \"metrics\"}"
+            },
+            "id": "b5ab45b0-9771-11e9-9eea-6f554992ec1f",
+            "migrationVersion": {
+                "visualization": "7.0.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-06-25T19:08:47.407Z",
+            "version": "WzUwLDFd"
+        }
+    ],
+    "version": "7.1.0"
+}

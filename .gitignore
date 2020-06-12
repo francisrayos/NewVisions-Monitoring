@@ -35,4 +35,4 @@ statsd-master/package-lock.json
 statsd-master/package.json
 
 # Update
-metricbeat
+metricbeat/metricbeat

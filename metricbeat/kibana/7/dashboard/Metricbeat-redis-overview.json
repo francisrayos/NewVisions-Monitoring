@@ -1,0 +1,191 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "Metricbeat-Redis-ecs",
+                "title": "Clients [Metricbeat Redis] ECS",
+                "uiStateJSON": "{\"vis\": {\"defaultColors\": {\"0 - 100\": \"rgb(0,104,55)\"}}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"id\": \"1\", \"params\": {\"field\": \"redis.info.clients.connected\", \"customLabel\": \"Connected clients\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}], \"params\": {\"fontSize\": 60, \"handleNoResults\": true, \"addTooltip\": true, \"type\": \"gauge\", \"gauge\": {\"style\": {\"fontSize\": 60, \"labelColor\": false, \"subText\": \"\", \"bgColor\": false}, \"gaugeStyle\": \"Full\", \"invertColors\": false, \"autoExtend\": false, \"type\": \"simple\", \"gaugeColorMode\": \"None\", \"colorSchema\": \"Green to Red\", \"labels\": {\"show\": true, \"color\": \"black\"}, \"backStyle\": \"Full\", \"verticalSplit\": false, \"colorsRange\": [{\"from\": 0, \"to\": 100}], \"scale\": {\"width\": 2, \"show\": false, \"color\": \"#333\", \"labels\": false}, \"percentageMode\": false, \"useRange\": false, \"orientation\": \"vertical\", \"gaugeType\": \"Metric\"}, \"addLegend\": false}, \"type\": \"metric\", \"title\": \"Clients [Metricbeat Redis] ECS\", \"listeners\": {}}"
+            },
+            "col": 1,
+            "id": "Redis-Clients-Metrics-ecs",
+            "panelIndex": 2,
+            "row": 1,
+            "size_x": 3,
+            "size_y": 3,
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "Metricbeat-Redis-ecs",
+                "title": "Connected clients [Metricbeat Redis] ECS",
+                "uiStateJSON": "{\"vis\": {\"colors\": {\"Blocked\": \"#C15C17\"}}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"id\": \"1\", \"params\": {\"field\": \"redis.info.clients.connected\", \"customLabel\": \"Connected\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}, {\"id\": \"2\", \"params\": {\"extended_bounds\": {}, \"min_doc_count\": 1, \"customInterval\": \"2h\", \"field\": \"@timestamp\", \"interval\": \"auto\"}, \"enabled\": true, \"schema\": \"segment\", \"type\": \"date_histogram\"}, {\"id\": \"3\", \"params\": {\"field\": \"redis.info.clients.blocked\", \"customLabel\": \"Blocked\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}], \"params\": {\"shareYAxis\": true, \"mode\": \"grouped\", \"addLegend\": true, \"seriesParams\": [{\"valueAxis\": \"ValueAxis-1\", \"show\": \"true\", \"mode\": \"stacked\", \"drawLinesBetweenPoints\": true, \"data\": {\"id\": \"1\", \"label\": \"Count\"}, \"showCircles\": true, \"type\": \"histogram\"}], \"times\": [], \"legendPosition\": \"right\", \"defaultYExtents\": false, \"scale\": \"linear\", \"addTooltip\": true, \"categoryAxes\": [{\"style\": {}, \"show\": true, \"position\": \"bottom\", \"title\": {}, \"type\": \"category\", \"scale\": {\"type\": \"linear\"}, \"id\": \"CategoryAxis-1\", \"labels\": {\"truncate\": 100, \"show\": true}}], \"valueAxes\": [{\"style\": {}, \"show\": true, \"position\": \"left\", \"title\": {\"text\": \"Count\"}, \"name\": \"LeftAxis-1\", \"type\": \"value\", \"scale\": {\"mode\": \"normal\", \"type\": \"linear\"}, \"id\": \"ValueAxis-1\", \"labels\": {\"rotate\": 0, \"truncate\": 100, \"show\": true, \"filter\": false}}], \"setYExtents\": false, \"addTimeMarker\": false, \"grid\": {\"categoryLines\": false, \"style\": {\"color\": \"#eee\"}}, \"yAxis\": {}}, \"type\": \"histogram\", \"title\": \"Connected clients [Metricbeat Redis] ECS\", \"listeners\": {}}"
+            },
+            "col": 4,
+            "id": "Redis-Connected-clients-ecs",
+            "panelIndex": 1,
+            "row": 1,
+            "size_x": 5,
+            "size_y": 3,
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "Metricbeat-Redis-ecs",
+                "title": "Hosts [Metricbeat Redis] ECS",
+                "uiStateJSON": "{\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"id\": \"2\", \"params\": {\"size\": 5, \"orderBy\": \"1\", \"field\": \"service.address\", \"order\": \"desc\"}, \"enabled\": true, \"schema\": \"bucket\", \"type\": \"terms\"}, {\"id\": \"3\", \"params\": {\"field\": \"redis.info.server.uptime\", \"customLabel\": \"Uptime (s)\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}, {\"id\": \"6\", \"params\": {\"field\": \"process.pid\", \"customLabel\": \"PID\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}, {\"id\": \"1\", \"params\": {\"field\": \"redis.info.memory.used.peak\", \"customLabel\": \"Memory\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}, {\"id\": \"4\", \"params\": {\"field\": \"redis.info.cpu.used.user\", \"customLabel\": \"CPU used (user)\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}, {\"id\": \"5\", \"params\": {\"field\": \"redis.info.cpu.used.sys\", \"customLabel\": \"CPU used (system)\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}], \"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}, \"perPage\": 10, \"totalFunc\": \"sum\", \"showPartialRows\": false, \"showMeticsAtAllLevels\": false, \"showTotal\": false}, \"type\": \"table\", \"title\": \"Hosts [Metricbeat Redis] ECS\", \"listeners\": {}}"
+            },
+            "col": 1,
+            "id": "Redis-hosts-ecs",
+            "panelIndex": 3,
+            "row": 4,
+            "size_x": 12,
+            "size_y": 2,
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "Metricbeat-Redis-ecs",
+                "title": "Server Versions [Metricbeat Redis] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"id\": \"1\", \"params\": {\"field\": \"service.address\", \"customLabel\": \"Hosts\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"cardinality\"}, {\"id\": \"2\", \"params\": {\"size\": 5, \"orderBy\": \"1\", \"field\": \"service.version\", \"customLabel\": \"Multiplexing API\", \"order\": \"desc\"}, \"enabled\": true, \"schema\": \"segment\", \"type\": \"terms\"}], \"params\": {\"legendPosition\": \"right\", \"addLegend\": true, \"isDonut\": false, \"addTooltip\": true, \"shareYAxis\": true}, \"type\": \"pie\", \"title\": \"Server Versions [Metricbeat Redis] ECS\", \"listeners\": {}}"
+            },
+            "col": 1,
+            "id": "Redis-Server-Versions-ecs",
+            "panelIndex": 4,
+            "row": 6,
+            "size_x": 4,
+            "size_y": 2,
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "Metricbeat-Redis-ecs",
+                "title": "Server mode [Metricbeat Redis] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"id\": \"1\", \"params\": {\"field\": \"service.address\", \"customLabel\": \"Hosts\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"cardinality\"}, {\"id\": \"2\", \"params\": {\"size\": 5, \"orderBy\": \"1\", \"field\": \"redis.info.server.mode\", \"customLabel\": \"Server mode\", \"order\": \"desc\"}, \"enabled\": true, \"schema\": \"segment\", \"type\": \"terms\"}], \"params\": {\"legendPosition\": \"right\", \"addLegend\": true, \"isDonut\": false, \"addTooltip\": true, \"shareYAxis\": true}, \"type\": \"pie\", \"title\": \"Server mode [Metricbeat Redis] ECS\", \"listeners\": {}}"
+            },
+            "col": 5,
+            "id": "Redis-server-mode-ecs",
+            "panelIndex": 5,
+            "row": 6,
+            "size_x": 4,
+            "size_y": 2,
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "Metricbeat-Redis-ecs",
+                "title": "Multiplexing API [Metricbeat Redis] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"id\": \"1\", \"params\": {\"field\": \"service.address\", \"customLabel\": \"Hosts\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"cardinality\"}, {\"id\": \"2\", \"params\": {\"size\": 5, \"orderBy\": \"1\", \"field\": \"redis.info.server.multiplexing_api\", \"customLabel\": \"Multiplexing API\", \"order\": \"desc\"}, \"enabled\": true, \"schema\": \"segment\", \"type\": \"terms\"}], \"params\": {\"legendPosition\": \"right\", \"addLegend\": true, \"isDonut\": false, \"addTooltip\": true, \"shareYAxis\": true}, \"type\": \"pie\", \"title\": \"Multiplexing API [Metricbeat Redis] ECS\", \"listeners\": {}}"
+            },
+            "col": 9,
+            "id": "Redis-multiplexing-API-ecs",
+            "panelIndex": 6,
+            "row": 6,
+            "size_x": 3,
+            "size_y": 2,
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "Metricbeat-Redis-ecs",
+                "title": "Keyspaces [Metricbeat Redis] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"id\": \"1\", \"params\": {\"field\": \"redis.keyspace.keys\", \"customLabel\": \"Number of keys\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"avg\"}, {\"id\": \"2\", \"params\": {\"extended_bounds\": {}, \"min_doc_count\": 1, \"customInterval\": \"2h\", \"field\": \"@timestamp\", \"interval\": \"auto\"}, \"enabled\": true, \"schema\": \"segment\", \"type\": \"date_histogram\"}, {\"id\": \"3\", \"params\": {\"size\": 5, \"orderBy\": \"1\", \"field\": \"redis.keyspace.id\", \"customLabel\": \"Keyspaces\", \"order\": \"desc\"}, \"enabled\": true, \"schema\": \"group\", \"type\": \"terms\"}], \"params\": {\"interpolate\": \"linear\", \"shareYAxis\": true, \"mode\": \"stacked\", \"addLegend\": true, \"defaultYExtents\": false, \"times\": [], \"legendPosition\": \"right\", \"seriesParams\": [{\"valueAxis\": \"ValueAxis-1\", \"interpolate\": \"linear\", \"show\": \"true\", \"mode\": \"stacked\", \"drawLinesBetweenPoints\": true, \"data\": {\"id\": \"1\", \"label\": \"Count\"}, \"showCircles\": true, \"type\": \"area\"}], \"scale\": \"linear\", \"addTooltip\": true, \"smoothLines\": false, \"categoryAxes\": [{\"style\": {}, \"show\": true, \"position\": \"bottom\", \"title\": {}, \"type\": \"category\", \"scale\": {\"type\": \"linear\"}, \"id\": \"CategoryAxis-1\", \"labels\": {\"truncate\": 100, \"show\": true}}], \"valueAxes\": [{\"style\": {}, \"show\": true, \"position\": \"left\", \"title\": {\"text\": \"Count\"}, \"name\": \"LeftAxis-1\", \"type\": \"value\", \"scale\": {\"mode\": \"normal\", \"type\": \"linear\"}, \"id\": \"ValueAxis-1\", \"labels\": {\"rotate\": 0, \"truncate\": 100, \"show\": true, \"filter\": false}}], \"setYExtents\": false, \"addTimeMarker\": false, \"grid\": {\"categoryLines\": false, \"style\": {\"color\": \"#eee\"}}, \"yAxis\": {}}, \"type\": \"area\", \"title\": \"Keyspaces [Metricbeat Redis] ECS\", \"listeners\": {}}"
+            },
+            "col": 9,
+            "id": "Redis-Keyspaces-ecs",
+            "panelIndex": 7,
+            "row": 1,
+            "size_x": 4,
+            "size_y": 3,
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "columns": [
+                    "_source"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"event.module:redis\"}, \"filter\": [], \"index\": \"metricbeat-*\", \"highlight\": {\"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"fragment_size\": 2147483647, \"fields\": {\"*\": {}}, \"require_field_match\": false}}"
+                },
+                "sort": [
+                    "@timestamp",
+                    "desc"
+                ],
+                "title": "Metricbeat Redis ECS",
+                "version": 1
+            },
+            "id": "Metricbeat-Redis-ecs",
+            "type": "search",
+            "version": 7
+        },
+        {
+            "attributes": {
+                "description": "Overview of Redis server metrics",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"version\": true, \"highlightAll\": true, \"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"darkTheme\": false}",
+                "panelsJSON": "[{\"row\": 1, \"col\": 1, \"size_y\": 3, \"type\": \"visualization\", \"id\": \"Redis-Clients-Metrics-ecs\", \"panelIndex\": 2, \"size_x\": 3}, {\"row\": 1, \"col\": 4, \"size_y\": 3, \"type\": \"visualization\", \"id\": \"Redis-Connected-clients-ecs\", \"panelIndex\": 1, \"size_x\": 5}, {\"row\": 4, \"col\": 1, \"size_y\": 2, \"type\": \"visualization\", \"id\": \"Redis-hosts-ecs\", \"panelIndex\": 3, \"size_x\": 12}, {\"row\": 6, \"col\": 1, \"size_y\": 2, \"type\": \"visualization\", \"id\": \"Redis-Server-Versions-ecs\", \"panelIndex\": 4, \"size_x\": 4}, {\"row\": 6, \"col\": 5, \"size_y\": 2, \"type\": \"visualization\", \"id\": \"Redis-server-mode-ecs\", \"panelIndex\": 5, \"size_x\": 4}, {\"row\": 6, \"col\": 9, \"size_y\": 2, \"type\": \"visualization\", \"id\": \"Redis-multiplexing-API-ecs\", \"panelIndex\": 6, \"size_x\": 3}, {\"row\": 1, \"col\": 9, \"size_y\": 3, \"type\": \"visualization\", \"id\": \"Redis-Keyspaces-ecs\", \"panelIndex\": 7, \"size_x\": 4}]",
+                "timeRestore": false,
+                "title": "[Metricbeat Redis] Overview ECS",
+                "uiStateJSON": "{\"P-3\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}, \"P-4\": {\"vis\": {\"legendOpen\": true}}, \"P-2\": {\"vis\": {\"defaultColors\": {\"0 - 100\": \"rgb(0,104,55)\"}}}}",
+                "version": 1
+            },
+            "id": "AV4YjZ5pux-M-tCAunxK-ecs",
+            "type": "dashboard",
+            "version": 1
+        }
+    ],
+    "version": "5.6.0-SNAPSHOT"
+}

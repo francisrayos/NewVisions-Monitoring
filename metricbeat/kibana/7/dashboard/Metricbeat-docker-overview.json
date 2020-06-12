@@ -1,0 +1,188 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "Metricbeat-Docker-ecs",
+                "title": "Docker containers [Metricbeat Docker] ECS",
+                "uiStateJSON": "{\"vis\": {\"params\": {\"sort\": {\"columnIndex\": 1, \"direction\": \"asc\"}}}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"id\": \"2\", \"params\": {\"size\": 5, \"orderBy\": \"1\", \"field\": \"container.name\", \"customLabel\": \"Name\", \"order\": \"desc\"}, \"enabled\": true, \"schema\": \"bucket\", \"type\": \"terms\"}, {\"id\": \"3\", \"params\": {\"field\": \"docker.cpu.total.pct\", \"customLabel\": \"CPU usage (%)\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}, {\"id\": \"4\", \"params\": {\"field\": \"docker.diskio.total\", \"customLabel\": \"DiskIO\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}, {\"id\": \"5\", \"params\": {\"field\": \"docker.memory.usage.pct\", \"customLabel\": \"Mem (%)\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}, {\"id\": \"6\", \"params\": {\"field\": \"docker.memory.rss.total\", \"customLabel\": \"Mem RSS\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}, {\"id\": \"1\", \"params\": {\"field\": \"container.id\", \"customLabel\": \"Number of Containers\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"cardinality\"}], \"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}, \"perPage\": 8, \"totalFunc\": \"sum\", \"showPartialRows\": false, \"showMeticsAtAllLevels\": false, \"showTotal\": true}, \"type\": \"table\", \"title\": \"Docker containers [Metricbeat Docker] ECS\", \"listeners\": {}}"
+            },
+            "col": 1,
+            "id": "Docker-containers-ecs",
+            "panelIndex": 1,
+            "row": 1,
+            "size_x": 7,
+            "size_y": 5,
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "Metricbeat-Docker-ecs",
+                "title": "Number of Containers [Metricbeat Docker] ECS",
+                "uiStateJSON": "{\"vis\": {\"defaultColors\": {\"0 - 100\": \"rgb(0,104,55)\"}}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"id\": \"2\", \"params\": {\"field\": \"docker.info.containers.running\", \"customLabel\": \"Running\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}, {\"id\": \"3\", \"params\": {\"field\": \"docker.info.containers.paused\", \"customLabel\": \"Paused\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}, {\"id\": \"4\", \"params\": {\"field\": \"docker.info.containers.stopped\", \"customLabel\": \"Stopped\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}], \"params\": {\"fontSize\": \"36\", \"handleNoResults\": true, \"addTooltip\": true, \"type\": \"gauge\", \"gauge\": {\"style\": {\"fontSize\": 60, \"labelColor\": false, \"subText\": \"\", \"bgColor\": false}, \"gaugeStyle\": \"Full\", \"invertColors\": false, \"autoExtend\": false, \"type\": \"simple\", \"gaugeColorMode\": \"None\", \"colorSchema\": \"Green to Red\", \"labels\": {\"show\": true, \"color\": \"black\"}, \"backStyle\": \"Full\", \"verticalSplit\": false, \"colorsRange\": [{\"from\": 0, \"to\": 100}], \"scale\": {\"width\": 2, \"show\": false, \"color\": \"#333\", \"labels\": false}, \"percentageMode\": false, \"useRange\": false, \"orientation\": \"vertical\", \"gaugeType\": \"Metric\"}, \"addLegend\": false}, \"type\": \"metric\", \"title\": \"Number of Containers [Metricbeat Docker] ECS\", \"listeners\": {}}"
+            },
+            "col": 8,
+            "id": "Docker-Number-of-Containers-ecs",
+            "panelIndex": 2,
+            "row": 1,
+            "size_x": 5,
+            "size_y": 2,
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "Metricbeat-Docker-ecs",
+                "title": "Docker containers per host [Metricbeat Docker] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"id\": \"1\", \"params\": {\"field\": \"container.id\", \"customLabel\": \"Number of containers\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"cardinality\"}, {\"id\": \"2\", \"params\": {\"size\": 5, \"orderBy\": \"1\", \"field\": \"agent.hostname\", \"customLabel\": \"Hosts\", \"order\": \"desc\"}, \"enabled\": true, \"schema\": \"segment\", \"type\": \"terms\"}], \"params\": {\"legendPosition\": \"bottom\", \"addLegend\": true, \"isDonut\": true, \"addTooltip\": true, \"shareYAxis\": true}, \"type\": \"pie\", \"title\": \"Docker containers per host [Metricbeat Docker] ECS\", \"listeners\": {}}"
+            },
+            "col": 8,
+            "id": "Docker-containers-per-host-ecs",
+            "panelIndex": 3,
+            "row": 3,
+            "size_x": 2,
+            "size_y": 3,
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "Metricbeat-Docker-ecs",
+                "title": "Docker images and names [Metricbeat Docker] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"id\": \"1\", \"params\": {}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"count\"}, {\"id\": \"2\", \"params\": {\"size\": 5, \"orderBy\": \"1\", \"field\": \"container.image.name\", \"order\": \"desc\"}, \"enabled\": true, \"schema\": \"segment\", \"type\": \"terms\"}, {\"id\": \"3\", \"params\": {\"size\": 5, \"orderBy\": \"1\", \"field\": \"container.name\", \"order\": \"desc\"}, \"enabled\": true, \"schema\": \"segment\", \"type\": \"terms\"}], \"params\": {\"legendPosition\": \"bottom\", \"addLegend\": true, \"isDonut\": true, \"addTooltip\": true, \"shareYAxis\": true}, \"type\": \"pie\", \"title\": \"Docker images and names [Metricbeat Docker] ECS\", \"listeners\": {}}"
+            },
+            "col": 10,
+            "id": "Docker-images-and-names-ecs",
+            "panelIndex": 7,
+            "row": 3,
+            "size_x": 3,
+            "size_y": 3,
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"event.module:docker AND metricset.name:cpu\"}, \"filter\": [], \"index\": \"metricbeat-*\", \"highlight\": {\"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"fragment_size\": 2147483647, \"fields\": {\"*\": {}}, \"require_field_match\": false}}"
+                },
+                "title": "CPU usage [Metricbeat Docker] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"id\": \"1\", \"params\": {\"percents\": [75], \"field\": \"docker.cpu.total.pct\", \"customLabel\": \"Total CPU time\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"percentiles\"}, {\"id\": \"2\", \"params\": {\"extended_bounds\": {}, \"min_doc_count\": 1, \"customInterval\": \"2h\", \"field\": \"@timestamp\", \"interval\": \"auto\"}, \"enabled\": true, \"schema\": \"segment\", \"type\": \"date_histogram\"}, {\"id\": \"3\", \"params\": {\"size\": 5, \"orderBy\": \"1.75\", \"field\": \"container.name\", \"customLabel\": \"Container name\", \"order\": \"desc\"}, \"enabled\": true, \"schema\": \"group\", \"type\": \"terms\"}], \"params\": {\"interpolate\": \"linear\", \"shareYAxis\": true, \"mode\": \"stacked\", \"addLegend\": true, \"defaultYExtents\": false, \"times\": [], \"legendPosition\": \"top\", \"seriesParams\": [{\"valueAxis\": \"ValueAxis-1\", \"interpolate\": \"linear\", \"show\": \"true\", \"mode\": \"stacked\", \"drawLinesBetweenPoints\": true, \"data\": {\"id\": \"1\", \"label\": \"Count\"}, \"showCircles\": true, \"type\": \"area\"}], \"scale\": \"linear\", \"addTooltip\": true, \"smoothLines\": true, \"categoryAxes\": [{\"style\": {}, \"show\": true, \"position\": \"bottom\", \"title\": {}, \"type\": \"category\", \"scale\": {\"type\": \"linear\"}, \"id\": \"CategoryAxis-1\", \"labels\": {\"truncate\": 100, \"show\": true}}], \"valueAxes\": [{\"style\": {}, \"show\": true, \"position\": \"left\", \"title\": {\"text\": \"Count\"}, \"name\": \"LeftAxis-1\", \"type\": \"value\", \"scale\": {\"mode\": \"normal\", \"type\": \"linear\"}, \"id\": \"ValueAxis-1\", \"labels\": {\"rotate\": 0, \"truncate\": 100, \"show\": true, \"filter\": false}}], \"setYExtents\": false, \"addTimeMarker\": false, \"grid\": {\"categoryLines\": false, \"style\": {\"color\": \"#eee\"}}, \"yAxis\": {}}, \"type\": \"area\", \"title\": \"CPU usage [Metricbeat Docker] ECS\", \"listeners\": {}}"
+            },
+            "col": 1,
+            "id": "Docker-CPU-usage-ecs",
+            "panelIndex": 4,
+            "row": 6,
+            "size_x": 6,
+            "size_y": 3,
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"event.module:docker AND metricset.name:memory\"}, \"filter\": [], \"index\": \"metricbeat-*\", \"highlight\": {\"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"fragment_size\": 2147483647, \"fields\": {\"*\": {}}, \"require_field_match\": false}}"
+                },
+                "title": "Memory usage [Metricbeat Docker] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"id\": \"1\", \"params\": {\"field\": \"docker.memory.usage.total\", \"customLabel\": \"Memory\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}, {\"id\": \"2\", \"params\": {\"extended_bounds\": {}, \"min_doc_count\": 1, \"customInterval\": \"2h\", \"field\": \"@timestamp\", \"interval\": \"auto\"}, \"enabled\": true, \"schema\": \"segment\", \"type\": \"date_histogram\"}, {\"id\": \"3\", \"params\": {\"size\": 5, \"orderBy\": \"1\", \"field\": \"container.name\", \"customLabel\": \"Container name\", \"order\": \"desc\"}, \"enabled\": true, \"schema\": \"group\", \"type\": \"terms\"}], \"params\": {\"interpolate\": \"linear\", \"shareYAxis\": true, \"mode\": \"stacked\", \"addLegend\": true, \"defaultYExtents\": false, \"times\": [], \"legendPosition\": \"top\", \"seriesParams\": [{\"valueAxis\": \"ValueAxis-1\", \"interpolate\": \"linear\", \"show\": \"true\", \"mode\": \"stacked\", \"drawLinesBetweenPoints\": true, \"data\": {\"id\": \"1\", \"label\": \"Count\"}, \"showCircles\": true, \"type\": \"area\"}], \"scale\": \"linear\", \"addTooltip\": true, \"smoothLines\": false, \"categoryAxes\": [{\"style\": {}, \"show\": true, \"position\": \"bottom\", \"title\": {}, \"type\": \"category\", \"scale\": {\"type\": \"linear\"}, \"id\": \"CategoryAxis-1\", \"labels\": {\"truncate\": 100, \"show\": true}}], \"valueAxes\": [{\"style\": {}, \"show\": true, \"position\": \"left\", \"title\": {\"text\": \"Count\"}, \"name\": \"LeftAxis-1\", \"type\": \"value\", \"scale\": {\"mode\": \"normal\", \"type\": \"linear\"}, \"id\": \"ValueAxis-1\", \"labels\": {\"rotate\": 0, \"truncate\": 100, \"show\": true, \"filter\": false}}], \"setYExtents\": false, \"addTimeMarker\": false, \"grid\": {\"categoryLines\": false, \"style\": {\"color\": \"#eee\"}}, \"yAxis\": {}}, \"type\": \"area\", \"title\": \"Memory usage [Metricbeat Docker] ECS\", \"listeners\": {}}"
+            },
+            "col": 7,
+            "id": "Docker-memory-usage-ecs",
+            "panelIndex": 5,
+            "row": 6,
+            "size_x": 6,
+            "size_y": 3,
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"event.module:docker AND metricset.name:network\"}, \"filter\": [], \"index\": \"metricbeat-*\", \"highlight\": {\"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"fragment_size\": 2147483647, \"fields\": {\"*\": {}}, \"require_field_match\": false}}"
+                },
+                "title": "Network IO [Metricbeat Docker] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"id\": \"1\", \"params\": {\"field\": \"docker.network.in.bytes\", \"customLabel\": \"IN bytes\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}, {\"id\": \"2\", \"params\": {\"extended_bounds\": {}, \"min_doc_count\": 1, \"customInterval\": \"2h\", \"field\": \"@timestamp\", \"interval\": \"auto\"}, \"enabled\": true, \"schema\": \"segment\", \"type\": \"date_histogram\"}, {\"id\": \"3\", \"params\": {\"size\": 5, \"orderBy\": \"1\", \"field\": \"container.name\", \"customLabel\": \"Container name\", \"order\": \"desc\"}, \"enabled\": true, \"schema\": \"group\", \"type\": \"terms\"}, {\"id\": \"4\", \"params\": {\"field\": \"docker.network.out.bytes\", \"customLabel\": \"OUT bytes\"}, \"enabled\": true, \"schema\": \"metric\", \"type\": \"max\"}], \"params\": {\"interpolate\": \"linear\", \"shareYAxis\": true, \"mode\": \"stacked\", \"addLegend\": true, \"defaultYExtents\": false, \"times\": [], \"legendPosition\": \"top\", \"seriesParams\": [{\"valueAxis\": \"ValueAxis-1\", \"interpolate\": \"linear\", \"show\": \"true\", \"mode\": \"stacked\", \"drawLinesBetweenPoints\": true, \"data\": {\"id\": \"1\", \"label\": \"Count\"}, \"showCircles\": true, \"type\": \"area\"}], \"scale\": \"linear\", \"addTooltip\": true, \"smoothLines\": true, \"categoryAxes\": [{\"style\": {}, \"show\": true, \"position\": \"bottom\", \"title\": {}, \"type\": \"category\", \"scale\": {\"type\": \"linear\"}, \"id\": \"CategoryAxis-1\", \"labels\": {\"truncate\": 100, \"show\": true}}], \"valueAxes\": [{\"style\": {}, \"show\": true, \"position\": \"left\", \"title\": {\"text\": \"Count\"}, \"name\": \"LeftAxis-1\", \"type\": \"value\", \"scale\": {\"mode\": \"normal\", \"type\": \"linear\"}, \"id\": \"ValueAxis-1\", \"labels\": {\"rotate\": 0, \"truncate\": 100, \"show\": true, \"filter\": false}}], \"setYExtents\": false, \"addTimeMarker\": false, \"grid\": {\"categoryLines\": false, \"style\": {\"color\": \"#eee\"}}, \"yAxis\": {}}, \"type\": \"area\", \"title\": \"Network IO [Metricbeat Docker] ECS\", \"listeners\": {}}"
+            },
+            "col": 1,
+            "id": "Docker-Network-IO-ecs",
+            "panelIndex": 6,
+            "row": 9,
+            "size_x": 12,
+            "size_y": 3,
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "columns": [
+                    "_source"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"event.module:docker\"}, \"filter\": [], \"index\": \"metricbeat-*\", \"highlight\": {\"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"fragment_size\": 2147483647, \"fields\": {\"*\": {}}, \"require_field_match\": false}}"
+                },
+                "sort": [
+                    "@timestamp",
+                    "desc"
+                ],
+                "title": "Metricbeat Docker ECS",
+                "version": 1
+            },
+            "id": "Metricbeat-Docker-ecs",
+            "type": "search",
+            "version": 4
+        },
+        {
+            "attributes": {
+                "description": "Overview of docker containers",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"version\": true, \"highlightAll\": true, \"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"darkTheme\": false}",
+                "panelsJSON": "[{\"row\": 1, \"col\": 1, \"size_y\": 5, \"type\": \"visualization\", \"id\": \"Docker-containers-ecs\", \"panelIndex\": 1, \"size_x\": 7}, {\"row\": 1, \"col\": 8, \"size_y\": 2, \"type\": \"visualization\", \"id\": \"Docker-Number-of-Containers-ecs\", \"panelIndex\": 2, \"size_x\": 5}, {\"row\": 3, \"col\": 8, \"size_y\": 3, \"type\": \"visualization\", \"id\": \"Docker-containers-per-host-ecs\", \"panelIndex\": 3, \"size_x\": 2}, {\"row\": 3, \"col\": 10, \"size_y\": 3, \"type\": \"visualization\", \"id\": \"Docker-images-and-names-ecs\", \"panelIndex\": 7, \"size_x\": 3}, {\"row\": 6, \"col\": 1, \"size_y\": 3, \"type\": \"visualization\", \"id\": \"Docker-CPU-usage-ecs\", \"panelIndex\": 4, \"size_x\": 6}, {\"row\": 6, \"col\": 7, \"size_y\": 3, \"type\": \"visualization\", \"id\": \"Docker-memory-usage-ecs\", \"panelIndex\": 5, \"size_x\": 6}, {\"row\": 9, \"col\": 1, \"size_y\": 3, \"type\": \"visualization\", \"id\": \"Docker-Network-IO-ecs\", \"panelIndex\": 6, \"size_x\": 12}]",
+                "timeRestore": false,
+                "title": "[Metricbeat Docker] Overview ECS",
+                "uiStateJSON": "{\"P-7\": {\"vis\": {\"legendOpen\": true}}, \"P-3\": {\"vis\": {\"legendOpen\": true}}, \"P-5\": {\"vis\": {\"legendOpen\": true}}, \"P-1\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": 1, \"direction\": \"asc\"}}}}, \"P-2\": {\"vis\": {\"defaultColors\": {\"0 - 100\": \"rgb(0,104,55)\"}}}}",
+                "version": 1
+            },
+            "id": "AV4REOpp5NkDleZmzKkE-ecs",
+            "type": "dashboard",
+            "version": 3
+        }
+    ],
+    "version": "5.6.0-SNAPSHOT"
+}
