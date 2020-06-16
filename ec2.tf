@@ -114,8 +114,10 @@ resource "aws_iam_role_policy" "metricbeat_iam_policy" {
             "Action": [
               "ec2:DescribeRegions",
               "ec2:DescribeInstances",
+              "ec2:DescribeTags",
               "cloudwatch:ListMetrics",
               "cloudwatch:GetMetricData",
+              "cloudwatch:GetMetricStatistics",
               "iam:ListAccountAliases", 
               "sts:GetCallerIdentity"
             ],
@@ -156,35 +158,35 @@ resource "aws_iam_instance_profile" "metricbeat_profile" {
 }
 
 # Create the Instance
-resource "aws_instance" "airflow_instance" {
-  ami                    = "${var.airflow_instance_ami}"
-  instance_type          = "${var.airflow_instance_type}"
+# resource "aws_instance" "airflow_instance" {
+#   ami                    = "${var.airflow_instance_ami}"
+#   instance_type          = "${var.airflow_instance_type}"
 
-  # VPC Subnet
-  subnet_id              = "${aws_subnet.redshift_subnet_1.id}"
+#   # VPC Subnet
+#   subnet_id              = "${aws_subnet.redshift_subnet_1.id}"
 
-  # Security Group
-  vpc_security_group_ids = ["${aws_security_group.allow-ssh.id}"]
+#   # Security Group
+#   vpc_security_group_ids = ["${aws_security_group.allow-ssh.id}"]
 
-  # Public SSH Key
-  key_name               = "${aws_key_pair.airflow-key.key_name}"
+#   # Public SSH Key
+#   key_name               = "${aws_key_pair.airflow-key.key_name}"
 
-  # IAM Instance Profile
-  iam_instance_profile   = "${aws_iam_instance_profile.metricbeat_profile.name}"
+#   # IAM Instance Profile
+#   iam_instance_profile   = "${aws_iam_instance_profile.metricbeat_profile.name}"
 
-  # Enable detailed monitoring
-  monitoring             = true
+#   # Enable detailed monitoring
+#   monitoring             = true
 
-  tags = {
-    Name = "airflow-instance"
-  }
+#   tags = {
+#     Name = "airflow-instance"
+#   }
 
-  depends_on = [
-    "aws_subnet.redshift_subnet_1",
-    "aws_security_group.allow-ssh",
-    "aws_key_pair.airflow-key",
-  ]
-}
+#   depends_on = [
+#     "aws_subnet.redshift_subnet_1",
+#     "aws_security_group.allow-ssh",
+#     "aws_key_pair.airflow-key",
+#   ]
+# }
 
 resource "aws_instance" "rstudio_instance" {
   ami                    = "${var.rstudio_instance_ami}"
