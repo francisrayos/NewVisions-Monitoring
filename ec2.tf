@@ -117,6 +117,7 @@ resource "aws_iam_role_policy" "metricbeat_iam_policy" {
               "ec2:DescribeTags",
               "cloudwatch:ListMetrics",
               "cloudwatch:GetMetricData",
+              "cloudwatch:PutMetricData",
               "cloudwatch:GetMetricStatistics",
               "iam:ListAccountAliases", 
               "sts:GetCallerIdentity"
@@ -152,41 +153,105 @@ resource "aws_iam_role" "metricbeat_iam_role" {
   }
 }
 
+resource "aws_iam_role_policy" "cloudwatch_agent_server_role_policy" {
+  name = "cloudwatch_agent_server_role_policy"
+  role = "${aws_iam_role.cloudwatch_agent_server_role.id}"
+
+  policy = <<-EOF
+  {
+      "Version": "2012-10-17",
+      "Statement": [
+          {
+              "Effect": "Allow",
+              "Action": [
+                  "cloudwatch:PutMetricData",
+                  "ec2:DescribeVolumes",
+                  "ec2:DescribeTags",
+                  "logs:PutLogEvents",
+                  "logs:DescribeLogStreams",
+                  "logs:DescribeLogGroups",
+                  "logs:CreateLogStream",
+                  "logs:CreateLogGroup"
+              ],
+              "Resource": "*"
+          },
+          {
+              "Effect": "Allow",
+              "Action": [
+                  "ssm:GetParameter"
+              ],
+              "Resource": "arn:aws:ssm:*:*:parameter/AmazonCloudWatch-*"
+          }
+      ]
+  }
+  EOF
+}
+
+resource "aws_iam_role" "cloudwatch_agent_server_role" {
+  name = "cloudwatch_agent_server_role"
+
+  assume_role_policy = <<-EOF
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Action": "sts:AssumeRole",
+        "Principal": {
+          "Service": "ec2.amazonaws.com"
+        },
+        "Effect": "Allow",
+        "Sid": ""
+      }
+    ]
+  }
+  EOF
+
+  tags = {
+    Name = "cloudwatch_agent_server_role"
+  }
+}
+
+# Instance Profiles
 resource "aws_iam_instance_profile" "metricbeat_profile" {
   name = "metricbeat_profile"
   role = "${aws_iam_role.metricbeat_iam_role.name}"
 }
 
+resource "aws_iam_instance_profile" "cloudwatch_agent_server_profile" {
+  name = "cloudwatch_agent_server_profile"
+  role = "${aws_iam_role.cloudwatch_agent_server_role.name}"
+}
+
 # Create the Instance
-# resource "aws_instance" "airflow_instance" {
-#   ami                    = "${var.airflow_instance_ami}"
-#   instance_type          = "${var.airflow_instance_type}"
+resource "aws_instance" "airflow_instance" {
+  ami                    = "${var.rstudio_instance_ami}"
+  instance_type          = "${var.airflow_instance_type}"
 
-#   # VPC Subnet
-#   subnet_id              = "${aws_subnet.redshift_subnet_1.id}"
+  # VPC Subnet
+  subnet_id              = "${aws_subnet.redshift_subnet_1.id}"
 
-#   # Security Group
-#   vpc_security_group_ids = ["${aws_security_group.allow-ssh.id}"]
+  # Security Group
+  vpc_security_group_ids = ["${aws_security_group.allow-ssh.id}"]
 
-#   # Public SSH Key
-#   key_name               = "${aws_key_pair.airflow-key.key_name}"
+  # Public SSH Key
+  key_name               = "${aws_key_pair.airflow-key.key_name}"
 
-#   # IAM Instance Profile
-#   iam_instance_profile   = "${aws_iam_instance_profile.metricbeat_profile.name}"
+  # IAM Instance Profile
+  iam_instance_profile   = "${aws_iam_instance_profile.metricbeat_profile.name}"
 
-#   # Enable detailed monitoring
-#   monitoring             = true
+  # Enable detailed monitoring
+  monitoring             = true
 
-#   tags = {
-#     Name = "airflow-instance"
-#   }
+  tags = {
+    Name = "airflow-instance"
+  }
 
-#   depends_on = [
-#     "aws_subnet.redshift_subnet_1",
-#     "aws_security_group.allow-ssh",
-#     "aws_key_pair.airflow-key",
-#   ]
-# }
+  depends_on = [
+    "aws_subnet.redshift_subnet_1",
+    "aws_security_group.allow-ssh",
+    "aws_key_pair.airflow-key",
+  ]
+}
 
 resource "aws_instance" "rstudio_instance" {
   ami                    = "${var.rstudio_instance_ami}"
@@ -202,7 +267,7 @@ resource "aws_instance" "rstudio_instance" {
   key_name               = "${aws_key_pair.rstudio-key.key_name}"
 
   # IAM Instance Profile
-  iam_instance_profile   = "${aws_iam_instance_profile.metricbeat_profile.name}"
+  iam_instance_profile   = "${aws_iam_instance_profile.cloudwatch_agent_server_profile.name}"
 
   # Enable detailed monitoring
   monitoring             = true
