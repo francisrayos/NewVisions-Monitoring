@@ -34,7 +34,8 @@ rstudio.pub
 statsd-master/package-lock.json
 statsd-master/package.json
 
-# Update
+# Beats modules
 metricbeat/metricbeat
+filebeat/filebeat
 kibana
 heartbeat
