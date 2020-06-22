@@ -1,2 +1,0 @@
-2020-06-11T10:30:26.078-0400	INFO	instance/beat.go:621	Home path: [/Users/francisrayosdelsol/Desktop/Insight DevOps Fellowship/final-project/metricbeat] Config path: [/Users/francisrayosdelsol/Desktop/Insight DevOps Fellowship/final-project/metricbeat] Data path: [/Users/francisrayosdelsol/Desktop/Insight DevOps Fellowship/final-project/metricbeat/data] Logs path: [/Users/francisrayosdelsol/Desktop/Insight DevOps Fellowship/final-project/metricbeat/logs]
-2020-06-11T10:30:26.086-0400	INFO	instance/beat.go:629	Beat ID: 81f56c46-6fa3-4143-8f1f-eb64dd301834
