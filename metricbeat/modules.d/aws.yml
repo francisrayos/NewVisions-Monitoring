@@ -14,8 +14,8 @@
   period: 60s
   metricsets:
     - ec2
-  access_key_id: <<ACCESS_KEY_ID>>
-  secret_access_key: <<SECRET_ACCESS_KEY>
+  access_key_id: AKIAQQ5PDCWHHOSPWCES
+  secret_access_key: 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
   default_region: 'us-east-1'
 
 - module: aws
@@ -26,10 +26,8 @@
     - namespace: AWS/EC2
       #name: ["CPUUtilization", "DiskWriteOps"]
       tags.resource_type_filter: ec2:instance
-      #dimensions:
-      #  - name: InstanceId
-      #    value: i-0686946e22cf9494a
-      #statistic: ["Average", "Maximum"]
+    - namespace: System/Linux
+    - namespace: CWAgent
 - module: aws
   period: 5m
   metricsets:

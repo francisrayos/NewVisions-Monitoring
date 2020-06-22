@@ -37,3 +37,4 @@ statsd-master/package.json
 # Update
 metricbeat/metricbeat
 kibana
+heartbeat
