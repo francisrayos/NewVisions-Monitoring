@@ -12,7 +12,7 @@ Heartbeat is a referential architecture. The
 
 ## Prerequisites
 
-## Input Variables
+### Input Variables
 
 ```
 # AWS Region
