@@ -14,7 +14,7 @@ Heartbeat is a referential architecture. The
 
 ## Input Variables
 
-'''
+```
 # AWS Region
 aws_region = "us-east-1"
 
@@ -44,7 +44,7 @@ airflow_instance_ami = "ami-02e4e4662a1a89f39"
 airflow_instance_type = "t2.medium"
 rstudio_instance_ami = "ami-0226a8af83fcecb43"
 rstudio_instance_type = "t2.medium"
-'''
+```
 
 ### Installing NodeJS, StatsD, and Airflow on EC2 Instance
 
