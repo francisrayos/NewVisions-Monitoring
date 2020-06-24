@@ -6,7 +6,8 @@ Server Monitoring & Live Tailing - DevOps Fellow Project @ Insight
 
 ## Project Overview
 
-Heartbeat is a referential architecture. The 
+Heartbeat is a monitoring dashboard solution, launched through Logz.io, a Grafana and ELK Stack-based
+infrastructure monitoring tool.
 
 ![Image of Architecture](images/architecture.png)
 
@@ -47,9 +48,9 @@ rs_nodetype = "dc2.large"
 rs_cluster_type = "single-node"
 
 # EC2 Instance Variables
-public_key_path1 = "<<PUBLIC KEY PATH>>"
-public_key_path2 = "<<PUBLIC KEY PATH>>"
-private_key_path = "<<PRIVATE KEY PATH>>"
+public_key_path1 = "airflow.pub"
+public_key_path2 = "rstudio.pub"
+private_key_path = "mykey"
 airflow_instance_ami = "ami-02e4e4662a1a89f39"
 airflow_instance_type = "t2.medium"
 rstudio_instance_ami = "ami-0226a8af83fcecb43"
