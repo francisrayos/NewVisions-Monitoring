@@ -12,9 +12,19 @@ Heartbeat is a referential architecture. The
 
 ## Prerequisites
 
-### Input Variables
+You will need to configure AWS credentials before using this project. The following outlines the
+process for a Linux operating system.
 
 ```
+export AWS_ACCESS_KEY_ID=<<YOUR_AWS_ACCESS_KEY_ID>>           # input access key
+export AWS_SECRET_ACCESS_KEY=<<YOUR_AWS_SECRET_ACCESS_KEY>>   # input secret key
+source ~/.zshrc                                               # relaunch zsh
+aws sts get-caller-identity                                   # confirm credentials
+```
+
+### Input Variables
+
+```javascript
 # AWS Region
 aws_region = "us-east-1"
 
@@ -49,5 +59,7 @@ rstudio_instance_type = "t2.medium"
 ### Installing NodeJS, StatsD, and Airflow on EC2 Instance
 
 ## Beats Configuration
+
+## Quick Start
 
 ## References & Quick Links
