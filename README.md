@@ -102,7 +102,7 @@ Run the collect-metrics.sh script in Terminal and the airflow.sh script while lo
 sudo ./metricbeat -e
 
 docker run --name docker-collector-metrics \
---env LOGZIO_TOKEN="lspxRedIaPqUhEGDxhZSGvmXGSiHLIqG" \
+--env LOGZIO_TOKEN="<<YOUR_LOGZIO_TOKEN>>" \
 --env LOGZIO_MODULES="aws" \
 --env AWS_ACCESS_KEY="<<YOUR_AWS_ACCESS_KEY>>" \
 --env AWS_SECRET_KEY="<<YOUR_AWS_SECRET_KEY>>" \
