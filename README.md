@@ -66,4 +66,11 @@ rstudio_instance_type = "t2.medium"
 
 ## Quick Start
 
+```
+terraform init -var-file="redshift.tfvars"
+terraform apply -var-file="redshift.tfvars"
+```
+
 ## References & Quick Links
+
+[How to Send Airflow Metrics to StatsD](https://airflow.apache.org/docs/stable/metrics.html)
