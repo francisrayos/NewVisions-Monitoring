@@ -2,15 +2,13 @@
 
 Server Monitoring & Live Tailing - DevOps Fellow Project @ Insight 
 
-
-
 ## Project Overview
 
 Heartbeat is a monitoring dashboard solution, launched through Logz.io, a Grafana and ELK Stack-based
 infrastructure monitoring tool. This project was launched as a pro-bono consulting project for New
 Visions for Public Schools, who aimed to centralize a monitoring system for the tools and services in its
 tech stack. The data team relies on a set of tools and services to process data provided by the Department of Education and other sources before feeding it into the tools and app that
-the organization maintains. Heartbeat centralizes metric and log aggregation to monitor certain data pipelines and the health of EC2 instances, Airflow schedulers, and more.
+the organization maintains. Heartbeat centralizes metric and log aggregation to monitor certain data pipelines and the health of EC2 instances, Airflow schedulers, and more. <br />
 
 ![Image of Architecture](images/architecture.png)
 
@@ -62,15 +60,35 @@ rstudio_instance_type = "t2.medium"
 
 ### Installing NodeJS, StatsD, and Airflow on EC2 Instance
 
+To configure Airflow metrics, you must install NodeJS, StatsD, and Airflow on the launched EC2 instance.
+
 ## Beats Configuration
 
 ## Quick Start
 
 ```
-terraform init -var-file="redshift.tfvars"
-terraform apply -var-file="redshift.tfvars"
+terraform init -var-file="variables.tfvars"
+terraform apply -var-file="variables.tfvars"
+```
+
+```
+sudo ./metricbeat -e
+
+docker run --name docker-collector-metrics \
+--env LOGZIO_TOKEN="lspxRedIaPqUhEGDxhZSGvmXGSiHLIqG" \
+--env LOGZIO_MODULES="aws" \
+--env AWS_ACCESS_KEY="AKIAQQ5PDCWHHOSPWCES" \
+--env AWS_SECRET_KEY="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" \
+--env AWS_REGION="us-east-1" \
+--env AWS_NAMESPACES="AWS/EC2,CWAgent,AWS/S3,AWS/Redshift" \
+logzio/docker-collector-metrics
+```
+```
+node stats.js config.js > /path/to/output.txt
+
+sudo ./filebeat -e
 ```
 
 ## References & Quick Links
 
-[How to Send Airflow Metrics to StatsD](https://airflow.apache.org/docs/stable/metrics.html)
+- [How to Send Airflow Metrics to StatsD](https://airflow.apache.org/docs/stable/metrics.html)
