@@ -14,20 +14,14 @@ the organization maintains. Heartbeat centralizes metric and log aggregation to 
 
 ## Tech Stack
 
-| Technology    | Use Case      |
-| ------------- | ------------- |
-| Terraform  | Automate infrastructure  |
-| AWS S3  | Data shipping to Redshifts  |
-| AWS Redshift | Master data aggregation  |
-| Airflow  | Manage processes on RStudio scripts  |
-| RStudio Server  | Move and tranform data  |
-| AWS Cloudwatch  | Metric aggregator for AWS tools  |
-| StatsD  | Log aggregator for collecting Airflow metrics  |
-| Beats | Log and metric shippers to Logz.io |
-| Logz.io  | UI monitoring dashboard  |
-| MongoDB  | Database configuration  |
-| Tableau  | Database configuration  |
-| PostgreSQL  | Database configuration  |
+| Technology    | Use Case      | Technology    | Use Case      |
+| ------------- | ------------- | ------------- | ------------- |
+| Terraform  | Automate infrastructure  | StatsD  | Log aggregator for collecting Airflow metrics  |
+| AWS S3  | Data shipping to Redshift  | Beats | Log and metric shippers to Logz.io |
+| AWS Redshift | Master data aggregation  | Logz.io  | UI monitoring dashboard  |
+| Airflow  | Manage processes on RStudio scripts  | MongoDB  | Database configuration  |
+| RStudio Server  | Move and tranform data  | Tableau  | Database configuration  |
+| AWS Cloudwatch  | Metric aggregator for AWS tools  | PostgreSQL  | Database configuration  |
 
 ## Prerequisites
 
