@@ -16,8 +16,18 @@ the organization maintains. Heartbeat centralizes metric and log aggregation to 
 
 | Technology    | Use Case      |
 | ------------- | ------------- |
-| Terraform  | Content Cell  |
-| AWS S3  | Content Cell  |
+| Terraform  | Automate infrastructure  |
+| AWS S3  | Data shipping to Redshifts  |
+| AWS Redshift | Master data aggregation  |
+| Airflow  | Manage processes on RStudio scripts  |
+| RStudio Server  | Move and tranform data  |
+| AWS Cloudwatch  | Metric aggregator for AWS tools  |
+| StatsD  | Log aggregator for collecting Airflow metrics  |
+| Beats | Log and metric shippers to Logz.io |
+| Logz.io  | UI monitoring dashboard  |
+| MongoDB  | Database configuration  |
+| Tableau  | Database configuration  |
+| PostgreSQL  | Database configuration  |
 
 ## Prerequisites
 
