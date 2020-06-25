@@ -7,7 +7,10 @@ Server Monitoring & Live Tailing - DevOps Fellow Project @ Insight
 ## Project Overview
 
 Heartbeat is a monitoring dashboard solution, launched through Logz.io, a Grafana and ELK Stack-based
-infrastructure monitoring tool.
+infrastructure monitoring tool. This project was launched as a pro-bono consulting project for New
+Visions for Public Schools, who aimed to centralize a monitoring system for the tools and services in its
+tech stack. The data team relies on a set of tools and services to process data provided by the Department of Education and other sources before feeding it into the tools and app that
+the organization maintains. Heartbeat centralizes metric and log aggregation to monitor certain data pipelines and the health of EC2 instances, Airflow schedulers, and more.
 
 ![Image of Architecture](images/architecture.png)
 
@@ -17,10 +20,10 @@ You will need to configure AWS credentials before using this project. The follow
 process for a Linux operating system.
 
 ```
-export AWS_ACCESS_KEY_ID=<<YOUR_AWS_ACCESS_KEY_ID>>           # input access key
-export AWS_SECRET_ACCESS_KEY=<<YOUR_AWS_SECRET_ACCESS_KEY>>   # input secret key
-source ~/.zshrc                                               # relaunch zsh
-aws sts get-caller-identity                                   # confirm credentials
+export AWS_ACCESS_KEY_ID='<<YOUR_AWS_ACCESS_KEY_ID>>' >> ~/.zshrc           # input access key
+export AWS_SECRET_ACCESS_KEY='<<YOUR_AWS_SECRET_ACCESS_KEY>>' >> ~/.zshrc   # input secret key
+source ~/.zshrc                                                             # relaunch zsh
+aws sts get-caller-identity                                                 # confirm credentials
 ```
 
 ### Input Variables
