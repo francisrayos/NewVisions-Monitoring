@@ -37,6 +37,8 @@ aws sts get-caller-identity                                                 # co
 
 ### Input Variables
 
+Before you launch the Terraform module, you must create a .tfvars file containing the following variables.
+
 ```javascript
 # AWS Region
 aws_region = "us-east-1"
@@ -75,19 +77,28 @@ To configure Airflow metrics, you must install [NodeJS](https://nodejs.org/en/do
 
 ## Beats Configuration
 
+Beats is a collection of open source log shippers that act as agents installed on the different servers in your environment for collecting logs or metrics. For this project, Filebeat is used to ship Airflow metrics using a custom console node exporter to Logz.io, and Metricbeat is used to ship real-time EC2 metrics to Logz.io as well. <br /><br />
+
+To learn more about how to configure Beats, click here.
+
 ## Quick Start
 
-```
-terraform init -var-file="variables.tfvars"
-terraform apply -var-file="variables.tfvars"
-```
 
+
+Create SSH keys to connect to the running EC2 instances.
 ```
 ssh-keygen -f airflow 
 ssh-keygen -f rstudio
 ```
-
+Launch the Terraform module.
 ```
+terraform init -var-file="variables.tfvars"
+terraform apply -var-file="variables.tfvars"
+```
+Run the collect-metrics.sh script in Terminal and the airflow.sh script while logged onto the EC2 instance to ship all metrics to Logz.io. Please note the path of the output.txt file and make sure to mark that path in your filebeat.yml file. The contents of both shell scripts are shown below.
+```
+# collect-metrics.sh
+
 sudo ./metricbeat -e
 
 docker run --name docker-collector-metrics \
@@ -101,6 +112,8 @@ logzio/docker-collector-metrics
 ```
 
 ```
+# airflow.sh
+
 node stats.js config.js > /path/to/output.txt
 
 sudo ./filebeat -e
