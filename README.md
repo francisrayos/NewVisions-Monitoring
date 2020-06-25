@@ -8,9 +8,16 @@ Heartbeat is a monitoring dashboard solution, launched through Logz.io, a Grafan
 infrastructure monitoring tool. This project was launched as a pro-bono consulting project for New
 Visions for Public Schools, who aimed to centralize a monitoring system for the tools and services in its
 tech stack. The data team relies on a set of tools and services to process data provided by the Department of Education and other sources before feeding it into the tools and app that
-the organization maintains. Heartbeat centralizes metric and log aggregation to monitor certain data pipelines and the health of EC2 instances, Airflow schedulers, and more. <br />
+the organization maintains. Heartbeat centralizes metric and log aggregation to monitor certain data pipelines and the health of EC2 instances, Airflow schedulers, and more. <br /><br />
 
 ![Image of Architecture](images/architecture.png)
+
+## Tech Stack
+
+| Technology    | Use Case      |
+| ------------- | ------------- |
+| Terraform  | Content Cell  |
+| AWS S3  | Content Cell  |
 
 ## Prerequisites
 
@@ -60,7 +67,7 @@ rstudio_instance_type = "t2.medium"
 
 ### Installing NodeJS, StatsD, and Airflow on EC2 Instance
 
-To configure Airflow metrics, you must install NodeJS, StatsD, and Airflow on the launched EC2 instance.
+To configure Airflow metrics, you must install [NodeJS](https://nodejs.org/en/download/package-manager/), [StatsD](https://github.com/statsd/statsd), and [Airflow](https://medium.com/@abraham.pabbathi/airflow-on-aws-ec2-instance-with-ubuntu-aff8d3206171) on the launched EC2 instance.
 
 ## Beats Configuration
 
@@ -69,6 +76,11 @@ To configure Airflow metrics, you must install NodeJS, StatsD, and Airflow on th
 ```
 terraform init -var-file="variables.tfvars"
 terraform apply -var-file="variables.tfvars"
+```
+
+```
+ssh-keygen -f airflow 
+ssh-keygen -f rstudio
 ```
 
 ```
@@ -83,6 +95,7 @@ docker run --name docker-collector-metrics \
 --env AWS_NAMESPACES="AWS/EC2,CWAgent,AWS/S3,AWS/Redshift" \
 logzio/docker-collector-metrics
 ```
+
 ```
 node stats.js config.js > /path/to/output.txt
 
