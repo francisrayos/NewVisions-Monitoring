@@ -77,7 +77,7 @@ To configure Airflow metrics, you must install [NodeJS](https://nodejs.org/en/do
 
 ## Beats Configuration
 
-Beats is a collection of open source log shippers that act as agents installed on the different servers in your environment for collecting logs or metrics. For this project, Filebeat is used to ship Airflow metrics using a custom console node exporter to Logz.io, and Metricbeat is used to ship real-time EC2 metrics to Logz.io as well. <br /><br />
+Beats is a collection of open source log shippers that act as agents installed on the different servers in your environment for collecting logs or metrics. For this project, Filebeat is used to ship Airflow metrics using a custom console node exporter to Logz.io, and Metricbeat is used to ship real-time EC2 metrics to Logz.io as well. <br />
 
 To learn more about how to configure Beats, click here.
 
